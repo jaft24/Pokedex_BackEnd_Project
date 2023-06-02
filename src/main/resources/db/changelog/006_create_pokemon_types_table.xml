@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+           http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+
+
+    <!--Create the pokemon_types table-->
+    <changeSet id="create_pokemon_types_table" author="jaleta">
+        <createTable tableName="pokemon_types">
+            <!-- Column1 : id as the primary Key -->
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <!-- Column2 : pokemon_id-->
+            <column name="pokemon_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+
+            <!-- Column3 : type_id-->
+            <column name="type_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+
+</databaseChangeLog>

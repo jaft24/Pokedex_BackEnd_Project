@@ -1,0 +1,15 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="loadAbilitiesData" author="jaleta">
+        <loadData relativeToChangelogFile="true" file="changelog/loadfiles/abilities.csv"
+                  separator=","
+                  tableName="abilities">
+            <column name="id" type="bigint"/>
+            <column name="ability" type="VARCHAR(255)"/>
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

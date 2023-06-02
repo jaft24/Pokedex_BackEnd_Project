@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+           http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+
+<!--Create the trainer table-->
+<changeSet id="create_trainer_table" author="jaleta">
+    <createTable tableName="trainer">
+        <!-- Column1 : Trainer Id as the primary Key -->
+        <column name="id" type="bigint">
+            <constraints primaryKey="true" nullable="false"/>
+        </column>
+
+        <!-- Column2 : Trainer name-->
+        <column name="name" type="varchar(255)">
+            <constraints nullable="false"/>
+        </column>
+
+        <!-- Column3 : Trainer Email-->
+        <column name="email" type="varchar(255)">
+            <constraints nullable="false"/>
+        </column>
+
+        <!-- Column4 : Trainer Password-->
+        <column name="password" type="varchar(255)">
+            <constraints nullable="false"/>
+        </column>
+
+    </createTable>
+</changeSet>
+
+</databaseChangeLog>

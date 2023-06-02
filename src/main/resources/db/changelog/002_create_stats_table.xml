@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+           http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+
+<!--Create the stats table-->
+<changeSet id="create_stats_table" author="jaleta">
+    <createTable tableName="stats">
+        <!-- Column1 : Pokemon Id as the primary Key -->
+        <column name="pokemon_id" type="bigint">
+            <constraints primaryKey="true" nullable="false"/>
+        </column>
+        <!-- Column2 : hp-->
+        <column name="hp" type="int">
+            <constraints nullable="false"/>
+        </column>
+
+        <!-- Column3 : Speed-->
+        <column name="speed" type="int">
+            <constraints nullable="false"/>
+        </column>
+
+        <!-- Column4 : Attack-->
+        <column name="attack" type="int">
+            <constraints nullable="false"/>
+        </column>
+
+        <!-- Column5 : Defense -->
+        <column name="defense" type="int">
+            <constraints nullable="false"/>
+        </column>
+
+        <!-- Column6 : Special Attack -->
+        <column name="special_attack" type="int">
+            <constraints nullable="false"/>
+        </column>
+
+        <!-- Column7 : Special Defense -->
+        <column name="special_defense" type="int">
+            <constraints nullable="false"/>
+        </column>
+    </createTable>
+</changeSet>
+
+</databaseChangeLog>

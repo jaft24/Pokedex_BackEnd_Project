@@ -1,0 +1,1635 @@
+"id","name","height","weight","genus","description"
+1,"Bulbasaur",7,69,"Seed Pokémon","Bulbasaur can be seen napping in bright sunlight.
+There is a seed on its back. By soaking up the sun’s rays,
+the seed grows progressively larger."
+2,"Ivysaur",10,130,"Seed Pokémon","There is a bud on this Pokémon’s back. To support its weight,
+Ivysaur’s legs and trunk grow thick and strong.
+If it starts spendingx more time lying in the sunlight,
+it’s a sign that the bud will bloom into a large flower soon."
+3,"Venusaur",20,1000,"Seed Pokémon","There is a large flower on Venusaur’s back. The flower is said
+to take on vivid colors if it gets plenty of nutrition and sunlight.
+The flower’s aroma soothes the emotions of people."
+4,"Charmander",6,85,"Lizard Pokémon","The flame that burns at the tip of its tail is an indication
+of its emotions. The flame wavers when Charmander
+is enjoying itself. If the Pokémon becomes enraged,
+the flame burns fiercely."
+5,"Charmeleon",11,190,"Flame Pokémon","Charmeleon mercilessly destroys its foes using its sharp
+claws. If it encounters a strong foe, it turns aggressive.
+In this excited state, the flame at the tip of its tail flares with
+a bluish white color."
+6,"Charizard",17,905,"Flame Pokémon","Charizard flies around the sky in search of powerful opponents.
+It breathes fire of such great heat that it melts anything.
+However, it never turns its fiery breath on any opponent
+weaker than itself."
+7,"Squirtle",5,90,"Tiny Turtle Pokémon","Squirtle’s shell is not merely used for protection.
+The shell’s rounded shape and the grooves on its
+surface help minimize resistance in water,
+enabling this Pokémon to swim at high speeds."
+8,"Wartortle",10,225,"Turtle Pokémon","Its tail is large and covered with a rich, thick fur. The tail
+becomes increasingly deeper in color as Wartortle ages.
+The scratches on its shell are evidence of this Pokémon’s
+toughness as a battler."
+9,"Blastoise",16,855,"Shellfish Pokémon","Blastoise has water spouts that protrude from its shell.
+The water spouts are very accurate.
+They can shoot bullets of water with enough accuracy
+to strike empty cans from a distance of over 160 feet."
+10,"Caterpie",3,29,"Worm Pokémon","It’s easy to catch, and it grows quickly, making
+it one of the top recommendations for novice
+Pokémon Trainers."
+11,"Metapod",7,99,"Cocoon Pokémon","Its shell is hard, but it’s still just a bug shell.
+It’s been known to break, so intense battles
+with it should be avoided."
+12,"Butterfree",11,320,"Butterfly Pokémon","When attacked by other Pokémon, it defends
+itself by scattering its poisonous scales and
+fluttering its wings."
+13,"Weedle",3,32,"Hairy Bug Pokémon","Weedle has an extremely acute sense of smell. It is capable
+of distinguishing its favorite kinds of leaves from those it
+dislikes just by sniffing with its big red proboscis (nose)."
+14,"Kakuna",6,100,"Cocoon Pokémon","Kakuna remains virtually immobile as it clings to a tree.
+However, on the inside, it is extremely busy as it prepares
+for its coming evolution.
+This is evident from how hot the shell becomes to the touch."
+15,"Beedrill",10,295,"Poison Bee Pokémon","Beedrill is extremely territorial. No one should ever approach
+its nest—this is for their own safety. If angered, they will attack
+in a furious swarm."
+16,"Pidgey",3,18,"Tiny Bird Pokémon","Pidgey has an extremely sharp sense of direction.
+It is capable of unerringly returning home to its nest,
+however far it may be removed from its familiar surroundings."
+17,"Pidgeotto",11,300,"Bird Pokémon","Pidgeotto claims a large area as its own territory. This
+Pokémon flies around, patrolling its living space. If its territory
+is violated, it shows no mercy in thoroughly punishing the foe
+with its sharp claws."
+18,"Pidgeot",15,395,"Bird Pokémon","This Pokémon has a dazzling plumage of beautifully
+glossy feathers. Many Trainers are captivated by the
+striking beauty of the feathers on its head, compelling
+them to choose Pidgeot as their Pokémon."
+19,"Rattata",3,35,"Mouse Pokémon","With their strong capacity for survival, they can
+live in dirty places without concern. Left
+unchecked, their numbers multiply rapidly."
+20,"Raticate",7,185,"Mouse Pokémon","Its disposition is far more violent than its looks
+would suggest. Don’t let your hand get too close
+to its face, as it could bite your hand clean off."
+21,"Spearow",3,20,"Tiny Bird Pokémon","Farmers whose fields are troubled by bug
+Pokémon appreciate Spearow for its vigorous
+appetite and look after it."
+22,"Fearow",12,380,"Beak Pokémon","Drawings of a Pokémon resembling Fearow can
+be seen in murals from deep in ancient history."
+23,"Ekans",20,69,"Snake Pokémon","Ekans curls itself up in a spiral while it rests. Assuming this
+position allows it to quickly respond to a threat from any
+direction with a glare from its upraised head."
+24,"Arbok",35,650,"Cobra Pokémon","This Pokémon is terrifically strong in order to constrict things
+with its body. It can even flatten steel oil drums. Once Arbok
+wraps its body around its foe, escaping its crunching embrace
+is impossible."
+25,"Pikachu",4,60,"Mouse Pokémon","It’s in its nature to store electricity. It feels
+stressed now and then if it’s unable to fully
+discharge the electricity."
+26,"Raichu",8,300,"Mouse Pokémon","It becomes aggressive when it has electricity
+stored up. At such times, even its Trainer has to
+take care to avoid being attacked."
+27,"Sandshrew",6,120,"Mouse Pokémon","It usually makes its home in deserts and arid
+zones, where rain does not fall. It digs holes to
+catch Bug-type Pokémon."
+28,"Sandslash",10,295,"Mouse Pokémon","It uses its claws to climb trees and then curls
+its body into a spiny ball, ready to drop onto
+any prey that appears."
+29,"Nidoran♀",4,70,"Poison Pin Pokémon","Nidoran♀ has barbs that secrete a powerful poison.
+They are thought to have developed as protection for
+this small-bodied Pokémon. When enraged, it releases
+a horrible toxin from its horn."
+30,"Nidorina",8,200,"Poison Pin Pokémon","When Nidorina are with their friends or family, they keep
+their barbs tucked away to prevent hurting each other.
+This Pokémon appears to become nervous if separated
+from the others."
+31,"Nidoqueen",13,600,"Drill Pokémon","Nidoqueen’s body is encased in extremely hard scales.
+It is adept at sending foes flying with harsh tackles. This
+Pokémon is at its strongest when it is defending its young."
+32,"Nidoran♂",5,90,"Poison Pin Pokémon","Nidoran♂ has developed muscles for moving its ears. Thanks
+to them, the ears can be freely moved in any direction. Even
+the slightest sound does not escape this Pokémon’s notice."
+33,"Nidorino",9,195,"Poison Pin Pokémon","Nidorino has a horn that is harder than a diamond. If it senses
+a hostile presence, all the barbs on its back bristle up at once,
+and it challenges the foe with all its might."
+34,"Nidoking",14,620,"Drill Pokémon","Nidoking’s thick tail packs enormously destructive power.
+With one swing, it can topple a metal transmission tower. Once
+this Pokémon goes on a rampage, there is no stopping it."
+35,"Clefairy",6,75,"Fairy Pokémon","On nights with a full moon, they gather together
+and dance. The surrounding area is enveloped
+in an abnormal magnetic field."
+36,"Clefable",13,400,"Fairy Pokémon","According to tradition, people who see a pair
+of Clefable skipping by can look forward to a
+happy marriage."
+37,"Vulpix",6,99,"Fox Pokémon","From its mouth spew flames that seem to
+resemble the spirits of the deceased. Some
+people mistakenly think this fire is a ghost."
+38,"Ninetales",11,199,"Fox Pokémon","Said to live for a thousand years, this Pokémon
+uses its supernatural abilities to manipulate fire.
+It can burn its prey to a crisp as it pleases."
+39,"Jigglypuff",5,55,"Balloon Pokémon","Jigglypuff possess a vocal range that exceeds
+12 octaves, but each individual’s singing skill
+depends on its own effort."
+40,"Wigglytuff",10,120,"Balloon Pokémon","As it inhales, it expands...and expands...and
+expands. Wigglytuff compete to see which one
+can inflate itself the most."
+41,"Zubat",8,75,"Bat Pokémon","When exposed to sunlight, they suffer burns.
+The frequency of their ultrasonic waves can
+differ slightly from colony to colony."
+42,"Golbat",16,550,"Bat Pokémon","Sometimes they drink so much blood, they can’t
+fly anymore. Then they fall to the ground and
+become food for other Pokémon."
+43,"Oddish",5,54,"Weed Pokémon","Oddish searches for fertile, nutrient-rich soil, then plants itself.
+During the daytime, while it is planted, this Pokémon’s feet
+are thought to change shape and become similar to the roots
+of trees."
+44,"Gloom",8,86,"Weed Pokémon","From its mouth Gloom drips honey that smells absolutely
+horrible. Apparently, it loves the horrid stench. It sniffs the
+noxious fumes and then drools even more of its honey."
+45,"Vileplume",12,186,"Flower Pokémon","Vileplume has the world’s largest petals. They are used to
+attract prey that are then doused with toxic spores. Once the
+prey are immobilized, this Pokémon catches and devours them."
+46,"Paras",3,54,"Mushroom Pokémon","Mushrooms called tochukaso sprout from its
+back. They can be dried and powdered to make
+a medicine used to extend life."
+47,"Parasect",10,295,"Mushroom Pokémon","It scatters toxic spores from its mushroom cap.
+Once harvested, these spores can be steeped
+and boiled down to prepare herbal medicines."
+48,"Venonat",10,300,"Insect Pokémon","Venonat is said to have evolved with a coat of thin, stiff hair
+that covers its entire body for protection. It possesses large
+eyes that never fail to spot even minuscule prey."
+49,"Venomoth",15,125,"Poison Moth Pokémon","Venomoth is nocturnal—it is a Pokémon that only becomes
+active at night. Its favorite prey are small insects that gather
+around streetlights, attracted by the light in the darkness."
+50,"Diglett",2,8,"Mole Pokémon","Many farmers cherish and nurture Diglett
+because its droppings enrich the soil it lives in."
+51,"Dugtrio",7,333,"Mole Pokémon","Despite the closeness between this Pokémon
+and farmers and other people, no one has ever
+seen the parts of it concealed underground."
+52,"Meowth",4,42,"Scratch Cat Pokémon","It loves shiny things. It often fights with
+Murkrow over prey they’re both trying to catch."
+53,"Persian",10,320,"Classy Cat Pokémon","It has a high opinion of itself, although not to
+the same extent as the Alolan Persian. It’s quite
+difficult to make friends with this Pokémon."
+54,"Psyduck",8,196,"Duck Pokémon","This Pokémon is troubled by constant
+headaches. The more pain it’s in, the more
+powerful its psychokinesis becomes."
+55,"Golduck",17,766,"Duck Pokémon","It swims along the banks of lakes and catches
+fish Pokémon. It takes them to the shore and
+quietly eats them up."
+56,"Mankey",5,280,"Pig Monkey Pokémon","Its raging tires it out and causes it to fall asleep,
+but the anger resonating in its dreams causes it
+to wake up—which infuriates it all over again."
+57,"Primeape",10,320,"Pig Monkey Pokémon","Some researchers theorize that Primeape
+remains angry even when inside a Poké Ball."
+58,"Growlithe",7,190,"Puppy Pokémon","It looks cute, but when you approach another
+Trainer’s Growlithe, it will bark at you and bite."
+59,"Arcanine",19,1550,"Legendary Pokémon","The fire burning inside its body serves as the
+energy to fuel it as it runs great distances.
+It appears in many legends."
+60,"Poliwag",6,124,"Tadpole Pokémon","It’s still not very good at walking. Its Trainers
+should train this Pokémon to walk every day."
+61,"Poliwhirl",10,200,"Tadpole Pokémon","It marches over the land in search of bug
+Pokémon to eat. Then it takes them underwater
+so it can dine on them where it’s safe."
+62,"Poliwrath",13,540,"Tadpole Pokémon","Its percentage of body fat is nearly zero. Its
+body is entirely muscle, which makes it heavy
+and forces its swimming prowess to develop."
+63,"Abra",9,195,"Psi Pokémon","It can teleport itself to safety while it’s asleep,
+but when it wakes, it doesn’t know where it is,
+so it panics."
+64,"Kadabra",13,565,"Psi Pokémon","Kadabra’s presence infests televisions and
+monitors with creepy shadows that bring
+bad luck."
+65,"Alakazam",15,480,"Psi Pokémon","Its brain cells continue to increase in number
+until its death. The older the Alakazam, the
+larger its head."
+66,"Machop",8,195,"Superpower Pokémon","With its superhuman strength, it’s able to throw
+a hundred people all at the same time. Its
+strength comes from lifting Graveler every day."
+67,"Machoke",15,705,"Superpower Pokémon","It willingly assists with hard labor because it
+knows the work is good training for its muscles."
+68,"Machamp",16,1300,"Superpower Pokémon","It can lift heavy loads with the greatest of ease.
+It can even heft dump trucks. But its clumsy
+fingers prevent it from doing any precision work."
+69,"Bellsprout",7,40,"Flower Pokémon","Bellsprout’s thin and flexible body lets it bend and sway
+to avoid any attack, however strong it may be. From its mouth,
+this Pokémon spits a corrosive fluid that melts even iron."
+70,"Weepinbell",10,64,"Flycatcher Pokémon","Weepinbell has a large hook on its rear end. At night, the
+Pokémon hooks on to a tree branch and goes to sleep.
+If it moves around in its sleep, it may wake up to find itself
+on the ground."
+71,"Victreebel",17,155,"Flycatcher Pokémon","Victreebel has a long vine that extends from its head.
+This vine is waved and flicked about as if it were an animal
+to attract prey. When an unsuspecting prey draws near,
+this Pokémon swallows it whole."
+72,"Tentacool",9,455,"Jellyfish Pokémon","It drifts in shallow seas, such as the areas near
+beaches. If you get bitten or stabbed by its
+toxic tentacles, rush to the hospital."
+73,"Tentacruel",16,550,"Jellyfish Pokémon","Although these Pokémon are rare, when a large
+outbreak of them occurs, all fish Pokémon
+disappear from the surrounding sea."
+74,"Geodude",4,200,"Rock Pokémon","There are plenty of them to be found along any
+road. A scholar with too much free time once
+counted a hundred of them along a single route."
+75,"Graveler",10,1050,"Rock Pokémon","This slow-footed Pokémon moves by curling up
+and rolling instead of walking. With enough
+momentum, its speed can exceed 60 mph."
+76,"Golem",14,3000,"Megaton Pokémon","Once a year, this Pokémon molts, and its shed
+shell returns to the soil. This process creates
+enriched soil, so farmers collect the shells."
+77,"Ponyta",10,300,"Fire Horse Pokémon","Ponyta is very weak at birth. It can barely stand up.
+This Pokémon becomes stronger by stumbling and
+falling to keep up with its parent."
+78,"Rapidash",17,950,"Fire Horse Pokémon","Rapidash usually can be seen casually cantering in the fields
+and plains. However, when this Pokémon turns serious, its
+fiery manes flare and blaze as it gallops its way up to 150 mph."
+79,"Slowpoke",12,360,"Dopey Pokémon","Alolan home cooking involves drying Slowpoke
+tails and then simmering them into a salty stew."
+80,"Slowbro",16,785,"Hermit Crab Pokémon","Whenever Shellder bites down hard on its tail,
+it gives Slowbro a flash of inspiration...which it
+forgets a moment later."
+81,"Magnemite",3,60,"Magnet Pokémon","It sends out electromagnetic waves, which let it
+float through the air. Touching it while it’s eating
+electricity will give you a full-body shock."
+82,"Magneton",10,600,"Magnet Pokémon","It has about three times the electrical power of
+Magnemite. For some reason, outbreaks of this
+Pokémon happen when lots of sunspots appear."
+83,"Farfetch’d",8,150,"Wild Duck Pokémon","Farfetch’d is always seen with a stalk from a plant of some
+sort. Apparently, there are good stalks and bad stalks. This
+Pokémon has been known to fight with others over stalks."
+84,"Doduo",14,392,"Twin Bird Pokémon","Doduo’s two heads contain completely identical brains. A
+scientific study reported that on rare occasions, there will be
+examples of this Pokémon possessing different sets of brains."
+85,"Dodrio",18,852,"Triple Bird Pokémon","Apparently, the heads aren’t the only parts of the body that
+Dodrio has three of. It has three sets of hearts and lungs as
+well, so it is capable of running long distances without rest."
+86,"Seel",11,900,"Sea Lion Pokémon","Seel hunts for prey in the frigid sea underneath sheets of ice.
+When it needs to breathe, it punches a hole through the ice
+with the sharply protruding section of its head."
+87,"Dewgong",17,1200,"Sea Lion Pokémon","Dewgong loves to snooze on bitterly cold ice. The sight of
+this Pokémon sleeping on a glacier was mistakenly thought
+to be a mermaid by a mariner long ago."
+88,"Grimer",9,300,"Sludge Pokémon","It was born from sludge transformed by
+exposure to X-rays from the moon. When its
+internal load of germs decreases, it dies."
+89,"Muk",12,300,"Sludge Pokémon","After recent environmental improvements, this
+Pokémon is now hardly seen at all. People
+speculate that it may go extinct at some point."
+90,"Shellder",3,40,"Bivalve Pokémon","This Pokémon’s tongue is always hanging out.
+It uses its tongue with great dexterity to dig up
+sand from the seabed in its search for food."
+91,"Cloyster",15,1325,"Bivalve Pokémon","Excavation of the tombs of ancient hunting
+tribes has turned up many spears tipped with
+spikes that had fallen off this Pokémon’s shell."
+92,"Gastly",13,1,"Gas Pokémon","Although Gastly is barely visible, when it’s near,
+a faint sweet smell lingers."
+93,"Haunter",16,1,"Gas Pokémon","It fears the light and revels in the dark. It may
+be on the verge of extinction in cities that stay
+brightly lit at night."
+94,"Gengar",15,405,"Shadow Pokémon","It apparently wishes for a traveling companion.
+Since it was once human itself, it tries to create
+one by taking the lives of other humans."
+95,"Onix",88,2100,"Rock Snake Pokémon","Onix has a magnet in its brain. It acts as a compass so that
+this Pokémon does not lose direction while it is tunneling.
+As it grows older, its body becomes increasingly rounder
+and smoother."
+96,"Drowzee",10,324,"Hypnosis Pokémon","It finds really fun dreams tasty. When it makes
+friends with people, it may show them the most
+delicious dreams it’s ever eaten."
+97,"Hypno",16,756,"Hypnosis Pokémon","As a matter of course, it makes anyone it meets
+fall asleep and has a taste of their dreams.
+Anyone having a good dream, it carries off."
+98,"Krabby",4,65,"River Crab Pokémon","Krabby live on beaches, burrowed inside holes dug into
+the sand. On sandy beaches with little in the way of food,
+these Pokémon can be seen squabbling with each other
+over territory."
+99,"Kingler",13,600,"Pincer Pokémon","Kingler has an enormous, oversized claw. It waves this huge
+claw in the air to communicate with others. However, because
+the claw is so heavy, the Pokémon quickly tires."
+100,"Voltorb",5,104,"Ball Pokémon","Voltorb is extremely sensitive—it explodes at the slightest
+of shocks. It is rumored that it was first created when a
+Poké Ball was exposed to a powerful pulse of energy."
+101,"Electrode",12,666,"Ball Pokémon","One of Electrode’s characteristics is its attraction to electricity.
+It is a problematical Pokémon that congregates mostly at
+electrical power plants to feed on electricity that has just
+been generated."
+102,"Exeggcute",4,25,"Egg Pokémon","Six of them together form a full-fledged
+Pokémon. It’s often hunted by Crabrawler,
+but uses psychokinesis to drive it off."
+103,"Exeggutor",20,1200,"Coconut Pokémon","When the time comes, one of its three heads
+falls off. Before long, the fallen head grows into
+an Exeggcute."
+104,"Cubone",4,65,"Lonely Pokémon","The skull it wears on its head is that of its dead
+mother. According to some, it will evolve when
+it comes to terms with the pain of her death."
+105,"Marowak",10,450,"Bone Keeper Pokémon","This Pokémon is out for vengeance on its natural
+enemy, Mandibuzz. It throws bones like
+boomerangs to try to take it down."
+106,"Hitmonlee",15,498,"Kicking Pokémon","Hitmonlee’s legs freely contract and stretch. Using these
+springlike legs, it bowls over foes with devastating kicks.
+After battle, it rubs down its legs and loosens the muscles
+to overcome fatigue."
+107,"Hitmonchan",14,502,"Punching Pokémon","Hitmonchan is said to possess the spirit of a boxer who had
+been working toward a world championship. This Pokémon
+has an indomitable spirit and will never give up in the face
+of adversity."
+108,"Lickitung",12,655,"Licking Pokémon","Whenever Lickitung comes across something new, it will
+unfailingly give it a lick. It does so because it memorizes things
+by texture and by taste. It is somewhat put off by sour things."
+109,"Koffing",6,10,"Poison Gas Pokémon","Koffing embodies toxic substances. It mixes the toxins with raw
+garbage to set off a chemical reaction that results in a terribly
+powerful poison gas. The higher the temperature, the more gas
+is concocted by this Pokémon."
+110,"Weezing",12,95,"Poison Gas Pokémon","Weezing alternately shrinks and inflates its twin bodies to mix
+together toxic gases inside. The more the gases are mixed,
+the more powerful the toxins become. The Pokémon also
+becomes more putrid."
+111,"Rhyhorn",10,1150,"Spikes Pokémon","Rhyhorn’s brain is very small. It is so dense, while on a run
+it forgets why it started running in the first place. It apparently
+remembers sometimes if it demolishes something."
+112,"Rhydon",19,1200,"Drill Pokémon","Rhydon has a horn that serves as a drill. It is used for
+destroying rocks and boulders. This Pokémon occasionally
+rams into streams of magma, but the armor-like hide prevents
+it from feeling the heat."
+113,"Chansey",11,346,"Egg Pokémon","Not only are these Pokémon fast runners,
+they’re also few in number, so anyone who finds
+one must be lucky indeed."
+114,"Tangela",10,350,"Vine Pokémon","Tangela’s vines snap off easily if they are grabbed. This
+happens without pain, allowing it to make a quick getaway.
+The lost vines are replaced by newly grown vines the very
+next day."
+115,"Kangaskhan",22,800,"Parent Pokémon","The child in its pouch leaves home after roughly
+three years. That is the only time the mother is
+heard to cry wildly."
+116,"Horsea",4,80,"Dragon Pokémon","If Horsea senses danger, it will reflexively spray a dense
+black ink from its mouth and try to escape. This Pokémon
+swims by cleverly flapping the fin on its back."
+117,"Seadra",12,250,"Dragon Pokémon","Seadra generates whirlpools by spinning its body.
+The whirlpools are strong enough to swallow even
+fishing boats. This Pokémon weakens prey with
+these currents, then swallows it whole."
+118,"Goldeen",6,150,"Goldfish Pokémon","Spellbound by the length of its horn and the
+beauty of its fins, many strange Trainers raise
+Goldeen and nothing but Goldeen."
+119,"Seaking",13,390,"Goldfish Pokémon","Trainers who are crazy for Seaking are divided
+into horn enthusiasts and fin enthusiasts.
+The two groups do not get along well."
+120,"Staryu",8,345,"Star Shape Pokémon","This Pokémon gets nibbled on by Lumineon and
+others. Thanks to its red core, it regenerates
+fast, so it’s unconcerned by their snack attacks."
+121,"Starmie",11,800,"Mysterious Pokémon","Its unusual body shape, reminiscent of abstract
+art, led local people to spread rumors that this
+Pokémon may be an invader from outer space."
+122,"Mr. Mime",13,545,"Barrier Pokémon","Mr. Mime is a master of pantomime. Its gestures and motions
+convince watchers that something unseeable actually exists.
+Once the watchers are convinced, the unseeable thing exists
+as if it were real."
+123,"Scyther",15,560,"Mantis Pokémon","While young, they live together deep in the
+mountains, training themselves in how to fight
+with their scythes and move at high speeds."
+124,"Jynx",14,406,"Human Shape Pokémon","Jynx walks rhythmically, swaying and shaking its hips
+as if it were dancing. Its motions are so bouncingly alluring,
+people seeing it are compelled to shake their hips without
+giving any thought to what they are doing."
+125,"Electabuzz",11,300,"Electric Pokémon","Electricity leaks from it in amounts far greater
+than the amount of electricity it eats."
+126,"Magmar",13,445,"Spitfire Pokémon","When angered, it spouts brilliant fire from all
+over its body. It doesn’t calm down until its
+opponent has burned to ash."
+127,"Pinsir",15,550,"Stag Beetle Pokémon","One solid blow from its horns is enough to split
+apart a large tree. Its greatest rival in Alola
+is Vikavolt."
+128,"Tauros",14,884,"Wild Bull Pokémon","Although it’s known to be a fierce Pokémon,
+Tauros in the Alola region are said to possess
+a measure of calmness."
+129,"Magikarp",9,100,"Fish Pokémon","Its reckless leaps make it easy pickings for
+predators. On the bright side, many Pokémon
+enjoy longer life spans, thanks to Magikarp."
+130,"Gyarados",65,2350,"Atrocious Pokémon","There are people who swear that any place
+Gyarados appears is fated for destruction."
+131,"Lapras",25,2200,"Transport Pokémon","These Pokémon were once near extinction due
+to poaching. Following protective regulations,
+there is now an overabundance of them."
+132,"Ditto",3,40,"Transform Pokémon","With its astonishing capacity for
+metamorphosis, it can get along with anything.
+It does not get along well with its fellow Ditto."
+133,"Eevee",3,65,"Evolution Pokémon","Current studies show it can evolve into an
+incredible eight different species of Pokémon."
+134,"Vaporeon",10,290,"Bubble Jet Pokémon","Blending in with the water and erasing all signs
+of its presence, it patiently waits for its prey,
+fish Pokémon."
+135,"Jolteon",8,245,"Lightning Pokémon","When its fur stands on end, that’s a sign it’s
+about to give off a jolt of electricity. Take care,
+as sometimes lightning strikes next to it, too."
+136,"Flareon",9,250,"Flame Pokémon","Its average body temperature is between 1,300
+and 1,500 degrees Fahrenheit. In its internal
+flame sac, temperatures reach 3,000 degrees."
+137,"Porygon",8,365,"Virtual Pokémon","It can convert its body into digital data,
+which enables it to enter cyberspace."
+138,"Omanyte",4,75,"Spiral Pokémon","Omanyte is one of the ancient and long-since-extinct Pokémon
+that have been regenerated from fossils by people. If attacked
+by an enemy, it withdraws itself inside its hard shell."
+139,"Omastar",10,350,"Spiral Pokémon","Omastar uses its tentacles to capture its prey. It is
+believed to have become extinct because its shell grew too
+large and heavy, causing its movements to become too slow
+and ponderous."
+140,"Kabuto",5,115,"Shellfish Pokémon","Kabuto is a Pokémon that has been regenerated from a fossil.
+However, in extremely rare cases, living examples have
+been discovered. The Pokémon has not changed at all for
+300 million years."
+141,"Kabutops",13,405,"Shellfish Pokémon","Kabutops swam underwater to hunt for its prey in ancient
+times. The Pokémon was apparently evolving from being a
+water dweller to living on land as evident from the beginnings
+of change in its gills and legs."
+142,"Aerodactyl",18,590,"Fossil Pokémon","In ancient times, it ruled the skies. A widely
+accepted theory is that it went extinct due to
+a large meteor impact."
+143,"Snorlax",21,4600,"Sleeping Pokémon","It eats nearly 900 pounds of food every day.
+It starts nodding off while eating—and continues
+to eat even while it’s asleep."
+144,"Articuno",17,554,"Freeze Pokémon","Articuno is a legendary bird Pokémon that can control ice.
+The flapping of its wings chills the air. As a result, it is said
+that when this Pokémon flies, snow will fall."
+145,"Zapdos",16,526,"Electric Pokémon","Zapdos is a legendary bird Pokémon that has the ability
+to control electricity. It usually lives in thunderclouds.
+The Pokémon gains power if it is stricken by lightning bolts."
+146,"Moltres",20,600,"Flame Pokémon","Moltres is a legendary bird Pokémon that has the ability
+to control fire. If this Pokémon is injured, it is said to dip its
+body in the molten magma of a volcano to burn and heal itself."
+147,"Dratini",18,33,"Dragon Pokémon","After a 10-hour struggle, a fisherman was able
+to pull one up and confirm its existence."
+148,"Dragonair",40,165,"Dragon Pokémon","From time immemorial, it has been venerated by
+agricultural peoples as an entity able to control
+the weather."
+149,"Dragonite",22,2100,"Dragon Pokémon","Incur the wrath of this normally calm Pokémon
+at your peril, because it will smash everything
+to smithereens before it’s satisfied."
+150,"Mewtwo",20,1220,"Genetic Pokémon","Mewtwo is a Pokémon that was created by genetic
+manipulation. However, even though the scientific power
+of humans created this Pokémon’s body, they failed to
+endow Mewtwo with a compassionate heart."
+151,"Mew",4,40,"New Species Pokémon","Mew is said to possess the genetic composition of all
+Pokémon. It is capable of making itself invisible at will,
+so it entirely avoids notice even if it approaches people."
+152,"Chikorita",9,64,"Leaf Pokémon","In battle, Chikorita waves its leaf around to keep the foe at
+bay. However, a sweet fragrance also wafts from the leaf,
+becalming the battling Pokémon and creating a cozy,
+friendly atmosphere all around."
+153,"Bayleef",12,158,"Leaf Pokémon","Bayleef’s neck is ringed by curled-up leaves. Inside each
+tubular leaf is a small shoot of a tree. The fragrance of this
+shoot makes people peppy."
+154,"Meganium",18,1005,"Herb Pokémon","The fragrance of Meganium’s flower soothes and calms
+emotions. In battle, this Pokémon gives off more of its
+becalming scent to blunt the foe’s fighting spirit."
+155,"Cyndaquil",5,79,"Fire Mouse Pokémon","Cyndaquil protects itself by flaring up the flames on its back.
+The flames are vigorous if the Pokémon is angry. However, if it
+is tired, the flames splutter fitfully with incomplete combustion."
+156,"Quilava",9,190,"Volcano Pokémon","Quilava keeps its foes at bay with the intensity of its flames
+and gusts of superheated air. This Pokémon applies its
+outstanding nimbleness to dodge attacks even while scorching
+the foe with flames."
+157,"Typhlosion",17,795,"Volcano Pokémon","Typhlosion obscures itself behind a shimmering heat haze that
+it creates using its intensely hot flames. This Pokémon creates
+blazing explosive blasts that burn everything to cinders."
+158,"Totodile",6,95,"Big Jaw Pokémon","Despite the smallness of its body, Totodile’s jaws are very
+powerful. While the Pokémon may think it is just playfully
+nipping, its bite has enough power to cause serious injury."
+159,"Croconaw",11,250,"Big Jaw Pokémon","Once Croconaw has clamped its jaws on its foe, it will
+absolutely not let go. Because the tips of its fangs are
+forked back like barbed fishhooks, they become impossible
+to remove when they have sunk in."
+160,"Feraligatr",23,888,"Big Jaw Pokémon","Feraligatr intimidates its foes by opening its huge mouth.
+In battle, it will kick the ground hard with its thick and powerful
+hind legs to charge at the foe at an incredible speed."
+161,"Sentret",8,60,"Scout Pokémon","When Sentret sleeps, it does so while another stands guard.
+The sentry wakes the others at the first sign of danger. When
+this Pokémon becomes separated from its pack, it becomes
+incapable of sleep due to fear."
+162,"Furret",18,325,"Long Body Pokémon","Furret has a very slim build. When under attack, it can slickly
+squirm through narrow spaces and get away. In spite of its
+short limbs, this Pokémon is very nimble and fleet."
+163,"Hoothoot",7,212,"Owl Pokémon","Hoothoot has an internal organ that senses and tracks the
+earth’s rotation. Using this special organ, this Pokémon
+begins hooting at precisely the same time every day."
+164,"Noctowl",16,408,"Owl Pokémon","Noctowl never fails at catching prey in darkness. This Pokémon
+owes its success to its superior vision that allows it to see in
+minimal light, and to its soft, supple wings that make no sound
+in flight."
+165,"Ledyba",10,108,"Five Star Pokémon","They communicate with one another using bodily
+fluids that give off odors. When they’re angry,
+their odor smells sour."
+166,"Ledian",14,356,"Five Star Pokémon","In battle, it throws punches with all four arms.
+The power of each individual blow is piddly,
+so it aims to win by quantity rather than quality."
+167,"Spinarak",5,85,"String Spit Pokémon","Some fishermen weave its sturdy thread into
+nets to catch fish Pokémon."
+168,"Ariados",11,335,"Long Leg Pokémon","It spins thread from both its rear and its mouth.
+Then it wraps its prey up in thread and sips
+their bodily fluids at its leisure."
+169,"Crobat",18,750,"Bat Pokémon","Silent and swift in its four-winged flight, it bites
+down on its prey before they realize what’s
+happening. In a heartbeat, it drains their blood."
+170,"Chinchou",5,120,"Angler Pokémon","It lives in the depths beyond the reach of
+sunlight. It flashes lights on its antennae
+to communicate with others of its kind."
+171,"Lanturn",12,225,"Light Pokémon","This Pokémon flashes a bright light that blinds
+its prey. This creates an opening for it to deliver
+an electrical attack."
+172,"Pichu",3,20,"Tiny Mouse Pokémon","Despite this Pokémon’s cute appearance, those
+who want to live with one should prepare to be
+on the receiving end of its electric jolts."
+173,"Cleffa",3,30,"Star Shape Pokémon","Because of its silhouette, it’s believed to be a
+star reborn. For some reason, it loves Minior."
+174,"Igglybuff",3,10,"Balloon Pokémon","It moves by bouncing along. As it moves a lot,
+it sweats, and its body gives off a sweet aroma."
+175,"Togepi",3,15,"Spike Ball Pokémon","As its energy, Togepi uses the positive emotions of
+compassion and pleasure exuded by people and Pokémon.
+This Pokémon stores up feelings of happiness inside its shell,
+then shares them with others."
+176,"Togetic",6,32,"Happiness Pokémon","Togetic is said to be a Pokémon that brings good fortune.
+When the Pokémon spots someone who is pure of heart,
+it is said to appear and share its happiness with that person."
+177,"Natu",2,20,"Tiny Bird Pokémon","Natu has a highly developed jumping ability. The Pokémon
+flaps and leaps onto tree branches that are taller than
+grown-up people to pick at the tree’s new shoots."
+178,"Xatu",15,150,"Mystic Pokémon","Xatu is known to stand motionless while staring at the sun all
+day long. Some people revere it as a mystical Pokémon out of
+their belief that Xatu is in possession of the power to see into
+the future."
+179,"Mareep",6,78,"Wool Pokémon","Mareep’s fluffy coat of wool rubs together and builds a static
+charge. The more static electricity is charged, the more brightly
+the lightbulb at the tip of its tail glows."
+180,"Flaaffy",8,133,"Wool Pokémon","Flaaffy’s wool quality changes so that it can generate
+a high amount of static electricity with a small amount of
+wool. The bare and slick parts of its hide are shielded
+against electricity."
+181,"Ampharos",14,615,"Light Pokémon","Ampharos gives off so much light that it can be seen even from
+space. People in the old days used the light of this Pokémon
+to send signals back and forth with others far away."
+182,"Bellossom",4,58,"Flower Pokémon","A Bellossom grows flowers more beautifully if it has evolved
+from a smelly Gloom—the more stinky the better. At night, this
+Pokémon closes its petals and goes to sleep."
+183,"Marill",4,85,"Aqua Mouse Pokémon","When fishing for food at the edge of a fast-running stream,
+Marill wraps its tail around the trunk of a tree. This Pokémon’s
+tail is flexible and configured to stretch."
+184,"Azumarill",8,285,"Aqua Rabbit Pokémon","Azumarill can make balloons out of air. It makes these air
+balloons if it spots a drowning Pokémon. The air balloons
+enable the Pokémon in trouble to breathe."
+185,"Sudowoodo",12,380,"Imitation Pokémon","Apparently, the larger the green parts of this
+Pokémon, the more collectors value it. It’s a
+particular favorite among elderly people."
+186,"Politoed",11,339,"Frog Pokémon","It’s the leader of Poliwag and Poliwhirl.
+When Politoed roars, they all cower in fear."
+187,"Hoppip",4,5,"Cottonweed Pokémon","This Pokémon drifts and floats with the wind. If it senses the
+approach of strong winds, Hoppip links its leaves with other
+Hoppip to prepare against being blown away."
+188,"Skiploom",6,10,"Cottonweed Pokémon","Skiploom’s flower blossoms when the temperature rises
+above 64 degrees Fahrenheit. How much the flower opens
+depends on the temperature. For that reason, this Pokémon
+is sometimes used as a thermometer."
+189,"Jumpluff",8,30,"Cottonweed Pokémon","Jumpluff rides warm southern winds to cross the sea and fly to
+foreign lands. The Pokémon descends to the ground when it
+encounters cold air while it is floating."
+190,"Aipom",8,115,"Long Tail Pokémon","Aipom’s tail ends in a hand-like appendage that can be cleverly
+manipulated. However, because the Pokémon uses its tail so
+much, its real hands have become rather clumsy."
+191,"Sunkern",3,18,"Seed Pokémon","Sunkern tries to move as little as it possibly can. It does so
+because it tries to conserve all the nutrients it has stored in its
+body for its evolution. It will not eat a thing, subsisting only on
+morning dew."
+192,"Sunflora",8,85,"Sun Pokémon","Sunflora converts solar energy into nutrition. It moves around
+actively in the daytime when it is warm. It stops moving as
+soon as the sun goes down for the night."
+193,"Yanma",12,380,"Clear Wing Pokémon","Yanma is capable of seeing 360 degrees without having to
+move its eyes. It is a great flier that is adept at making sudden
+stops and turning midair. This Pokémon uses its flying ability
+to quickly chase down targeted prey."
+194,"Wooper",4,85,"Water Fish Pokémon","Wooper usually lives in water. However, it occasionally comes
+out onto land in search of food. On land, it coats its body with
+a gooey, toxic film."
+195,"Quagsire",14,750,"Water Fish Pokémon","Quagsire hunts for food by leaving its mouth wide open in
+water and waiting for its prey to blunder in unaware. Because
+the Pokémon does not move, it does not get very hungry."
+196,"Espeon",9,265,"Sun Pokémon","It unleashes psychic power from the orb on its
+forehead. When its power is exhausted, the orb
+grows dull and dark."
+197,"Umbreon",10,270,"Moonlight Pokémon","With its black fur, it blends into the darkness.
+It bides its time, and when prey appears, this
+Pokémon goes for its throat, and then eats it."
+198,"Murkrow",5,21,"Darkness Pokémon","Seen as a symbol of bad luck, it’s generally
+disliked. Yet it gives presents—objects that
+sparkle or shine—to Trainers it’s close to."
+199,"Slowking",20,795,"Royal Pokémon","This Pokémon is so famed for its intellect that a
+proverb still persists in some regions: “When in
+doubt, ask Slowking.”"
+200,"Misdreavus",7,10,"Screech Pokémon","If you hear a sobbing sound emanating from a
+vacant room, it’s undoubtedly a bit of mischief
+from Misdreavus."
+201,"Unown",5,50,"Symbol Pokémon","This Pokémon is shaped like ancient writing. It is a mystery as
+to which came first, the ancient writings or the various Unown.
+Research into this topic is ongoing but nothing is known."
+202,"Wobbuffet",13,285,"Patient Pokémon","Wobbuffet does nothing but endure attacks—it won’t attack on
+its own. However, it won’t endure an attack on its tail. When
+that happens, the Pokémon will try to take the foe with it using
+Destiny Bond."
+203,"Girafarig",15,415,"Long Neck Pokémon","Girafarig’s rear head contains a tiny brain that is too small for
+thinking. However, the rear head doesn’t need to sleep, so it
+can keep watch over its surroundings 24 hours a day."
+204,"Pineco",6,72,"Bagworm Pokémon","Pineco hangs from a tree branch and patiently waits for prey to
+come along. If the Pokémon is disturbed while eating by
+someone shaking its tree, it drops down to the ground and
+explodes with no warning."
+205,"Forretress",12,1258,"Bagworm Pokémon","Forretress conceals itself inside its hardened steel shell.
+The shell is opened when the Pokémon is catching prey,
+but it does so at such a quick pace that the shell’s inside
+cannot be seen."
+206,"Dunsparce",15,140,"Land Snake Pokémon","Dunsparce has a drill for its tail. It uses this tail to burrow into
+the ground backward. This Pokémon is known to make its
+nest in complex shapes deep under the ground."
+207,"Gligar",11,648,"Fly Scorpion Pokémon","Gligar glides through the air without a sound as if it were
+sliding. This Pokémon hangs on to the face of its foe using
+its clawed hind legs and the large pincers on its forelegs, then
+injects the prey with its poison barb."
+208,"Steelix",92,4000,"Iron Snake Pokémon","Steelix lives even further underground than Onix.
+This Pokémon is known to dig toward the earth’s core.
+There are records of this Pokémon reaching a depth of
+over six-tenths of a mile underground."
+209,"Snubbull",6,78,"Fairy Pokémon","Its growls make its opponents uneasy. This
+laid-back Pokémon tends to sleep half the day."
+210,"Granbull",14,487,"Fairy Pokémon","More timid than Snubbull, this Pokémon is doted
+on by young people amused at the contrast
+between its looks and its attitude."
+211,"Qwilfish",5,39,"Balloon Pokémon","Qwilfish sucks in water, inflating itself. This Pokémon
+uses the pressure of the water it swallowed to shoot toxic
+quills all at once from all over its body. It finds swimming
+somewhat challenging."
+212,"Scizor",18,1180,"Pincer Pokémon","Once it has identified an enemy, this Pokémon
+smashes it mercilessly with pincers hard
+as steel."
+213,"Shuckle",6,205,"Mold Pokémon","Shuckle quietly hides itself under rocks, keeping its body
+concealed inside its hard shell while eating berries it has
+stored away. The berries mix with its body fluids to become
+a juice."
+214,"Heracross",15,540,"Single Horn Pokémon","Heracross has sharp claws on its feet. These are planted
+firmly into the ground or the bark of a tree, giving the
+Pokémon a secure and solid footing to forcefully fling away
+foes with its proud horn."
+215,"Sneasel",9,280,"Sharp Claw Pokémon","It uses its claws to poke holes in eggs so it can
+slurp out the insides. Breeders consider it a
+scourge and will drive it away or eradicate it."
+216,"Teddiursa",6,88,"Little Bear Pokémon","This Pokémon likes to lick its palms that are sweetened by
+being soaked in honey. Teddiursa concocts its own honey
+by blending fruits and pollen collected by Beedrill."
+217,"Ursaring",18,1258,"Hibernator Pokémon","In the forests inhabited by Ursaring, it is said that there are
+many streams and towering trees where they gather food. This
+Pokémon walks through its forest gathering food every day."
+218,"Slugma",7,350,"Lava Pokémon","Slugma does not have any blood in its body. Instead, intensely
+hot magma circulates throughout this Pokémon’s body,
+carrying essential nutrients and oxygen to its organs."
+219,"Magcargo",8,550,"Lava Pokémon","Magcargo’s body temperature is approximately
+18,000 degrees Fahrenheit. Water is vaporized on contact.
+If this Pokémon is caught in the rain, the raindrops instantly
+turn into steam, cloaking the area in a thick fog."
+220,"Swinub",4,65,"Pig Pokémon","Swinub roots for food by rubbing its snout against the ground.
+Its favorite food is a mushroom that grows under the cover of
+dead grass. This Pokémon occasionally roots out hot springs."
+221,"Piloswine",11,558,"Swine Pokémon","Piloswine is covered by a thick coat of long hair that enables
+it to endure the freezing cold. This Pokémon uses its tusks to
+dig up food that has been buried under ice."
+222,"Corsola",6,50,"Coral Pokémon","Pursued by Mareanie for the branches on its
+head, this Pokémon will sometimes snap its own
+branches off as a diversion while it escapes."
+223,"Remoraid",6,120,"Jet Pokémon","Remoraid sucks in water, then expels it at high velocity using
+its abdominal muscles to shoot down flying prey. When
+evolution draws near, this Pokémon travels downstream
+from rivers."
+224,"Octillery",9,285,"Jet Pokémon","Octillery grabs onto its foe using its tentacles. This Pokémon
+tries to immobilize it before delivering the finishing blow. If the
+foe turns out to be too strong, Octillery spews ink to escape."
+225,"Delibird",9,160,"Delivery Pokémon","It has a generous habit of sharing its food with
+people and Pokémon, so it’s always scrounging
+around for more food."
+226,"Mantine",21,2200,"Kite Pokémon","On sunny days, schools of Mantine can be seen elegantly
+leaping over the sea’s waves. This Pokémon is not bothered
+by the Remoraid that hitches rides."
+227,"Skarmory",17,505,"Armor Bird Pokémon","Its metal body is sturdy, but it does rust rather
+easily. So on rainy days, this Pokémon prefers
+to stay put in its nest."
+228,"Houndour",6,108,"Dark Pokémon","Houndour hunt as a coordinated pack. They communicate
+with each other using a variety of cries to corner their prey.
+This Pokémon’s remarkable teamwork is unparalleled."
+229,"Houndoom",14,350,"Dark Pokémon","In a Houndoom pack, the one with its horns raked sharply
+toward the back serves a leadership role. These Pokémon
+choose their leader by fighting among themselves."
+230,"Kingdra",18,1520,"Dragon Pokémon","Kingdra sleeps on the seafloor where it is otherwise devoid
+of life. When a storm arrives, the Pokémon is said to awaken
+and wander about in search of prey."
+231,"Phanpy",5,335,"Long Nose Pokémon","Phanpy uses its long nose to shower itself. When others
+gather around, they thoroughly douse each other with water.
+These Pokémon can be seen drying their soaking-wet
+bodies at the edge of water."
+232,"Donphan",11,1200,"Armor Pokémon","If Donphan were to tackle with its hard body, even a house
+could be destroyed. Using its massive strength, the Pokémon
+helps clear rock and mud slides that block mountain trails."
+233,"Porygon2",6,325,"Virtual Pokémon","Porygon was updated to a new version in
+readiness for planetary development. But that
+dream remains unrealized as yet."
+234,"Stantler",14,712,"Big Horn Pokémon","Stantler’s magnificent antlers were traded at high prices as
+works of art. As a result, this Pokémon was hunted close to
+extinction by those who were after the priceless antlers."
+235,"Smeargle",12,580,"Painter Pokémon","It draws symbols all over the place to mark its
+territory. In towns with many Smeargle, the walls
+are covered in graffiti."
+236,"Tyrogue",7,210,"Scuffle Pokémon","Tyrogue becomes stressed out if it does not get to train every
+day. When raising this Pokémon, the Trainer must establish
+and uphold various training methods."
+237,"Hitmontop",14,480,"Handstand Pokémon","Hitmontop spins on its head at high speed, all the while
+delivering kicks. This technique is a remarkable mix of both
+offense and defense at the same time. The Pokémon travels
+faster spinning than it does walking."
+238,"Smoochum",4,60,"Kiss Pokémon","Smoochum actively runs about, but also falls quite often.
+Whenever the chance arrives, it will look for its reflection to
+make sure its face hasn’t become dirty."
+239,"Elekid",6,235,"Electric Pokémon","This Pokémon is constantly fighting with
+Togedemaru that try to steal its electricity.
+It’s a pretty even match."
+240,"Magby",7,214,"Live Coal Pokémon","A famous potter lives with a Magby.
+Apparently its soft flames produce fine works."
+241,"Miltank",12,755,"Milk Cow Pokémon","Most people raise it for its milk, but it’s quite
+tough and strong, so it’s also well suited
+for battle."
+242,"Blissey",15,468,"Happiness Pokémon","Its fluffy fur coat acts as a sensor, enabling it to
+read the feelings of people and Pokémon."
+243,"Raikou",19,1780,"Thunder Pokémon","Raikou embodies the speed of lightning. The roars of
+this Pokémon send shock waves shuddering through the
+air and shake the ground as if lightning bolts had come
+crashing down."
+244,"Entei",21,1980,"Volcano Pokémon","Entei embodies the passion of magma. This Pokémon is
+thought to have been born in the eruption of a volcano.
+It sends up massive bursts of fire that utterly consume all
+that they touch."
+245,"Suicune",20,1870,"Aurora Pokémon","Suicune embodies the compassion of a pure spring of water.
+It runs across the land with gracefulness. This Pokémon has
+the power to purify dirty water."
+246,"Larvitar",6,720,"Rock Skin Pokémon","Larvitar is born deep under the ground. To come up to the
+surface, this Pokémon must eat its way through the soil above.
+Until it does so, Larvitar cannot see its parents."
+247,"Pupitar",12,1520,"Hard Shell Pokémon","Pupitar creates a gas inside its body that it compresses and
+forcefully ejects to propel itself like a jet. The body is very
+durable—it avoids damage even if it hits solid steel."
+248,"Tyranitar",20,2020,"Armor Pokémon","Tyranitar is so overwhelmingly powerful, it can bring down a
+whole mountain to make its nest. This Pokémon wanders about
+in mountains seeking new opponents to fight."
+249,"Lugia",52,2160,"Diving Pokémon","Lugia’s wings pack devastating power—a light fluttering of its
+wings can blow apart regular houses. As a result, this
+Pokémon chooses to live out of sight deep under the sea."
+250,"Ho-Oh",38,1990,"Rainbow Pokémon","Ho-Oh’s feathers glow in seven colors depending on the angle
+at which they are struck by light. These feathers are said to
+bring happiness to the bearers. This Pokémon is said to live at
+the foot of a rainbow."
+251,"Celebi",6,50,"Time Travel Pokémon","This Pokémon came from the future by crossing over time.
+It is thought that so long as Celebi appears, a bright and
+shining future awaits us."
+252,"Treecko",5,50,"Wood Gecko Pokémon","Treecko is cool, calm, and collected—it never panics under
+any situation. If a bigger foe were to glare at this Pokémon,
+it would glare right back without conceding an inch of ground."
+253,"Grovyle",9,216,"Wood Gecko Pokémon","This Pokémon adeptly flies from branch to branch in trees.
+In a forest, no Pokémon can ever hope to catch a fleeing
+Grovyle however fast they may be."
+254,"Sceptile",17,522,"Forest Pokémon","Sceptile has seeds growing on its back. They are said to be
+bursting with nutrients that revitalize trees. This Pokémon
+raises the trees in a forest with loving care."
+255,"Torchic",4,25,"Chick Pokémon","Torchic has a place inside its body where it keeps its flame.
+Give it a hug—it will be glowing with warmth. This Pokémon is
+covered all over by a fluffy coat of down."
+256,"Combusken",9,195,"Young Fowl Pokémon","Combusken battles with the intensely hot flames it spews from
+its beak and with outstandingly destructive kicks. This
+Pokémon’s cry is very loud and distracting."
+257,"Blaziken",19,520,"Blaze Pokémon","Blaziken has incredibly strong legs—it can easily clear a
+30-story building in one leap. This Pokémon’s blazing punches
+leave its foes scorched and blackened."
+258,"Mudkip",4,76,"Mud Fish Pokémon","In water, Mudkip breathes using the gills on its cheeks. If it is
+faced with a tight situation in battle, this Pokémon will unleash
+its amazing power—it can crush rocks bigger than itself."
+259,"Marshtomp",7,280,"Mud Fish Pokémon","Marshtomp is much faster at traveling through mud than it is at
+swimming. This Pokémon’s hindquarters exhibit obvious
+development, giving it the ability to walk on just its hind legs."
+260,"Swampert",15,819,"Mud Fish Pokémon","Swampert predicts storms by sensing subtle differences in the
+sounds of waves and tidal winds with its fins. If a storm is
+approaching, it piles up boulders to protect itself."
+261,"Poochyena",5,136,"Bite Pokémon","Poochyena is an omnivore—it will eat anything. A distinguishing
+feature is how large its fangs are compared to its body. This
+Pokémon tries to intimidate its foes by making the hair on its
+tail bristle out."
+262,"Mightyena",10,370,"Bite Pokémon","Mightyena travel and act as a pack in the wild. The memory
+of its life in the wild compels the Pokémon to obey only
+those Trainers that it recognizes to possess superior skill."
+263,"Zigzagoon",4,175,"Tiny Raccoon Pokémon","The hair on Zigzagoon’s back is bristly. It rubs the hard back
+hair against trees to leave its territorial markings. This Pokémon
+may play dead to fool foes in battle."
+264,"Linoone",5,325,"Rushing Pokémon","When hunting, Linoone will make a beeline straight for the
+prey at a full run. While this Pokémon is capable of topping
+60 mph, it has to come to a screeching halt before it can turn."
+265,"Wurmple",3,36,"Worm Pokémon","Wurmple is targeted by Swellow as prey. This Pokémon
+will try to resist by pointing the spikes on its rear at the
+attacking predator. It will weaken the foe by leaking poison
+from the spikes."
+266,"Silcoon",6,100,"Cocoon Pokémon","Silcoon was thought to endure hunger and not consume
+anything before its evolution. However, it is now thought
+that this Pokémon slakes its thirst by drinking rainwater
+that collects on its silk."
+267,"Beautifly",10,284,"Butterfly Pokémon","Beautifly has a long mouth like a coiled needle, which is very
+convenient for collecting pollen from flowers. This Pokémon
+rides the spring winds as it flits around gathering pollen."
+268,"Cascoon",7,115,"Cocoon Pokémon","If it is attacked, Cascoon remains motionless however badly it
+may be hurt. It does so because if it were to move, its body
+would be weak upon evolution. This Pokémon will also not
+forget the pain it endured."
+269,"Dustox",12,316,"Poison Moth Pokémon","When Dustox flaps its wings, a fine dust is scattered all over.
+This dust is actually a powerful poison that will even make a
+pro wrestler sick. This Pokémon searches for food using its
+antennae like radar."
+270,"Lotad",5,26,"Water Weed Pokémon","Lotad is said to have dwelled on land before. However, this
+Pokémon is thought to have returned to water because the
+leaf on its head grew large and heavy. It now lives by floating
+atop the water."
+271,"Lombre",12,325,"Jolly Pokémon","Lombre’s entire body is covered by a slippery, slimy film.
+It feels horribly unpleasant to be touched by this Pokémon’s
+hands. Lombre is often mistaken for a human child."
+272,"Ludicolo",15,550,"Carefree Pokémon","Upon hearing an upbeat and cheerful rhythm, the cells in
+Ludicolo’s body become very energetic and active. Even
+in battle, this Pokémon will exhibit an amazing amount
+of power."
+273,"Seedot",5,40,"Acorn Pokémon","Seedot looks exactly like an acorn when it is dangling from a
+tree branch. It startles other Pokémon by suddenly moving.
+This Pokémon polishes its body once a day using leaves."
+274,"Nuzleaf",10,280,"Wily Pokémon","This Pokémon pulls out the leaf on its head and makes a flute
+with it. The sound of Nuzleaf’s flute strikes fear and uncertainty
+in the hearts of people lost in a forest."
+275,"Shiftry",13,596,"Wicked Pokémon","Shiftry’s large fans generate awesome gusts of wind at a
+speed close to 100 feet per second. The whipped-up wind
+blows anything away. This Pokémon chooses to live quietly
+deep in forests."
+276,"Taillow",3,23,"Tiny Swallow Pokémon","Taillow is young—it has only just left its nest. As a result,
+it sometimes becomes lonesome and cries at night.
+This Pokémon feeds on Wurmple that live in forests."
+277,"Swellow",7,198,"Swallow Pokémon","Swellow is very conscientious about the upkeep of its glossy
+wings. Once two Swellow are gathered, they diligently take
+care of cleaning each other’s wings."
+278,"Wingull",6,95,"Seagull Pokémon","Fishermen keep an eye out for Wingull in the
+sky, because wherever they’re circling, the
+ocean is sure to be teeming with fish Pokémon."
+279,"Pelipper",12,280,"Water Bird Pokémon","Gathering food is the work of young males.
+They store food in their capacious beaks and
+carry it back to others waiting in the nest."
+280,"Ralts",4,66,"Feeling Pokémon","Ralts has the ability to sense the emotions of people. If its
+Trainer is in a cheerful mood, this Pokémon grows cheerful
+and joyous in the same way."
+281,"Kirlia",8,202,"Emotion Pokémon","Kirlia uses the horns on its head to amplify its psychokinetic
+power. When the Pokémon uses its power, the air around it
+becomes distorted, creating mirages of nonexistent scenery."
+282,"Gardevoir",16,484,"Embrace Pokémon","Gardevoir has the psychokinetic power to distort the
+dimensions and create a small black hole. This Pokémon
+will try to protect its Trainer even at the risk of its own life."
+283,"Surskit",5,17,"Pond Skater Pokémon","When this Pokémon senses danger, a sweet
+fluid oozes from the tip of its head. The taste
+of it disgusts bird Pokémon."
+284,"Masquerain",8,36,"Eyeball Pokémon","Its wings and antennae don’t cope well with
+moisture. After a rain, it faces sunward to
+dry off."
+285,"Shroomish",4,45,"Mushroom Pokémon","If Shroomish senses danger, it shakes its body and scatters
+spores from the top of its head. This Pokémon’s spores are
+so toxic, they make trees and weeds wilt."
+286,"Breloom",12,392,"Mushroom Pokémon","The seeds ringing Breloom’s tail are made of hardened toxic
+spores. It is horrible to eat the seeds. Just taking a bite of this
+Pokémon’s seed will cause your stomach to rumble."
+287,"Slakoth",8,240,"Slacker Pokémon","Slakoth’s heart beats just once a minute. Whatever happens,
+it is content to loaf around motionless. It is rare to see this
+Pokémon in motion."
+288,"Vigoroth",14,465,"Wild Monkey Pokémon","Vigoroth is simply incapable of remaining still. Even when it
+tries to sleep, the blood in its veins grows agitated, compelling
+this Pokémon to run wild throughout the jungle before it can
+settle down."
+289,"Slaking",20,1305,"Lazy Pokémon","Wherever Slaking live, rings of over a yard in diameter appear
+in grassy fields. They are made by the Pokémon as it eats all
+the grass within reach while lying prone on the ground."
+290,"Nincada",5,55,"Trainee Pokémon","Nincada lives underground. It uses its sharp claws to carve the
+roots of trees and absorb moisture and nutrients.
+This Pokémon can’t withstand bright sunlight so avoids it."
+291,"Ninjask",8,120,"Ninja Pokémon","If Ninjask is not trained properly, it will refuse to obey
+the Trainer and cry loudly continuously. Because of this
+quality, this Pokémon is said to be one that puts the
+Trainer’s abilities to the test."
+292,"Shedinja",8,12,"Shed Pokémon","Shedinja is a peculiar Pokémon. It seems to appear unsought
+in a Poké Ball after a Nincada evolves. This bizarre Pokémon
+is entirely immobile—it doesn’t even breathe."
+293,"Whismur",6,163,"Whisper Pokémon","Whismur is very timid. If it starts to cry loudly, it becomes
+startled by its own crying and cries even harder. When it finally
+stops crying, the Pokémon goes to sleep, all tired out."
+294,"Loudred",10,405,"Big Voice Pokémon","Loudred shouts while stamping its feet. After it finishes
+shouting, this Pokémon becomes incapable of hearing
+anything for a while. This is considered to be a weak point."
+295,"Exploud",15,840,"Loud Noise Pokémon","Exploud communicates its feelings to the others by emitting
+whistle-like sounds from the tubes on its body. This Pokémon
+only raises its voice when it is in battle."
+296,"Makuhita",10,864,"Guts Pokémon","Their daily routine consists of training together
+first thing in the morning, eating and napping in
+the afternoon, and then more training afterward."
+297,"Hariyama",23,2538,"Arm Thrust Pokémon","They love to compare their freakish strength—
+strength enough to send a truck flying with a
+single slap."
+298,"Azurill",2,20,"Polka Dot Pokémon","Azurill’s tail is large and bouncy. It is packed full of the
+nutrients this Pokémon needs to grow. Azurill can be seen
+bouncing and playing on its big, rubbery tail."
+299,"Nosepass",10,970,"Compass Pokémon","It uses powerful magnetism to drag its prey
+toward it. It’s also been known to pull in metal,
+which it collects and uses to protect itself."
+300,"Skitty",6,110,"Kitten Pokémon","Skitty is known to chase around playfully after its own tail.
+In the wild, this Pokémon lives in holes in the trees of forests.
+It is very popular as a pet because of its adorable looks."
+301,"Delcatty",11,326,"Prim Pokémon","Delcatty sleeps anywhere it wants without keeping a permanent
+nest. If other Pokémon approach it as it sleeps, this Pokémon
+will never fight—it will just move away somewhere else."
+302,"Sableye",5,110,"Darkness Pokémon","This Pokémon is feared. When its gemstone eyes
+begin to glow with a sinister shine, it’s believed
+that Sableye will steal people’s spirits away."
+303,"Mawile",6,115,"Deceiver Pokémon","Don’t be taken in by this Pokémon’s cute face—it’s very
+dangerous. Mawile fools the foe into letting down its guard,
+then chomps down with its massive jaws. The steel jaws are
+really horns that have been transformed."
+304,"Aron",4,600,"Iron Armor Pokémon","Aron has a body of steel. With one all-out charge, this
+Pokémon can demolish even a heavy dump truck.
+The destroyed dump truck then becomes a handy meal
+for the Pokémon."
+305,"Lairon",9,1200,"Iron Armor Pokémon","Lairon feeds on iron contained in rocks and water. It makes
+its nest on mountains where iron ore is buried. As a result,
+the Pokémon often clashes with humans mining the iron ore."
+306,"Aggron",21,3600,"Iron Armor Pokémon","Aggron is protective of its environment. If its mountain is
+ravaged by a landslide or a fire, this Pokémon will haul
+topsoil to the area, plant trees, and beautifully restore its
+own territory."
+307,"Meditite",6,112,"Meditate Pokémon","Meditite heightens its inner energy through meditation.
+It survives on just one berry a day. Minimal eating is another
+aspect of this Pokémon’s training."
+308,"Medicham",13,315,"Meditate Pokémon","Through the power of meditation, Medicham developed its
+sixth sense. It gained the ability to use psychokinetic powers.
+This Pokémon is known to meditate for a whole month
+without eating."
+309,"Electrike",6,152,"Lightning Pokémon","Electrike runs faster than the human eye can follow.
+The friction from running is converted into electricity,
+which is then stored in this Pokémon’s fur."
+310,"Manectric",15,402,"Discharge Pokémon","Manectric discharges strong electricity from its mane.
+The mane is used for collecting electricity in the atmosphere.
+This Pokémon creates thunderclouds above its head."
+311,"Plusle",4,42,"Cheering Pokémon","When Plusle is cheering on its partner, it flashes with electric
+sparks from all over its body. If its partner loses, this Pokémon
+cries loudly."
+312,"Minun",4,42,"Cheering Pokémon","Minun loves to cheer on its partner in battle. It gives off sparks
+from its body while it is doing so. If its partner is in trouble,
+this Pokémon gives off increasing amounts of sparks."
+313,"Volbeat",7,177,"Firefly Pokémon","Volbeat’s tail glows like a lightbulb. With other Volbeat,
+it uses its tail to draw geometric shapes in the night sky.
+This Pokémon loves the sweet aroma given off by Illumise."
+314,"Illumise",6,177,"Firefly Pokémon","Illumise leads a flight of illuminated Volbeat to draw signs in
+the night sky. This Pokémon is said to earn greater respect
+from its peers by composing more complex designs in the sky."
+315,"Roselia",3,20,"Thorn Pokémon","On extremely rare occasions, a Roselia is said to appear with
+its flowers in unusual colors. The thorns on this Pokémon’s
+head contain a vicious poison."
+316,"Gulpin",4,103,"Stomach Pokémon","Most of Gulpin’s body is made up of its stomach—its heart and
+brain are very small in comparison. This Pokémon’s stomach
+contains special enzymes that dissolve anything."
+317,"Swalot",17,800,"Poison Bag Pokémon","Swalot has no teeth, so what it eats, it swallows whole, no
+matter what. Its cavernous mouth yawns widely. An automobile
+tire could easily fit inside this Pokémon’s mouth."
+318,"Carvanha",8,208,"Savage Pokémon","If they scent the faintest trace of blood, they
+rush to attack en masse. When alone, they’re
+rather cowardly."
+319,"Sharpedo",18,888,"Brutal Pokémon","It has a sad history. In the past, its dorsal fin
+was a treasured foodstuff, so this Pokémon
+became a victim of overfishing."
+320,"Wailmer",20,1300,"Ball Whale Pokémon","It shows off by spraying jets of seawater from
+the nostrils above its eyes. It eats a solid ton of
+Wishiwashi every day."
+321,"Wailord",145,3980,"Float Whale Pokémon","Its immense size is the reason for its popularity.
+Wailord watching is a favorite sightseeing
+activity in various parts of the world."
+322,"Numel",7,240,"Numb Pokémon","Numel stores magma of almost 2,200 degrees Fahrenheit
+within its body. If it gets wet, the magma cools and hardens.
+In that event, the Pokémon’s body grows heavy and its
+movements become sluggish."
+323,"Camerupt",19,2200,"Eruption Pokémon","The humps on Camerupt’s back are formed by a transformation
+of its bones. They sometimes blast out molten magma.
+This Pokémon apparently erupts often when it is enraged."
+324,"Torkoal",5,804,"Coal Pokémon","If the fire burning within its shell goes out, it will
+die. Those who wish to raise one in their home
+must always keep something flammable at hand."
+325,"Spoink",7,306,"Bounce Pokémon","Spoink keeps a pearl on top of its head. The pearl functions to
+amplify this Pokémon’s psychokinetic powers. It is therefore on
+a constant search for a bigger pearl."
+326,"Grumpig",9,715,"Manipulate Pokémon","Grumpig uses the black pearls on its body to wield
+its fantastic powers. When it is doing so, it dances bizarrely.
+This Pokémon’s black pearls are valuable as works of art."
+327,"Spinda",11,50,"Spot Panda Pokémon","Each and every Spinda has a slightly different
+configuration of spots. There are collectors who
+enjoy the tiny differences in their spot patterns."
+328,"Trapinch",7,150,"Ant Pit Pokémon","As it digs through the sand, its giant jaws
+crush any rocks that obstruct its path. It builds
+a funnel-shaped nest."
+329,"Vibrava",11,153,"Vibration Pokémon","To help make its wings grow, it dissolves
+quantities of prey in its digestive juices and
+guzzles them down every day."
+330,"Flygon",20,820,"Mystic Pokémon","This Pokémon hides in the heart of sandstorms
+it creates and seldom appears where people
+can see it."
+331,"Cacnea",4,513,"Cactus Pokémon","The more arid and harsh the environment, the more pretty and
+fragrant a flower Cacnea grows. This Pokémon battles by
+wildly swinging its thorny arms."
+332,"Cacturne",13,774,"Scarecrow Pokémon","If a traveler is going through a desert in the thick of night,
+Cacturne will follow in a ragtag group. The Pokémon are
+biding their time, waiting for the traveler to tire and become
+incapable of moving."
+333,"Swablu",4,12,"Cotton Bird Pokémon","Swablu loves to make things clean. If it spots something dirty,
+it will wipe and polish it with its cottony wings. If its wings
+become dirty, this Pokémon finds a stream and showers itself."
+334,"Altaria",11,206,"Humming Pokémon","Altaria sings in a gorgeous soprano. Its wings are like cotton
+clouds. This Pokémon catches updrafts with its buoyant wings
+and soars way up into the wild blue yonder."
+335,"Zangoose",13,403,"Cat Ferret Pokémon","Zangoose usually stays on all fours, but when angered, it gets
+up on its hind legs and extends its claws. This Pokémon shares
+a bitter rivalry with Seviper that dates back over generations."
+336,"Seviper",27,525,"Fang Snake Pokémon","Seviper’s swordlike tail serves two purposes—it slashes foes
+and douses them with secreted poison. This Pokémon will not
+give up its long-running blood feud with Zangoose."
+337,"Lunatone",10,1680,"Meteorite Pokémon","Lunatone becomes active around the time of the full moon.
+Instead of walking, it moves by floating in midair.
+The Pokémon’s intimidating red eyes cause all those who
+see it to become transfixed with fear."
+338,"Solrock",12,1540,"Meteorite Pokémon","Sunlight is the source of Solrock’s power. It is said to possess
+the ability to read the emotions of others. This Pokémon gives
+off intense heat while rotating its body."
+339,"Barboach",4,19,"Whiskers Pokémon","Its slippery body is hard to grasp, so much so
+that there are festivals where people compete
+to see how many they can catch barehanded."
+340,"Whiscash",9,236,"Whiskers Pokémon","Sighting Whiscash leaping from the water
+is believed to herald an earthquake."
+341,"Corphish",6,115,"Ruffian Pokémon","Corphish catches prey with its sharp claws. It has no
+likes or dislikes when it comes to food—it will eat anything.
+This Pokémon has no trouble living in filthy water."
+342,"Crawdaunt",11,328,"Rogue Pokémon","Crawdaunt molts (sheds) its shell regularly. Immediately after
+molting, its shell is soft and tender. Until the shell hardens,
+this Pokémon hides in its streambed burrow to avoid attack
+from its foes."
+343,"Baltoy",5,215,"Clay Doll Pokémon","As soon as it spots others of its kind, Baltoy congregates with
+them and then begins crying noisily in unison. This Pokémon
+sleeps while cleverly balancing itself on its one foot."
+344,"Claydol",15,1080,"Clay Doll Pokémon","Claydol is an enigma that appeared from a clay statue made by
+an ancient civilization dating back 20,000 years. This Pokémon
+shoots beams from both its hands."
+345,"Lileep",10,238,"Sea Lily Pokémon","Lileep is an ancient Pokémon that was regenerated from a
+fossil. It remains permanently anchored to a rock. From its
+immobile perch, this Pokémon intently scans for prey with its
+two eyes."
+346,"Cradily",15,604,"Barnacle Pokémon","Cradily’s body serves as an anchor, preventing it from being
+washed away in rough seas. This Pokémon secretes a strong
+digestive fluid from its tentacles."
+347,"Anorith",7,125,"Old Shrimp Pokémon","Anorith is said to be a type of Pokémon predecessor, with
+eight wings at the sides of its body. This Pokémon swam in the
+primordial sea by undulating these eight wings."
+348,"Armaldo",15,682,"Plate Pokémon","Armaldo is a Pokémon species that became extinct in
+prehistoric times. This Pokémon is said to have walked
+on its hind legs, which would have been more convenient
+for life on land."
+349,"Feebas",6,74,"Fish Pokémon","Although unattractive and unpopular, this
+Pokémon’s marvelous vitality has made it a
+subject of research."
+350,"Milotic",62,1620,"Tender Pokémon","It lives at the bottom of clear lakes. In times of
+war, it shows itself, which soothes people’s
+minds and hearts."
+351,"Castform",3,8,"Weather Pokémon","Its form changes on its own, due to its cells’
+sensitive reactions to temperature and humidity."
+352,"Kecleon",10,220,"Color Swap Pokémon","Kecleon alters its body coloration to blend in with its
+surroundings, allowing it to sneak up on its prey unnoticed.
+Then it lashes out with its long, stretchy tongue to instantly
+ensnare the unsuspecting target."
+353,"Shuppet",6,23,"Puppet Pokémon","Shuppet grows by feeding on dark emotions, such as
+vengefulness and envy, in the hearts of people. It roams
+through cities in search of grudges that taint people."
+354,"Banette",11,125,"Marionette Pokémon","A cursed energy permeated the stuffing of a discarded and
+forgotten plush doll, giving it new life as Banette.
+The Pokémon’s energy would escape if it were to ever open
+its mouth."
+355,"Duskull",8,150,"Requiem Pokémon","Duskull wanders lost among the deep darkness of midnight.
+There is an oft-told admonishment given to misbehaving
+children that this Pokémon will spirit away bad children who
+earn scoldings from their mothers."
+356,"Dusclops",16,306,"Beckon Pokémon","Dusclops absorbs anything, however large the object may be.
+This Pokémon hypnotizes its foe by waving its hands in a
+macabre manner and by bringing its single eye to bear.
+The hypnotized foe is made to do Dusclops’s bidding."
+357,"Tropius",20,1000,"Fruit Pokémon","Children of the southern tropics eat as snacks the fruit that
+grows in bunches around the neck of Tropius. This Pokémon
+flies by flapping the leaves on its back as if they were wings."
+358,"Chimecho",6,10,"Wind Chime Pokémon","In high winds, Chimecho cries as it hangs from a tree branch or
+the eaves of a building using a suction cup on its head. This
+Pokémon plucks berries with its long tail and eats them."
+359,"Absol",12,470,"Disaster Pokémon","Although it’s said to bring disaster, in actuality,
+this Pokémon possesses a calm disposition and
+warns people of any crises that loom."
+360,"Wynaut",6,140,"Bright Pokémon","Wynaut gather on moonlit nights to play by squeezing up
+against each other. By being squeezed, this Pokémon gains
+endurance and is trained to dole out powerful counterattacks."
+361,"Snorunt",7,168,"Snow Hat Pokémon","It can only survive in cold areas. It bounces
+happily around, even in environments as cold as
+-150 degrees Fahrenheit."
+362,"Glalie",15,2565,"Face Pokémon","Its prey is instantaneously frozen stiff by the
+cold air it exhales from its huge mouth. While
+they’re in that frozen state, it gobbles them up."
+363,"Spheal",8,395,"Clap Pokémon","Spheal always travels by rolling around on its ball-like body.
+When the season for ice floes arrives, this Pokémon can be
+seen rolling about on ice and crossing the sea."
+364,"Sealeo",11,876,"Ball Roll Pokémon","Sealeo often balances and rolls things on the tip of its
+nose. While the Pokémon is rolling something, it checks
+the object’s aroma and texture to determine whether it likes
+the object or not."
+365,"Walrein",14,1506,"Ice Break Pokémon","Walrein swims all over in frigid seawater while crushing
+icebergs with its grand, imposing tusks. Its thick layer of
+blubber makes enemy attacks bounce off harmlessly."
+366,"Clamperl",4,525,"Bivalve Pokémon","Clamperl grows while being protected by its rock-hard shell.
+When its body becomes too large to fit inside the shell, it is
+sure evidence that this Pokémon is getting close to evolution."
+367,"Huntail",17,270,"Deep Sea Pokémon","Huntail’s tail is shaped like a fish. It uses the tail to attract
+prey, then swallows the prey whole with its large, gaping
+mouth. This Pokémon swims by wiggling its slender body
+like a snake."
+368,"Gorebyss",18,226,"South Sea Pokémon","Although Gorebyss is the very picture of elegance and beauty
+while swimming, it is also cruel. When it spots prey, this
+Pokémon inserts its thin mouth into the prey’s body and drains
+the prey of its body fluids."
+369,"Relicanth",10,234,"Longevity Pokémon","It was fortuitously discovered during a deep sea
+expedition. Its teeth have atrophied, so it now
+survives on microscopic organisms it sucks up."
+370,"Luvdisc",6,87,"Rendezvous Pokémon","Loving couples have a soft spot for this
+Pokémon, so honeymoon hotels often release
+this Pokémon into their pools."
+371,"Bagon",6,421,"Rock Head Pokémon","With its steel-hard stone head, it headbutts
+indiscriminately. This is because of the stress
+it feels at being unable to fly."
+372,"Shelgon",11,1105,"Endurance Pokémon","They lurk deep within caves—motionless,
+neither eating nor drinking. Why they don’t die is
+not known."
+373,"Salamence",15,1026,"Dragon Pokémon","It flies around on its wings, which have grown in
+at last. In its happiness, it gushes hot flames,
+burning up the fields it passes over."
+374,"Beldum",6,952,"Iron Ball Pokémon","With magnetic traction, it pulls its opponents in
+close. When they’re in range, it slashes them
+with its rear claws."
+375,"Metang",12,2025,"Iron Claw Pokémon","It adores magnetic minerals, so it pursues
+Nosepass at speeds exceeding 60 mph."
+376,"Metagross",16,5500,"Iron Leg Pokémon","A linkage of two Metang, this Pokémon can
+perform any calculation in a flash by utilizing
+parallel processing in its four brains."
+377,"Regirock",17,2300,"Rock Peak Pokémon","Regirock’s body is composed entirely of rocks. Recently,
+a study made the startling discovery that the rocks were all
+unearthed from different locations."
+378,"Regice",18,1750,"Iceberg Pokémon","Regice cloaks itself with frigid air of -328 degrees Fahrenheit.
+Things will freeze solid just by going near this Pokémon.
+Its icy body is so cold, it will not melt even if it is immersed
+in magma."
+379,"Registeel",19,2050,"Iron Pokémon","Registeel was imprisoned by people in ancient times.
+The metal composing its body is thought to be a curious
+substance that is not of this earth."
+380,"Latias",14,400,"Eon Pokémon","Latias is highly intelligent and capable of understanding
+human speech. It is covered with a glass-like down.
+The Pokémon enfolds its body with its down and refracts
+light to alter its appearance."
+381,"Latios",20,600,"Eon Pokémon","Latios will only open its heart to a Trainer with a
+compassionate spirit. This Pokémon can fly faster than a
+jet plane by folding its forelegs to minimize air resistance."
+382,"Kyogre",45,3520,"Sea Basin Pokémon","Kyogre is said to be the personification of the sea itself.
+Legends tell of its many clashes against Groudon,
+as each sought to gain the power of nature."
+383,"Groudon",35,9500,"Continent Pokémon","Through Primal Reversion and with nature’s full power,
+it will take back its true form. It can cause magma to
+erupt and expand the landmass of the world."
+384,"Rayquaza",70,2065,"Sky High Pokémon","It flies forever through the ozone layer, consuming
+meteoroids for sustenance. The many meteoroids
+in its body provide the energy it needs to Mega Evolve."
+385,"Jirachi",3,11,"Wish Pokémon","Jirachi will awaken from its sleep of a thousand years if you
+sing to it in a voice of purity. It is said to make true any wish
+that people desire."
+386,"Deoxys",17,608,"DNA Pokémon","Deoxys emerged from a virus that came from space. It is highly
+intelligent and wields psychokinetic powers. This Pokémon
+shoots lasers from the crystalline organ on its chest."
+387,"Turtwig",4,102,"Tiny Leaf Pokémon","It undertakes photosynthesis with its body, making
+oxygen. The leaf on its head wilts if it is thirsty."
+388,"Grotle",11,970,"Grove Pokémon","It knows where pure water wells up. It carries fellow
+Pokémon there on its back."
+389,"Torterra",22,3100,"Continent Pokémon","Small Pokémon occasionally gather on its unmoving
+back to begin building their nests."
+390,"Chimchar",5,62,"Chimp Pokémon","The gas made in its belly burns from its rear end.
+The fire burns weakly when it feels sick."
+391,"Monferno",9,220,"Playful Pokémon","It uses ceilings and walls to launch aerial attacks.
+Its fiery tail is but one weapon."
+392,"Infernape",12,550,"Flame Pokémon","It tosses its enemies around with agility. It uses all
+its limbs to fight in its own unique style."
+393,"Piplup",4,52,"Penguin Pokémon","Because it is very proud, it hates accepting food
+from people. Its thick down guards it from cold."
+394,"Prinplup",8,230,"Penguin Pokémon","It lives a solitary life. Its wings deliver wicked blows
+that can snap even the thickest of trees."
+395,"Empoleon",17,845,"Emperor Pokémon","The three horns that extend from its beak attest to
+its power. The leader has the biggest horns."
+396,"Starly",3,20,"Starling Pokémon","They flock around mountains and fields, chasing
+after bug Pokémon. Their singing is noisy
+and annoying."
+397,"Staravia",6,155,"Starling Pokémon","It lives in forests and fields. Squabbles over
+territory occur when flocks collide."
+398,"Staraptor",12,249,"Predator Pokémon","When Staravia evolve into Staraptor, they leave the
+flock to live alone. They have sturdy wings."
+399,"Bidoof",5,200,"Plump Mouse Pokémon","It constantly gnaws on logs and rocks to whittle
+down its front teeth. It nests alongside water."
+400,"Bibarel",10,315,"Beaver Pokémon","It makes its nest by damming streams with bark and
+mud. It is known as an industrious worker."
+401,"Kricketot",3,22,"Cricket Pokémon","When its antennae hit each other, it sounds like the
+music of a xylophone."
+402,"Kricketune",10,255,"Cricket Pokémon","It signals its emotions with its melodies. Scientists
+are studying these melodic patterns."
+403,"Shinx",5,95,"Flash Pokémon","All of its fur dazzles if danger is sensed. It flees
+while the foe is momentarily blinded."
+404,"Luxio",9,305,"Spark Pokémon","Strong electricity courses through the tips of its
+sharp claws. A light scratch causes fainting in foes."
+405,"Luxray",14,420,"Gleam Eyes Pokémon","Luxray’s ability to see through objects comes in
+handy when it’s scouting for danger."
+406,"Budew",2,12,"Bud Pokémon","Over the winter, it closes its bud and endures the
+cold. In spring, the bud opens and releases pollen."
+407,"Roserade",9,145,"Bouquet Pokémon","With the movements of a dancer, it strikes with
+whips that are densely lined with poison thorns."
+408,"Cranidos",9,315,"Head Butt Pokémon","In rock layers where Cranidos fossils are found,
+the fossilized trunks of trees snapped in two
+are also often found."
+409,"Rampardos",16,1025,"Head Butt Pokémon","Records exist of a revived fossil that evolved
+into Rampardos. It proceeded to escape and
+then destroy a skyscraper with a headbutt."
+410,"Shieldon",5,570,"Shield Pokémon","This Pokémon lived in primeval jungles. Few
+enemies would have been willing to square off
+against its heavily armored face, so it’s thought."
+411,"Bastiodon",13,1495,"Shield Pokémon","It lived in the same environments as Rampardos.
+Their fossils have been found together—
+seemingly from after they’d fought to the finish."
+412,"Burmy",2,34,"Bagworm Pokémon","If its cloak is broken in battle, it quickly remakes
+the cloak with materials nearby."
+413,"Wormadam",5,65,"Bagworm Pokémon","When Burmy evolved, its cloak became a part of
+this Pokémon’s body. The cloak is never shed."
+414,"Mothim",9,233,"Moth Pokémon","It flutters around at night and steals honey from
+the Combee hive."
+415,"Combee",3,55,"Tiny Bee Pokémon","It collects and delivers honey to its colony.
+At night, they cluster to form a beehive and sleep."
+416,"Vespiquen",12,385,"Beehive Pokémon","Its abdomen is a honeycomb for grubs. It raises its
+grubs on honey collected by Combee."
+417,"Pachirisu",4,39,"EleSquirrel Pokémon","A pair may be seen rubbing their cheek pouches
+together in an effort to share stored electricity."
+418,"Buizel",7,295,"Sea Weasel Pokémon","It inflates the flotation sac around its neck and
+pokes its head out of the water to see what is
+going on."
+419,"Floatzel",11,335,"Sea Weasel Pokémon","Its flotation sac developed as a result of pursuing
+aquatic prey. It can double as a rubber raft."
+420,"Cherubi",4,33,"Cherry Pokémon","It evolves by sucking the energy out of the small
+ball where it had been storing nutrients."
+421,"Cherrim",5,93,"Blossom Pokémon","If it senses strong sunlight, it opens its folded
+petals to absorb the sun’s rays with its whole body."
+422,"Shellos",3,63,"Sea Slug Pokémon","Purple mucus sticks to the hands of anyone
+who touches it. Take care, as the substance is
+troublesome to wash off. "
+423,"Gastrodon",9,299,"Sea Slug Pokémon","Plankton, invisible to the naked eye, is its main
+food source. It comes onto the land periodically,
+but the reason for this is not known."
+424,"Ambipom",12,203,"Long Tail Pokémon","To eat, it deftly shucks nuts with its two tails.
+It rarely uses its arms now."
+425,"Drifloon",4,12,"Balloon Pokémon","If for some reason its body bursts, its soul spills
+out with a screaming sound."
+426,"Drifblim",12,150,"Blimp Pokémon","Even while under careful observation, large
+flocks of Drifblim flying at dusk will inexplicably
+disappear from view."
+427,"Buneary",4,55,"Rabbit Pokémon","When it senses danger, it perks up its ears.
+On cold nights, it sleeps with its head tucked into
+its fur."
+428,"Lopunny",12,333,"Rabbit Pokémon","The ears appear to be delicate. If they are touched
+roughly, it kicks with its graceful legs."
+429,"Mismagius",9,44,"Magical Pokémon","Mismagius have been known to cast spells to
+make people fall in love, so some people search
+for this Pokémon as if their life depended on it."
+430,"Honchkrow",9,273,"Big Boss Pokémon","If its Murkrow cronies fail to catch food for it,
+or if it feels they have betrayed it, it will hunt
+them down wherever they are and punish them."
+431,"Glameow",5,39,"Catty Pokémon","When it’s happy, Glameow demonstrates beautiful
+movements of its tail, like a dancing ribbon."
+432,"Purugly",10,438,"Tiger Cat Pokémon","To make itself appear intimidatingly beefy, it tightly
+cinches its waist with its twin tails."
+433,"Chingling",2,6,"Bell Pokémon","There is an orb inside its mouth. When it hops,
+the orb bounces all over and makes a
+ringing sound."
+434,"Stunky",4,192,"Skunk Pokémon","It protects itself by spraying a noxious fluid from its
+rear. The stench lingers for 24 hours."
+435,"Skuntank",10,380,"Skunk Pokémon","It sprays a stinky fluid from its tail. The fluid smells
+worse the longer it is allowed to fester."
+436,"Bronzor",5,605,"Bronze Pokémon","Implements shaped like it were discovered in
+ancient tombs. It is unknown if they are related."
+437,"Bronzong",13,1870,"Bronze Bell Pokémon","Ancient people believed that petitioning Bronzong
+for rain was the way to make crops grow."
+438,"Bonsly",5,150,"Bonsai Pokémon","From its eyes, it can expel excess moisture from
+its body. This liquid is similar in composition to
+human sweat."
+439,"Mime Jr.",6,130,"Mime Pokémon","It habitually mimics foes. Once mimicked, the foe
+cannot take its eyes off this Pokémon."
+440,"Happiny",6,244,"Playhouse Pokémon","It’s too small to lay eggs yet. As a surrogate,
+it searches out round white stones."
+441,"Chatot",5,19,"Music Note Pokémon","It can learn and speak human words. If they gather,
+they all learn the same saying."
+442,"Spiritomb",10,1080,"Forbidden Pokémon","It was bound to a fissure in an odd keystone as
+punishment for misdeeds 500 years ago."
+443,"Gible",7,205,"Land Shark Pokémon","It skulks in caves, and when prey or an enemy
+passes by, it leaps out and chomps them. The
+force of its attack sometimes chips its teeth."
+444,"Gabite",14,560,"Cave Pokémon","Shiny objects are its passion. It can be found in
+its cave, scarcely moving, its gaze fixed on the
+jewels it’s amassed or Carbink it has caught."
+445,"Garchomp",19,950,"Mach Pokémon","The protuberances on its head serve as
+sensors. It can even detect distant prey."
+446,"Munchlax",6,1050,"Big Eater Pokémon","When it finds something that looks like it might
+be edible, it goes right ahead and swallows it
+whole. That’s why it gets fatter day by day."
+447,"Riolu",7,202,"Emanation Pokémon","It’s tough enough to run right through the night,
+and it’s also a hard worker, but it’s still just
+a youngster."
+448,"Lucario",12,540,"Aura Pokémon","They can detect the species of a living being—
+and its emotions—from over half a mile away.
+They control auras and hunt their prey in packs."
+449,"Hippopotas",8,495,"Hippo Pokémon","It enshrouds itself with sand to protect itself from
+germs. It does not enjoy getting wet."
+450,"Hippowdon",20,3000,"Heavyweight Pokémon","It blasts internally stored sand from ports on its
+body to create a towering twister for attack."
+451,"Skorupi",8,120,"Scorpion Pokémon","It burrows under the sand to lie in wait for prey.
+Its tail claws can inject its prey with a
+savage poison."
+452,"Drapion",13,615,"Ogre Scorpion Pokémon","It has the power in its clawed arms to make scrap
+of a car. The tips of its claws release poison."
+453,"Croagunk",7,230,"Toxic Mouth Pokémon","Inflating its poison sacs, it fills the area with an odd
+sound and hits flinching opponents with a
+poison jab."
+454,"Toxicroak",13,444,"Toxic Mouth Pokémon","Its knuckle claws secrete a toxin so vile that even a
+scratch could prove fatal."
+455,"Carnivine",14,270,"Bug Catcher Pokémon","It binds itself to trees in marshes. It attracts prey
+with its sweet-smelling drool and gulps them down."
+456,"Finneon",4,70,"Wing Fish Pokémon","Its double tail fins propel its energetic jumps.
+When it breaks the surface of the sea, Wingull
+swoop down to grab it on the fly."
+457,"Lumineon",12,240,"Neon Pokémon","This deep-sea Pokémon lives at the bottom of
+the sea. Its fins haul it over the seabed in
+search of its favorite food—Starmie."
+458,"Mantyke",10,650,"Kite Pokémon","When it swims close to the surface of the ocean,
+people aboard ships are able to observe the pattern
+on its back."
+459,"Snover",10,505,"Frost Tree Pokémon","In the spring, it grows berries with the texture of
+frozen treats around its belly."
+460,"Abomasnow",22,1355,"Frost Tree Pokémon","It lives a quiet life on mountains that are perpetually
+covered in snow. It hides itself by whipping
+up blizzards."
+461,"Weavile",11,340,"Sharp Claw Pokémon","They dwell in cold places. This Pokémon’s main
+food source in Alola is Vulpix and Sandshrew,
+which they carefully divide among their group."
+462,"Magnezone",12,1800,"Magnet Area Pokémon","As it zooms through the sky, this Pokémon
+seems to be receiving signals of unknown origin,
+while transmitting signals of unknown purpose."
+463,"Lickilicky",17,1400,"Licking Pokémon","Their saliva contains lots of components that can
+dissolve anything. The numbness caused by their
+lick does not dissipate."
+464,"Rhyperior",24,2828,"Drill Pokémon","It puts rocks in holes in its palms and uses its
+muscles to shoot them. Geodude are shot at
+rare times."
+465,"Tangrowth",20,1286,"Vine Pokémon","Its vines grow so profusely that, in the warm
+season, you can’t even see its eyes."
+466,"Electivire",18,1386,"Thunderbolt Pokémon","When it gets excited, it thumps its chest. With
+every thud, thunder roars and electric sparks
+shower all around."
+467,"Magmortar",16,680,"Blast Pokémon","From its arm, it launches fireballs hotter than
+3,500 degrees Fahrenheit. Its arm starts to
+melt when it fires a whole barrage."
+468,"Togekiss",15,380,"Jubilee Pokémon","It shares many blessings with people who respect
+one another’s rights and avoid needless strife."
+469,"Yanmega",19,515,"Ogre Darner Pokémon","This six-legged Pokémon is easily capable of
+transporting an adult in flight. The wings on its tail
+help it stay balanced."
+470,"Leafeon",10,255,"Verdant Pokémon","The younger they are, the more they smell like
+fresh grass. With age, their fragrance takes on
+the odor of fallen leaves."
+471,"Glaceon",8,259,"Fresh Snow Pokémon","It freezes its fur into icicles, spiky and sharp,
+and tackles its prey."
+472,"Gliscor",20,425,"Fang Scorpion Pokémon","Its flight is soundless. It uses its lengthy tail to
+carry off its prey... Then its elongated fangs do
+the rest."
+473,"Mamoswine",25,2910,"Twin Tusk Pokémon","Its impressive tusks are made of ice. The population
+thinned when it turned warm after the ice age."
+474,"Porygon-Z",9,340,"Virtual Pokémon","Its program was modified to facilitate
+extra-dimensional activities, but that led to
+noticeably strange behavior."
+475,"Gallade",16,520,"Blade Pokémon","A master of courtesy and swordsmanship, it fights
+using extending swords on its elbows."
+476,"Probopass",14,3400,"Compass Pokémon","The main body controls three mobile units called
+Mini-Noses, which it maneuvers to catch prey."
+477,"Dusknoir",22,1066,"Gripper Pokémon","The antenna on its head captures radio waves from
+the world of spirits that command it to take
+people there."
+478,"Froslass",13,266,"Snow Land Pokémon","The soul of a woman lost on a snowy mountain
+possessed an icicle, becoming this Pokémon.
+The food it most relishes is the souls of men."
+479,"Rotom",3,3,"Plasma Pokémon","Its body is composed of plasma. It is known to
+infiltrate electronic devices and wreak havoc."
+480,"Uxie",3,3,"Knowledge Pokémon","It is said that its emergence gave humans the
+intelligence to improve their quality of life."
+481,"Mesprit",3,3,"Emotion Pokémon","It sleeps at the bottom of a lake. Its spirit is said to
+leave its body to fly on the lake’s surface."
+482,"Azelf",3,3,"Willpower Pokémon","It is thought that Uxie, Mesprit, and Azelf all came
+from the same egg."
+483,"Dialga",54,6830,"Temporal Pokémon","It has the power to control time. It appears in
+Sinnoh-region myths as an ancient deity."
+484,"Palkia",42,3360,"Spatial Pokémon","It has the ability to distort space. It is described as
+a deity in Sinnoh-region mythology."
+485,"Heatran",17,4300,"Lava Dome Pokémon","Boiling blood, like magma, circulates through its
+body. It makes its dwelling place in volcanic caves."
+486,"Regigigas",37,4200,"Colossal Pokémon","There is an enduring legend that states this
+Pokémon towed continents with ropes."
+487,"Giratina",45,7500,"Renegade Pokémon","It was banished for its violence. It silently gazed
+upon the old world from the Distortion World."
+488,"Cresselia",15,856,"Lunar Pokémon","Those who sleep holding Cresselia’s feather are
+assured of joyful dreams. It is said to represent
+the crescent moon."
+489,"Phione",4,31,"Sea Drifter Pokémon","It drifts in warm seas. It always returns to where it
+was born, no matter how far it may have drifted."
+490,"Manaphy",3,14,"Seafaring Pokémon","It starts its life with a wondrous power that permits
+it to bond with any kind of Pokémon."
+491,"Darkrai",15,505,"Pitch-Black Pokémon","It can lull people to sleep and make them dream.
+It is active during nights of the new moon."
+492,"Shaymin",2,21,"Gratitude Pokémon","The blooming of Gracidea flowers confers the
+power of flight upon it. Feelings of gratitude are
+the message it delivers."
+493,"Arceus",32,3200,"Alpha Pokémon","It is told in mythology that this Pokémon was born
+before the universe even existed."
+494,"Victini",4,40,"Victory Pokémon","When it shares the infinite energy it creates,
+that being’s entire body will be overflowing
+with power."
+495,"Snivy",6,81,"Grass Snake Pokémon","They photosynthesize by bathing their tails in
+sunlight. When they are not feeling well, their
+tails droop."
+496,"Servine",8,160,"Grass Snake Pokémon","When it gets dirty, its leaves can’t be used in
+photosynthesis, so it always keeps itself clean."
+497,"Serperior",33,630,"Regal Pokémon","It can stop its opponents’ movements with just a
+glare. It takes in solar energy and boosts
+it internally."
+498,"Tepig",5,99,"Fire Pig Pokémon","It loves to eat roasted berries, but sometimes it
+gets too excited and burns them to a crisp."
+499,"Pignite",10,555,"Fire Pig Pokémon","When its internal fire flares up, its movements grow
+sharper and faster. When in trouble, it emits smoke."
+500,"Emboar",16,1500,"Mega Fire Pig Pokémon","It has mastered fast and powerful fighting moves.
+It grows a beard of fire."
+501,"Oshawott",5,59,"Sea Otter Pokémon","It fights using the scalchop on its stomach.
+In response to an attack, it retaliates immediately
+by slashing."
+502,"Dewott",8,245,"Discipline Pokémon","As a result of strict training, each Dewott learns
+different forms for using the scalchops."
+503,"Samurott",15,946,"Formidable Pokémon","One swing of the sword incorporated in its armor
+can fell an opponent. A simple glare from one of
+them quiets everybody."
+504,"Patrat",5,116,"Scout Pokémon","Extremely cautious, one of them will always be on
+the lookout, but it won’t notice a foe coming
+from behind."
+505,"Watchog",11,270,"Lookout Pokémon","When they see an enemy, their tails stand high,
+and they spit the seeds of berries stored in their
+cheek pouches."
+506,"Lillipup",4,41,"Puppy Pokémon","The long fur surrounding its face functions as
+radar, enabling it to probe the condition of its
+battle opponents."
+507,"Herdier",9,147,"Loyal Dog Pokémon","This Pokémon obeys its master’s orders
+faithfully. However, it refuses to listen to
+anything said by a person it doesn’t respect."
+508,"Stoutland",12,610,"Big-Hearted Pokémon","With this wise Pokémon, there could be no
+concern that it would ever attack people. Some
+parents even trust it to babysit."
+509,"Purrloin",4,101,"Devious Pokémon","They steal from people for fun, but their victims
+can’t help but forgive them. Their deceptively cute
+act is perfect."
+510,"Liepard",11,375,"Cruel Pokémon","Stealthily, it sneaks up on its target, striking from
+behind before its victim has a chance to react."
+511,"Pansage",6,105,"Grass Monkey Pokémon","It’s good at finding berries and gathers them from
+all over. It’s kind enough to share them
+with friends."
+512,"Simisage",11,305,"Thorn Monkey Pokémon","Ill tempered, it fights by swinging its barbed tail
+around wildly. The leaf growing on its head is
+very bitter."
+513,"Pansear",6,110,"High Temp Pokémon","This Pokémon lives in caves in volcanoes.
+The fire within the tuft on its head can reach
+600 degrees Fahrenheit."
+514,"Simisear",10,280,"Ember Pokémon","When it gets excited, embers rise from its head
+and tail and it gets hot. For some reason, it
+loves sweets."
+515,"Panpour",6,135,"Spray Pokémon","The water stored inside the tuft on its head is full of
+nutrients. Plants that receive its water grow large."
+516,"Simipour",10,290,"Geyser Pokémon","It prefers places with clean water. When its tuft runs
+low, it replenishes it by siphoning up water with
+its tail."
+517,"Munna",6,233,"Dream Eater Pokémon","It eats the dreams of people and Pokémon. When it
+eats a pleasant dream, it expels pink-colored mist."
+518,"Musharna",11,605,"Drowsing Pokémon","The dream mist coming from its forehead changes
+into many different colors depending on the dream
+that was eaten."
+519,"Pidove",3,21,"Tiny Pigeon Pokémon","These Pokémon live in cities. They are accustomed
+to people. Flocks often gather in parks and plazas."
+520,"Tranquill",6,150,"Wild Pigeon Pokémon","No matter where in the world it goes, it knows
+where its nest is, so it never gets separated from
+its Trainer."
+521,"Unfezant",12,290,"Proud Pokémon","Males have plumage on their heads. They will never
+let themselves feel close to anyone other than
+their Trainers."
+522,"Blitzle",8,298,"Electrified Pokémon","Its mane shines when it discharges electricity.
+They use the frequency and rhythm of these flashes
+to communicate."
+523,"Zebstrika",16,795,"Thunderbolt Pokémon","They have lightning-like movements.
+When Zebstrika run at full speed, the sound of
+thunder reverberates."
+524,"Roggenrola",4,180,"Mantle Pokémon","The hexagonal cavity is its ear. It walks in the
+direction of sounds it hears, but if the sounds
+cease, it panics and topples over."
+525,"Boldore",9,1020,"Ore Pokémon","It explores caves in search of underground
+water. It’s not comfortable around water, so
+this Pokémon takes great care in lapping it up."
+526,"Gigalith",17,2600,"Compressed Pokémon","Known for its hefty horsepower, this Pokémon
+is a popular partner for construction workers."
+527,"Woobat",4,21,"Bat Pokémon","The heart-shaped mark left on a body after a
+Woobat has been attached to it is said to bring
+good fortune."
+528,"Swoobat",9,105,"Courting Pokémon","Anyone who comes into contact with the ultrasonic
+waves emitted by a courting male experiences a
+positive mood shift."
+529,"Drilbur",3,85,"Mole Pokémon","By spinning its body, it can dig straight through the
+ground at a speed of 30 mph."
+530,"Excadrill",7,404,"Subterrene Pokémon","More than 300 feet below the surface, they build
+mazelike nests. Their activity can be destructive to
+subway tunnels."
+531,"Audino",11,310,"Hearing Pokémon","It touches others with the feelers on its ears, using
+the sound of their heartbeats to tell how they
+are feeling."
+532,"Timburr",6,125,"Muscular Pokémon","Always carrying squared logs, they help out with
+construction. As they grow, they carry bigger logs."
+533,"Gurdurr",12,400,"Muscular Pokémon","This Pokémon is so muscular and strongly built that
+even a group of wrestlers could not make it budge
+an inch."
+534,"Conkeldurr",14,870,"Muscular Pokémon","Rather than rely on force, they master moves that
+utilize the centrifugal force of spinning concrete."
+535,"Tympole",5,45,"Tadpole Pokémon","By vibrating its cheeks, it emits sound waves
+imperceptible to humans. It uses the rhythm of
+these sounds to talk."
+536,"Palpitoad",8,170,"Vibration Pokémon","It lives in the water and on land. It uses its long,
+sticky tongue to immobilize its opponents."
+537,"Seismitoad",15,620,"Vibration Pokémon","They shoot paralyzing liquid from their head bumps.
+They use vibration to hurt their opponents."
+538,"Throh",13,555,"Judo Pokémon","When it encounters a foe bigger than itself, it wants
+to throw it. It changes belts as it gets stronger."
+539,"Sawk",14,510,"Karate Pokémon","Tying their belts gets them pumped and makes their
+punches more destructive. Disturbing their training
+angers them."
+540,"Sewaddle",3,25,"Sewing Pokémon","Since this Pokémon makes its own clothes out of
+leaves, it is a popular mascot for fashion designers."
+541,"Swadloon",5,73,"Leaf-Wrapped Pokémon","It protects itself from the cold by wrapping up in
+leaves. It stays on the move, eating leaves
+in forests."
+542,"Leavanny",12,205,"Nurturing Pokémon","It keeps its eggs warm with heat from fermenting
+leaves. It also uses leaves to make warm wrappings
+for Sewaddle."
+543,"Venipede",4,53,"Centipede Pokémon","Its bite injects a potent poison, enough to paralyze
+large bird Pokémon that try to prey on it."
+544,"Whirlipede",12,585,"Curlipede Pokémon","It is usually motionless, but when attacked,
+it rotates at high speed and then crashes into
+its opponent."
+545,"Scolipede",25,2005,"Megapede Pokémon","With quick movements, it chases down its foes,
+attacking relentlessly with its horns until it prevails."
+546,"Cottonee",3,6,"Cotton Puff Pokémon","Pillows and beds stuffed with cotton exhaled
+by Cottonee are soft and puffy, light and airy—
+altogether top quality."
+547,"Whimsicott",7,66,"Windveiled Pokémon","This Pokémon appears, riding upon the wind.
+But if the wind gusts up, it’ll blow the cotton on
+this Pokémon’s head clean off."
+548,"Petilil",5,66,"Bulb Pokémon","By pruning the leaves on its head with
+regularity, this Pokémon can be grown into a
+fine plump shape."
+549,"Lilligant",11,163,"Flowering Pokémon","As soon as it finds a male to be its partner,
+the beautiful flower on its head darkens,
+droops, and withers away."
+550,"Basculin",10,180,"Hostile Pokémon","Red and blue Basculin usually do not get along,
+but sometimes members of one school mingle with
+the other’s school."
+551,"Sandile",7,152,"Desert Croc Pokémon","It conceals itself in the sand and chomps down
+on the legs of any prey that unwarily walk over
+it. Its favorite food is Trapinch."
+552,"Krokorok",10,334,"Desert Croc Pokémon","Thanks to the special membrane covering its
+eyes, it can see its surroundings clearly, even in
+the middle of the night."
+553,"Krookodile",15,963,"Intimidation Pokémon","After clamping down with its powerful jaws,
+it twists its body around to rip its prey in half."

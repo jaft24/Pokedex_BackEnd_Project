@@ -1,0 +1,23 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+
+    <changeSet id="relationshipPokemonPokemon_Type" author="jaleta">
+        <addForeignKeyConstraint baseTableName="pokemon_types"
+                                 baseColumnNames="pokemon_id"
+                                 constraintName="pokemon_type_id"
+                                 referencedTableName="pokemon"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="relationshipPokemon_TypeTypes" author="jaleta">
+        <addForeignKeyConstraint baseTableName="pokemon_types"
+                                 baseColumnNames="type_id"
+                                 constraintName="type_pokemon_id"
+                                 referencedTableName="types"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+</databaseChangeLog>

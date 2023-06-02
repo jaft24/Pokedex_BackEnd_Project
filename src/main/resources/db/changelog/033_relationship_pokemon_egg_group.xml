@@ -1,0 +1,23 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+
+    <changeSet id="relationshipPokemonPokemon_Egg_Groups" author="jaleta">
+        <addForeignKeyConstraint baseTableName="pokemon_egg_groups"
+                                 baseColumnNames="pokemon_id"
+                                 constraintName="pokemon_egg_group_id"
+                                 referencedTableName="pokemon"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="relationshipPokemon_Egg_GroupEgg_Groups" author="jaleta">
+        <addForeignKeyConstraint baseTableName="pokemon_egg_groups"
+                                 baseColumnNames="egg_group_id"
+                                 constraintName="egg_group_pokemon_id"
+                                 referencedTableName="egg_groups"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+</databaseChangeLog>

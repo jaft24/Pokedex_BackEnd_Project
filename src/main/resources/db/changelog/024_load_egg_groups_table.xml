@@ -1,0 +1,15 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="loadEgg_GroupsData" author="jaleta">
+        <loadData relativeToChangelogFile="true" file="changelog/loadfiles/egg_groups.csv"
+                  separator=","
+                  tableName="egg_groups">
+            <column name="id" type="bigint"/>
+            <column name="egg_groups" type="VARCHAR(255)"/>
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

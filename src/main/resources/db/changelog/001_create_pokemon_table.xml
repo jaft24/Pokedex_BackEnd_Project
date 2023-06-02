@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+           http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+
+    <!--Create the main pokemon table-->
+    <changeSet id="create_pokemon_table" author="jaleta">
+        <createTable tableName="pokemon">
+            <!-- Column1 : Id as the primary Key -->
+            <column name="id" type="bigint">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <!-- Column2 : name-->
+            <column name="name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <!-- Column3 : height-->
+            <column name="height" type="float">
+                <constraints nullable="false"/>
+            </column>
+
+            <!-- Column4 : weight-->
+            <column name="weight" type="float">
+                <constraints nullable="false"/>
+            </column>
+
+            <!-- Column5 : genus-->
+            <column name="genus" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <!-- Column6 : description-->
+            <column name="description" type="varchar">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
