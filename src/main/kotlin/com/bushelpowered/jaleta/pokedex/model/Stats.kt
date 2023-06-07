@@ -1,8 +1,9 @@
 package com.bushelpowered.jaleta.pokedex.model
 
-import com.fasterxml.jackson.annotation.JsonBackReference
-import jakarta.persistence.*
-import java.math.BigInteger
+import jakarta.persistence.Column
+import jakarta.persistence.Entity
+import jakarta.persistence.Table
+import jakarta.persistence.Id
 
 @Entity
 @Table(name = "stats", schema = "public")
@@ -10,7 +11,7 @@ data class Stats (
 
     @Id
     @Column(name = "pokemon_id")
-    val pokemon_id: Int,
+    val pokemonId: Int,
 
     @Column(name = "hp")
     val hp: Int,
@@ -25,18 +26,9 @@ data class Stats (
     val defense: Int,
 
     @Column(name = "special_attack")
-    val special_attack: Int,
+    val specialAttack: Int,
 
     @Column(name = "special_defense")
-    val special_defense: Int,
-
-    @JsonBackReference
-    @OneToOne(fetch = FetchType.LAZY)
-    @MapsId
-    @JoinColumn(name = "pokemon_id")
-    val pokemon: Pokemon
-
-
+    val specialDefense: Int
 
 )
-

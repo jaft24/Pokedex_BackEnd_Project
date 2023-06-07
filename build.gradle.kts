@@ -18,20 +18,10 @@ repositories {
 
 dependencies {
 
-    //Authentication Dependencies
 	implementation ("org.springframework.boot:spring-boot-starter-oauth2-client")
 	implementation ("org.springframework.boot:spring-boot-starter-security")
 	implementation ("org.springframework.boot:spring-boot-starter-oauth2-resource-server")
-//	implementation("org.springframework.security:spring-security-oauth2-jose:5.5.0")
 	implementation ("org.springframework.boot:spring-boot-starter-web-services")
-
-
-
-//	implementation("org.keycloak:keycloak-spring-boot-starter:15.0.2")
-//	testImplementation("org.springframework.security:spring-security-test")
-//	implementation("org.modelmapper:modelmapper:3.0.0")
-
-
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
@@ -39,8 +29,6 @@ dependencies {
 	implementation("org.liquibase:liquibase-core")
 	runtimeOnly("org.postgresql:postgresql")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-
-
 
 }
 

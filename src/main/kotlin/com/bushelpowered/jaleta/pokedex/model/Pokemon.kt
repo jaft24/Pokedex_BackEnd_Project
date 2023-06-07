@@ -1,12 +1,18 @@
 package com.bushelpowered.jaleta.pokedex.model
 
-import com.fasterxml.jackson.annotation.JsonManagedReference
-import jakarta.persistence.*
-import java.math.BigInteger
+import jakarta.persistence.Column
+import jakarta.persistence.Entity
+import jakarta.persistence.Table
+import jakarta.persistence.Id
+import jakarta.persistence.OneToMany
+import jakarta.persistence.OneToOne
+import jakarta.persistence.JoinTable
+import jakarta.persistence.JoinColumn
+import jakarta.persistence.PrimaryKeyJoinColumn
 
 @Entity
-    @Table(name = "pokemon", schema = "public")
-    data class Pokemon(
+@Table(name = "pokemon", schema = "public")
+data class Pokemon(
 
     @Id
     @Column(name = "id")
@@ -15,39 +21,37 @@ import java.math.BigInteger
     @Column(name = "name")
     val name: String,
 
-    @JsonManagedReference
-    @ManyToMany(fetch = FetchType.LAZY)
-        @JoinTable(
-            name = "pokemon_types",
-            joinColumns = [JoinColumn(name = "pokemon_id")],
-            inverseJoinColumns = [JoinColumn(name = "type_id")]
-        )
-    val types: List<Types> = emptyList(),
+    @OneToMany
+    @JoinTable(
+        name = "pokemon_types",
+        joinColumns = [JoinColumn(name = "pokemon_id")],
+        inverseJoinColumns = [JoinColumn(name = "type_id")]
+    )
+    val types: List<Type> = emptyList(),
 
     @Column(name = "height")
-    val height: Float,
+    val height: Double,
 
     @Column(name = "weight")
-    val weight: Float,
+    val weight: Double,
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @OneToMany
     @JoinTable(
         name = "pokemon_abilities",
         joinColumns = [JoinColumn(name = "pokemon_id")],
         inverseJoinColumns = [JoinColumn(name = "ability_id")]
     )
-    val abilities: List<Abilities> = emptyList(),
+    val abilities: List<Ability> = emptyList(),
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @OneToMany
     @JoinTable(
         name = "pokemon_egg_groups",
         joinColumns = [JoinColumn(name = "pokemon_id")],
         inverseJoinColumns = [JoinColumn(name = "egg_group_id")]
     )
-    val eggGroups: List<EggGroups> = emptyList(),
+    val eggGroups: List<EggGroup> = emptyList(),
 
-    @JsonManagedReference
-    @OneToOne(mappedBy = "pokemon")
+    @OneToOne
     @PrimaryKeyJoinColumn
     val stats: Stats,
 
@@ -56,5 +60,5 @@ import java.math.BigInteger
 
     @Column(name = "description")
     val description: String
-    )
 
+)
