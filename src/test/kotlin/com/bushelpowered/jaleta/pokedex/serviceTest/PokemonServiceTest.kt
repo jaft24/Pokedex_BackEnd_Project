@@ -7,21 +7,23 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
+import org.mockito.InjectMocks
+import org.mockito.Mock
 import org.mockito.Mockito.`when`
-import org.mockito.Mockito.mock
+import org.mockito.MockitoAnnotations
 import org.springframework.data.domain.PageImpl
 import org.springframework.data.domain.PageRequest
 
-
 class PokemonServiceTest {
 
+    @Mock
     private lateinit var pokemonRepository: PokemonRepository
+    @InjectMocks
     private lateinit var pokemonService: PokemonService
 
     @BeforeEach
     fun setUp() {
-        pokemonRepository = mock(PokemonRepository::class.java)
-        pokemonService = PokemonService(pokemonRepository)
+        MockitoAnnotations.openMocks(this)
     }
 
     @Test
