@@ -15,14 +15,10 @@ This project is a backend for a Pokemon api. This api end points that lets users
 7. KeyCloak is running on http://localhost:8083/, and you should be able to access the pokedexapi realm by utilizing the password and name specified in the "docker-compose.yml" file, and run all the end points on Postman
 
 # List of sample users created in KeyCloak
-  username  Name          Email              Password
-1	asmith    Alex Smith	  alex@gmail.com	   password123
-2	jdoe      John Doe	    john@yahoo.com	   abcd1234
-3	mwill     Marry Will	  marry@yahoo.com    a1b2c3d4
-4 swalker   Sky Walker    sky@fastmail.com   starwars123
+
 |   Username    |      Name     |     Email        |    Password   |
 | ------------- | ------------- | ---------------- | ------------- |
-| asmith        | Alex Smith    | alex@gmail.com.  | password123   |
+| asmith        | Alex Smith    | alex@gmail.com   | password123   |
 | jdoe          | John Doe      | john@yahoo.com   | abcd1234      |
 | mwill         | Marry Will    | marry@yahoo.com  | a1b2c3d4      |
 | swalker       | Sky Walker    | sky@fastmail.com | starwars123   | 
