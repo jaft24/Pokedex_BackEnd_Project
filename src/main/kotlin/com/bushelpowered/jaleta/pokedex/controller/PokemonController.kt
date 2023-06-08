@@ -51,21 +51,21 @@ class PokemonController(private var pokemonService: PokemonService) {
         return ResponseEntity.ok(pokemons)
     }
 
-    @GetMapping("/type/{typeName}")
-    fun filterPokemonByTypes(@PathVariable typeName: String, pageable: Pageable): ResponseEntity<Page<Pokemon>> {
-        val pokemonWithType = pokemonService.filterPokemonByType(typeName, pageable)
+    @GetMapping("/byType/{type}")
+    fun filterPokemonByType(@PathVariable type: String, pageable: Pageable): ResponseEntity<Page<Pokemon>> {
+        val pokemonWithType = pokemonService.filterPokemonByType(type, pageable)
          return ResponseEntity.ok(pokemonWithType)
     }
 
-    @GetMapping("/ability/{abilityName}")
-    fun filterPokemonByAbility(@PathVariable abilityName: String, pageable: Pageable): ResponseEntity<Page<Pokemon>> {
-        val pokemonWithAbility = pokemonService.filterPokemonByAbility(abilityName, pageable)
+    @GetMapping("/byAbility/{ability}")
+    fun filterPokemonByAbility(@PathVariable ability: String, pageable: Pageable): ResponseEntity<Page<Pokemon>> {
+        val pokemonWithAbility = pokemonService.filterPokemonByAbility(ability, pageable)
         return ResponseEntity.ok(pokemonWithAbility)
     }
 
-    @GetMapping("/eggGroup/{eggGroupName}")
-    fun filterPokemonByEggGroup(@PathVariable eggGroupName: String, pageable: Pageable): ResponseEntity<Page<Pokemon>> {
-        val pokemonWithEggGroup = pokemonService.filterPokemonByEggGroup(eggGroupName, pageable)
+    @GetMapping("/byEggGroup/{eggGroup}")
+    fun filterPokemonByEggGroup(@PathVariable eggGroup: String, pageable: Pageable): ResponseEntity<Page<Pokemon>> {
+        val pokemonWithEggGroup = pokemonService.filterPokemonByEggGroup(eggGroup, pageable)
         return ResponseEntity.ok(pokemonWithEggGroup)
     }
 
