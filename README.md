@@ -20,10 +20,12 @@ This project is a backend for a Pokemon api. This api end points that lets users
 2	jdoe      John Doe	    john@yahoo.com	   abcd1234
 3	mwill     Marry Will	  marry@yahoo.com    a1b2c3d4
 4 swalker   Sky Walker    sky@fastmail.com   starwars123
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+|   Username    |      Name     |     Email        |    Password   |
+| ------------- | ------------- | ---------------- | ------------- |
+| asmith        | Alex Smith    | alex@gmail.com.  | password123   |
+| jdoe          | John Doe      | john@yahoo.com   | abcd1234      |
+| mwill         | Marry Will    | marry@yahoo.com  | a1b2c3d4      |
+| swalker       | Sky Walker    | sky@fastmail.com | starwars123   | 
 
 # How to use the project (POSTMAN)
 I configured the security of the project where it would only ask for autentication if a capture end point is run ("/api/capture/- ") , and if users are running a pokemon end point ("/api/pokemon/- ") it will not ask for authentication, as anyone should be able to see, search, and filter through the pokemon api.
