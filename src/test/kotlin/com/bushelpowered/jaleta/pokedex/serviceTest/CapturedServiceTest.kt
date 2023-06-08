@@ -36,12 +36,10 @@ class CapturedServiceTest {
         val username = ""
         val password = ""
         val authentication: Authentication = UsernamePasswordAuthenticationToken(username, password)
-
         val pokemonId = 1
         val capture = Capture()
         capture.trainerId = authentication.name
         capture.pokemonId = pokemonId
-
         `when`(capturedRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)).thenReturn(false)
         `when`(capturedRepository.countAllByTrainerId(capture.trainerId)).thenReturn(4)
 
@@ -59,7 +57,6 @@ class CapturedServiceTest {
         val capture = Capture()
         capture.trainerId = authentication.name
         capture.pokemonId = pokemonId
-
         `when`(capturedRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)).thenReturn(true)
 
         val exception = assertThrows(IllegalArgumentException::class.java) {
@@ -79,7 +76,6 @@ class CapturedServiceTest {
         val capture = Capture()
         capture.trainerId = authentication.name
         capture.pokemonId = pokemonId
-
         `when`(capturedRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)).thenReturn(false)
         `when`(capturedRepository.countAllByTrainerId(capture.trainerId)).thenReturn(5)
 
@@ -117,9 +113,9 @@ class CapturedServiceTest {
                 description = "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings."
             )
         )
-
         `when`(capturedRepository.findByTrainerId(trainerId)).thenReturn(capturedList)
         `when`(pokemonRepository.findAllById(pokemonIdList)).thenReturn(pokemonList)
+
         val result = capturedService.getAllCapturedPokemonByTrainerId(authentication)
 
         assertEquals(pokemonList, result)
@@ -134,6 +130,7 @@ class CapturedServiceTest {
         val pokemonId = 1
 
         capturedService.deleteByTrainerIdAndPokemonId(authentication, pokemonId)
+
         verify(capturedRepository).deleteByTrainerIdAndPokemonId(trainerId, pokemonId)
     }
 
@@ -145,6 +142,7 @@ class CapturedServiceTest {
         val trainerId = authentication.name
 
         capturedService.deleteAllByTrainerId(authentication)
+
         verify(capturedRepository).deleteAllByTrainerId(trainerId)
     }
 }

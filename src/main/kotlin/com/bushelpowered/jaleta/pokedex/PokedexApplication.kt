@@ -9,5 +9,4 @@ class PokedexApplication
 fun main(args: Array<String>) {
 	runApplication<PokedexApplication>(*args)
 
-
 }

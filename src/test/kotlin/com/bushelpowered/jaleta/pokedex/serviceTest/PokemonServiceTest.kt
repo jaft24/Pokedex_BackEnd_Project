@@ -63,7 +63,6 @@ class PokemonServiceTest {
     @Test
     fun testGetPokemonByID_ExistingId_ReturnsListOfPokemon() {
         val id = 1
-
         val expectedPokemon = Pokemon(
             1, "Pikachu",
             listOf(Type(2, "fire"), Type(3, "flying")),
@@ -73,8 +72,8 @@ class PokemonServiceTest {
             Stats(6, 78, 100, 84, 78, 109, 82),
             "Mouse Pokémon", "Pikachu has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings."
         )
-
         `when`(pokemonRepository.findAllById(id)).thenReturn(expectedPokemon)
+
         val result = pokemonService.getPokemonByID(id)
 
         assertEquals(expectedPokemon, result)
@@ -82,11 +81,9 @@ class PokemonServiceTest {
 
     @Test
     fun testGetPokemonByID_NonExistingId_ThrowsNoSuchElementException() {
-        // Arrange
         val id = 1
         `when`(pokemonRepository.findAllById(mutableListOf(id))).thenReturn(mutableListOf())
 
-        // Act & Assert
         assertThrows(NullPointerException::class.java) {
             pokemonService.getPokemonByID(id)
         }
@@ -94,7 +91,6 @@ class PokemonServiceTest {
 
     @Test
     fun filterPokemonByType_ShouldReturnFilteredPokemonByType() {
-        // Arrange
         val typeName = "fire"
         val pageable = PageRequest.of(0, 10)
         val pokemonList = listOf(
@@ -160,6 +156,7 @@ class PokemonServiceTest {
                 description = "Bulbasaur can be seen napping in bright sunlight."
             )
         )
+
         val expectedPage = PageImpl(pokemonList, pageable, pokemonList.size.toLong())
 
         `when`(pokemonRepository.findPokemonByTypesType(typeName, pageable)).thenReturn(expectedPage)
@@ -167,6 +164,5 @@ class PokemonServiceTest {
 
         assertEquals(expectedPage, resultPage)
     }
-
 
 }

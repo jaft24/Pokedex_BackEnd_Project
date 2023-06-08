@@ -14,7 +14,7 @@
             <constraints primaryKey="true" nullable="false"/>
         </column>
 
-        <column name="trainer_id" type="bigint">
+        <column name="trainer_id" type="varchar">
             <constraints nullable="false"/>
         </column>
 

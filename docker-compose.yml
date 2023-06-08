@@ -7,3 +7,16 @@ services:
       POSTGRES_DB: pokedex
       POSTGRES_USER: user
       POSTGRES_PASSWORD: secret
+
+  dev_keycloak:
+    container_name: keycloak_dev
+    image: quay.io/keycloak/keycloak:20.0.2
+    command: "start-dev --import-realm"
+    volumes:
+      - './keycloak/realms:/opt/keycloak/data/import'
+      - './keycloak/export:/opt/keycloak/data/export'
+    ports:
+      - "8083:8080"
+    environment:
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
