@@ -6,6 +6,28 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
 
-<!--    <include relativeToChangelogFile="true" file="changelog/034_relationship_pokemon_captured.xml"/>-->
+    <include relativeToChangelogFile="true" file="changelog/001_create_pokemon_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/002_create_stats_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/003_create_types_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/004_create_abilities_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/005_create_egg_groups_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/006_create_pokemon_types_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/007_create_pokemon_abilities_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/008_create_pokemon_egg_group_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/009_create_captured_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/020_load_pokemon_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/021_load_stats_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/022_load_types_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/023_load_abilities_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/024_load_egg_groups_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/025_load_pokemon_abilities_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/026_load_pokemon_types_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/027_load_pokemon_egg_groups_table.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/030_relationship_pokemon_stats.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/031_relationship_pokemon_type.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/032_relationship_pokemon_abilities.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/033_relationship_pokemon_egg_group.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/034_relationship_pokemon_captured.xml"/>
+    <include relativeToChangelogFile="true" file="changelog/040_autoincrement_pokemon_captured.xml"/>
 
 </databaseChangeLog>
