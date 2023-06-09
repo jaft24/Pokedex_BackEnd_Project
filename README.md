@@ -56,6 +56,7 @@ NB: Pagination rule if a Response Entity has 10 or more than 10 pokemons it will
 10. Filter pokemon by EggGroup. http://localhost:8081/api/pokemon/byEggGroup/{eggGroup}
 11. Combining all filters. The parameters (Request(Query)Parameters) for this end point are all optional being that if all of them are null (value not specified) it returns a paginated list of all pokemons, the more parameters applied the narrower the list that fit them. A sample Query Param could look likem this:  
 End Point: http://localhost:8081/api/pokemon/filter
+
 |   Key    |      Value     |
 | -------- | -------------- |
 | genus    |  Seed Pokémon  |
@@ -108,13 +109,13 @@ Wrangled and Organized CSV Files: https://github.com/JaletaTesgera/Pokedex/tree/
 
 ** Postman Resources: <br>
 *.   Postman Learning Center: https://learning.postman.com/ <br>
-*.   Postman Beginer's Course - API Testing: https://www.youtube.com/watch?v=VywxIQ2ZXw4 <br>
+*.   Postman Beginer's Course - API Testing: https://www.youtube.com/watch?v=VywxIQ2ZXw4 <br> <br>
 
-** KeyCloak Resources:
-*.   Running KeyCloak from a docker container: https://bushel.atlassian.net/wiki/spaces/SBW/pages/8658059287/Configuring+local+Keycloak+instance+like+Bushel+SSO
-*.   A Quick Guide to Using Keycloak with Spring Boot: https://www.baeldung.com/spring-boot-keycloak
-*.   KeyCloak Documentation: https://www.keycloak.org/documentation
-*.   Using KeyCloak with Spring Boot 3.0: https://medium.com/geekculture/using-keycloak-with-spring-boot-3-0-376fa9f60e0b
-*.   KeyCloak - Creating user from API end point: https://www.youtube.com/watch?v=kIXs5k4gyuM
+** KeyCloak Resources: <br>
+*.   Running KeyCloak from a docker container: https://bushel.atlassian.net/wiki/spaces/SBW/pages/8658059287/Configuring+local+Keycloak+instance+like+Bushel+SSO <br>
+*.   A Quick Guide to Using Keycloak with Spring Boot: https://www.baeldung.com/spring-boot-keycloak <br>
+*.   KeyCloak Documentation: https://www.keycloak.org/documentation <br>
+*.   Using KeyCloak with Spring Boot 3.0: https://medium.com/geekculture/using-keycloak-with-spring-boot-3-0-376fa9f60e0b <br>
+*.   KeyCloak - Creating user from API end point: https://www.youtube.com/watch?v=kIXs5k4gyuM <br>
 
 ------- END -------
