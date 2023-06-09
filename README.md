@@ -1,5 +1,5 @@
 # Pokedex_BackEnd_Project
-Author: Jaleta Tesgera
+Author: Jaleta Tesgera <br>
 Date: June, 08, 2023
 
 # Project Description
