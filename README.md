@@ -8,10 +8,10 @@ This project is a backend for a Pokemon api. This api end points that lets users
 # How to Install and Run
 1. Both the postgress sql and keycloak are set up in the pokedex docker container and you will find a "docker-compose.yml" file that contains both configurations.
 2. Port, database connection, and spring securty is set up in the application.properties file.
-3. The json file for the realm I created ("pokedexapi") should be found in the keycloak, realm folder.
-4. Command to run the docker compose: docker compose up -d
-5. Once that docker container has started run the spring boot application with pokedex bootRun (http://localhost:8081/)
-6. If you have run it sucessfully please find the resources/db/changelog/changelog_master.xml and comment out the changelog includeAll code line as the changelogs should only run once to create the tables, load their data, and create their relationships.
+3. The keycloak relam import json file for the realm ("pokedexapi") should be found in the keycloak, realm folder.
+4. Command to run the docker compose: docker compose up -d (this comand willl run also automatiucally import the "pokedexapi" relam to the running keycloak instance)
+5. Once that docker container has started running, run the spring boot application with pokedex bootRun which will start its server on (http://localhost:8081/)
+6. If you have run it sucessfully, and created the necessary databases please find the resources/db/changelog/changelog_master.xml and comment out the changelog includeAll code line as the changelogs should only run once to create the tables, load their data, and create their relationships.
 7. KeyCloak is running on http://localhost:8083/, and you should be able to access the pokedexapi realm by utilizing the password and name specified in the "docker-compose.yml" file, and run all the end points on Postman
 
 # List of sample users created in KeyCloak
