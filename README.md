@@ -11,7 +11,7 @@ This project is a backend for a Pokemon api. This api end points that lets users
 3. The json file for the realm I created ("pokedexapi") should be found in the keycloak, realm folder.
 4. Command to run the docker compose: docker compose up -d
 5. Once that docker container has started run the spring boot application with pokedex bootRun (http://localhost:8081/)
-6. If you have run it sucessfully please find the resources/db/changelog/changelog_master.xml and comment out the changelog include files as they only should be run once to create the tables, load their data, and create their relationships.
+6. If you have run it sucessfully please find the resources/db/changelog/changelog_master.xml and comment out the changelog includeAll code line as the changelogs should only run once to create the tables, load their data, and create their relationships.
 7. KeyCloak is running on http://localhost:8083/, and you should be able to access the pokedexapi realm by utilizing the password and name specified in the "docker-compose.yml" file, and run all the end points on Postman
 
 # List of sample users created in KeyCloak
@@ -38,6 +38,7 @@ Eg: Lets us simulate a login for Sky Walker (username and passowrd are the only 
  | client_secret |  sHXxsqaebT4jeGWlLqTHLs4EUqMG31R5  |
  
 # 2. Capture End Points (Authorization JWT Token Needed = Bearer + Token)
+NB: Please note that since you ran all the changelog files as new and filled table values from local csv files, the captured table will be empty. Thus, you will need to run the capture api to capture some pokemon in order to retrive a list of captured pokemon by the authenticated trainer, or else the retrieve end point will return an empty list.
 1. Capture pokemon by specifying the Id. http://localhost:8081/api/capture/{id}
 2. Retrive a list of all the captured pokemon by the Logged In trainer. http://localhost:8081/api/capture/getAll
 3. Remove a pokemon from a captured list. http://localhost:8081/api/capture/remove/{id}
