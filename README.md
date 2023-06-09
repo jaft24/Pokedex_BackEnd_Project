@@ -85,30 +85,30 @@ This notice is from the past reviews we have had and expections I have on my cod
 
 # Resources
 
-Raw Pokemon List CSV File: https://bitbucket.org/!api/2.0/snippets/myriadmobile/Rerr8E/96d04ea30f8e177149dd0c1c98271f1843b5f9b7/files/pokedex.csv  
-Wrangled and Organized CSV Files: https://github.com/JaletaTesgera/Pokedex/tree/main/DBFiles  
+Raw Pokemon List CSV File: https://bitbucket.org/!api/2.0/snippets/myriadmobile/Rerr8E/96d04ea30f8e177149dd0c1c98271f1843b5f9b7/files/pokedex.csv <br>
+Wrangled and Organized CSV Files: https://github.com/JaletaTesgera/Pokedex/tree/main/DBFiles <br> <br>
 
-** Debugging and General: https://stackoverflow.com/
+** Debugging and General: https://stackoverflow.com/ <br> <br>
 
-** Kotlin Resources: 
-*.   Learn Kotlin Programming - Full Courses For Beginners: https://www.youtube.com/watch?v=EExSSotojVI
-*.   Genral: https://kotlinlang.org/
+** Kotlin Resources:  <br>
+*.   Learn Kotlin Programming - Full Courses For Beginners: https://www.youtube.com/watch?v=EExSSotojVI <br>
+*.   Genral: https://kotlinlang.org/ <br> <br>
 
-** Spring Boot Resources:
-*.   General: https://kotlinlang.org/
-*.   Spring Boot Tutorials Full Course: https://www.youtube.com/watch?v=9SGDpanrc8U
-*.   Baeldung | Learn Spring Boot: https://www.baeldung.com/spring-boot
-** Data JPA:
-*.   Getting Started | Accessing Data with JPA: https://spring.io/guides/gs/accessing-data-jpa/
-*.   Introduction to Spring Data JPA: https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa
-*.   Database Access using Spring JPA: https://www.youtube.com/watch?v=P8Y4VxR1UtA
-*.   How to write custom method in repository in Spring Data JPA: https://javatute.com/jpa/how-to-write-custom-method-in-repository-in-spring-data-jpa/
+** Spring Boot Resources: <br>
+*.   General: https://kotlinlang.org/ <br>
+*.   Spring Boot Tutorials Full Course: https://www.youtube.com/watch?v=9SGDpanrc8U <br>
+*.   Baeldung | Learn Spring Boot: https://www.baeldung.com/spring-boot <br>
+** Data JPA: <br>
+*.   Getting Started | Accessing Data with JPA: https://spring.io/guides/gs/accessing-data-jpa/ <br>
+*.   Introduction to Spring Data JPA: https://www.baeldung.com/the-persistence-layer-with-spring-data-jpa <br>
+*.   Database Access using Spring JPA: https://www.youtube.com/watch?v=P8Y4VxR1UtA <br>
+*.   How to write custom method in repository in Spring Data JPA: https://javatute.com/jpa/how-to-write-custom-method-in-repository-in-spring-data-jpa/ <br> <br>
 
-** Liquibase Documentations: https://docs.liquibase.com/home.html
+** Liquibase Documentations: https://docs.liquibase.com/home.html <br> <br>
 
-** Postman Resources:
-*.   Postman Learning Center: https://learning.postman.com/
-*.   Postman Beginer's Course - API Testing: https://www.youtube.com/watch?v=VywxIQ2ZXw4
+** Postman Resources: <br>
+*.   Postman Learning Center: https://learning.postman.com/ <br>
+*.   Postman Beginer's Course - API Testing: https://www.youtube.com/watch?v=VywxIQ2ZXw4 <br>
 
 ** KeyCloak Resources:
 *.   Running KeyCloak from a docker container: https://bushel.atlassian.net/wiki/spaces/SBW/pages/8658059287/Configuring+local+Keycloak+instance+like+Bushel+SSO
