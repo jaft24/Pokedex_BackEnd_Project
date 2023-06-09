@@ -81,8 +81,9 @@ NB: Pagination rule if a Response Entity has 10 or more than 10 pokemons it will
      
 # Additional Notices for Reviwers
 This notice is from the past reviews we have had and expections I have on my code.
-1. You will notice a separate "040_autoincrement_pokemon_captured.xml" liquibase file instead of just having the id to autoincrement in the tabe creation. For some reason I kept getting that error when I had it as a proporty of a colummn "autoincrememt = true" so I made a separate liquibase changeset for it.
-2. In all of my Test files you will see wild card imports for my models (import com.bushelpowered.jaleta.pokedex.model.*), and I wanted to let you know that I did it on purpose because my tests utilize all my models thus, I decided to do a wild card import instead of writing them all since it significantly shortens my code. Moreover, it is an import from my own files so I thought it would be okay to do so.
+1. You will notice a separate "040_autoincrement_pokemon_captured.xml" liquibase file instead of just having the id to autoincrement in the tabe creation. For some reason I kept getting an "unsupported" error when I had it as a property of a colummn "autoincrememt = true" so I made a separate liquibase changeset for it.
+2. In my changelogs you will notice that there are upto 40 liquibase migrations, but it is actually not, I have an order system where for every type of chnagelog I jump to a new double digit. Meaning create, load, relationship, and autoincrement are all on different 2nd digit indexes (-0-, -2-, -3-, and -4-). I did this to leave space for unpredicatbale tables I might have to create, load data, or relate in the future and still maintain a numeral order, and good organization in my liquibase migrations.
+3. Code is formatted with a Prettier Plugin.
 
 # Resources
 
