@@ -54,8 +54,7 @@ NB: Pagination rule if a Response Entity has 10 or more than 10 pokemons it will
 8. Filter pokemon by Type. http://localhost:8081/api/pokemon/byType/{type}
 9. Filter pokemon by Ability. http://localhost:8081/api/pokemon/byAbility/{ability}
 10. Filter pokemon by EggGroup. http://localhost:8081/api/pokemon/byEggGroup/{eggGroup}
-11. Combining all filters. The parameters (Request(Query)Parameters) for this end point are all optional being that if all of them are null (value not specified) it returns a paginated list of all pokemons, the more parameters applied the narrower the list that fit them. A sample Query Param could look likem this:  
-End Point: http://localhost:8081/api/pokemon/filter
+11. Combining all filters. The parameters (Request(Query)Parameters) for this end point are all optional being that if all of them are null (value not specified) it returns a paginated list of all pokemons, the more parameters applied the narrower the list that fit them. A sample Query Param could look likem this: End Point: http://localhost:8081/api/pokemon/filter
 
 |   Key    |      Value     |
 | -------- | -------------- |
