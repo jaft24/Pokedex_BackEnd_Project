@@ -19,7 +19,7 @@ class CapturedService(private val capturedRepository: CapturedRepository, privat
 
         if (capturedRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)) {
             throw IllegalArgumentException("You have already captured this Pokemon.")
-        } else if(capturedRepository.countAllByTrainerId(capture.trainerId) >= maxCaptureAmount) {
+        } else if (capturedRepository.countAllByTrainerId(capture.trainerId) >= maxCaptureAmount) {
             throw IllegalArgumentException("You can't capture more than five Pokemon.")
         } else {
             capturedRepository.save(capture)
@@ -36,12 +36,11 @@ class CapturedService(private val capturedRepository: CapturedRepository, privat
         return pokemonRepository.findAllById(pokemonIdList)
     }
 
-    fun deleteByTrainerIdAndPokemonId (autHeader: Authentication, pokemonId: Int) {
+    fun deleteByTrainerIdAndPokemonId(autHeader: Authentication, pokemonId: Int) {
         capturedRepository.deleteByTrainerIdAndPokemonId(autHeader.name, pokemonId)
     }
 
-    fun deleteAllByTrainerId (autHeader: Authentication) {
+    fun deleteAllByTrainerId(autHeader: Authentication) {
         capturedRepository.deleteAllByTrainerId(autHeader.name)
     }
-
 }

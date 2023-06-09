@@ -7,7 +7,7 @@
         <loadData relativeToChangelogFile="true" file="changelog/loadfiles/stats.csv"
                   separator=","
                   tableName="stats">
-            <column name="pokemon_id" type="bigint"/>
+            <column name="id" type="bigint"/>
             <column name="hp" type="int"/>
             <column name="speed" type="int"/>
             <column name="attack" type="int"/>

@@ -1,4 +1,4 @@
-pokemon_id,hp,speed,attack,defense,special_attack,special_defense
+id,hp,speed,attack,defense,special_attack,special_defense
 1,45,45,49,49,65,65
 2,60,60,62,63,80,80
 3,80,80,82,83,100,100

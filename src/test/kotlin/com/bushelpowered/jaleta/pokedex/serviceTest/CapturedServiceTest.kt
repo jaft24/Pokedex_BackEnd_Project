@@ -1,6 +1,11 @@
 package com.bushelpowered.jaleta.pokedex.serviceTest
 
-import com.bushelpowered.jaleta.pokedex.model.*
+import com.bushelpowered.jaleta.pokedex.model.Ability
+import com.bushelpowered.jaleta.pokedex.model.Capture
+import com.bushelpowered.jaleta.pokedex.model.EggGroup
+import com.bushelpowered.jaleta.pokedex.model.Pokemon
+import com.bushelpowered.jaleta.pokedex.model.Stat
+import com.bushelpowered.jaleta.pokedex.model.Type
 import com.bushelpowered.jaleta.pokedex.repository.CapturedRepository
 import com.bushelpowered.jaleta.pokedex.repository.PokemonRepository
 import com.bushelpowered.jaleta.pokedex.service.CapturedService
@@ -10,8 +15,8 @@ import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.mockito.InjectMocks
 import org.mockito.Mock
-import org.mockito.Mockito.verify
 import org.mockito.Mockito.never
+import org.mockito.Mockito.verify
 import org.mockito.Mockito.`when`
 import org.mockito.MockitoAnnotations
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
@@ -21,8 +26,10 @@ class CapturedServiceTest {
 
     @Mock
     private lateinit var capturedRepository: CapturedRepository
+
     @Mock
     private lateinit var pokemonRepository: PokemonRepository
+
     @InjectMocks
     private lateinit var capturedService: CapturedService
 
@@ -96,7 +103,7 @@ class CapturedServiceTest {
         val capturedList = listOf(
             Capture(trainerId = trainerId, pokemonId = 1),
             Capture(trainerId = trainerId, pokemonId = 2),
-            Capture(trainerId = trainerId, pokemonId = 3)
+            Capture(trainerId = trainerId, pokemonId = 3),
         )
         val pokemonIdList = listOf(1, 2, 3)
         val pokemonList = listOf(
@@ -108,10 +115,10 @@ class CapturedServiceTest {
                 height = 0.4,
                 abilities = listOf(Ability(23, "blaze"), Ability(13, "solar-power")),
                 eggGroups = listOf(EggGroup(13, "monster"), EggGroup(15, "dragon")),
-                stats = Stats(6, 78, 100, 84, 78, 109, 82),
+                stat = Stat(6, 78, 100, 84, 78, 109, 82),
                 genus = "Mouse Pokémon",
-                description = "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings."
-            )
+                description = "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
+            ),
         )
         `when`(capturedRepository.findByTrainerId(trainerId)).thenReturn(capturedList)
         `when`(pokemonRepository.findAllById(pokemonIdList)).thenReturn(pokemonList)

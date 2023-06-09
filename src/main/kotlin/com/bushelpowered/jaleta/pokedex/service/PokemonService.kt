@@ -22,15 +22,15 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
     }
 
     fun getPokemonByID(id: Int): Pokemon {
-        if (pokemonRepository.findAllById(id).equals(null)){
-            throw NullPointerException("There is no pokemon with this Id number")
+        if (!pokemonRepository.existsById(id)) {
+            throw NoSuchElementException("There is no pokemon with this Id number")
         }
         return pokemonRepository.findAllById(id)
     }
 
-    fun getPokemonByName(name: String): Pokemon{
-        if (pokemonRepository.findByName(name).equals(null)){
-            throw NullPointerException("There is no pokemon with this name")
+    fun getPokemonByName(name: String): Pokemon {
+        if (!pokemonRepository.existsByName(name)) {
+            throw NoSuchElementException("There is no pokemon with this name")
         }
         return pokemonRepository.findByName(name)
     }
@@ -47,7 +47,7 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
 
     fun filterPokemonByGenus(genusName: String, pageable: Pageable): Page<Pokemon> {
         val updatedPageable = updatePageable(pageable)
-        return pokemonRepository.findPokemonsByGenus(genusName,updatedPageable)
+        return pokemonRepository.findPokemonsByGenus(genusName, updatedPageable)
     }
 
     fun filterPokemonByType(typeName: String, pageable: Pageable): Page<Pokemon> {
@@ -72,7 +72,7 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
         type: String?,
         ability: String?,
         eggGroup: String?,
-        pageable: Pageable
+        pageable: Pageable,
     ): PageImpl<Pokemon> {
         val updatedPageable = updatePageable(pageable)
 
@@ -96,20 +96,18 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
         }
 
         val allFiltersCombined: MutableList<Pokemon> = mutableListOf()
-            allFiltersCombined.addAll(pokemonRepository.findAll())
-            genusPokemon?.let { allFiltersCombined.retainAll(it.content) }
-            heightPokemon?.let { allFiltersCombined.retainAll(it.content) }
-            weightPokemon?.let { allFiltersCombined.retainAll(it.content) }
-            typePokemon?.let { allFiltersCombined.retainAll(it.content) }
-            abilityPokemon?.let { allFiltersCombined.retainAll(it.content) }
-            eggGroupPokemon?.let { allFiltersCombined.retainAll(it.content) }
+        allFiltersCombined.addAll(pokemonRepository.findAll())
+        genusPokemon?.let { allFiltersCombined.retainAll(it.content) }
+        heightPokemon?.let { allFiltersCombined.retainAll(it.content) }
+        weightPokemon?.let { allFiltersCombined.retainAll(it.content) }
+        typePokemon?.let { allFiltersCombined.retainAll(it.content) }
+        abilityPokemon?.let { allFiltersCombined.retainAll(it.content) }
+        eggGroupPokemon?.let { allFiltersCombined.retainAll(it.content) }
 
         val startIndex = updatedPageable.offset.toInt()
         val endIndex = (startIndex + updatedPageable.pageSize).coerceAtMost(allFiltersCombined.size)
         val filteredResults = allFiltersCombined.subList(startIndex, endIndex)
 
         return PageImpl(filteredResults, updatedPageable, allFiltersCombined.size.toLong())
-
     }
-
 }

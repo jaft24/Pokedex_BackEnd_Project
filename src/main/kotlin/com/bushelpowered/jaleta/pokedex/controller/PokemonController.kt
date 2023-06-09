@@ -6,10 +6,10 @@ import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
 import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
+import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/api/pokemon")
@@ -17,20 +17,20 @@ class PokemonController(private var pokemonService: PokemonService) {
 
     @GetMapping("/all")
     fun getAllPokemon(pageable: Pageable): ResponseEntity<Page<Pokemon>> {
-       val allPokemons =  pokemonService.getAllPokemon(pageable)
+        val allPokemons = pokemonService.getAllPokemon(pageable)
         return ResponseEntity.ok(allPokemons)
     }
 
     @GetMapping("/byId/{id}")
     fun getPokemonById(@PathVariable id: Int): ResponseEntity<Pokemon> {
         val pokemon = pokemonService.getPokemonByID(id)
-         return ResponseEntity.ok(pokemon)
+        return ResponseEntity.ok(pokemon)
     }
 
     @GetMapping("/byName/{name}")
     fun getPokemonByName(@PathVariable name: String): ResponseEntity<Pokemon> {
-        val pokemon =  pokemonService.getPokemonByName(name)
-         return ResponseEntity.ok(pokemon)
+        val pokemon = pokemonService.getPokemonByName(name)
+        return ResponseEntity.ok(pokemon)
     }
 
     @GetMapping("/byGenus/{genus}")
@@ -42,7 +42,7 @@ class PokemonController(private var pokemonService: PokemonService) {
     @GetMapping("/byHeight/{height}")
     fun filterByHeight(@PathVariable height: Double, pageable: Pageable): ResponseEntity<Page<Pokemon>> {
         val pokemons = pokemonService.filterPokemonByHeight(height, pageable)
-         return ResponseEntity.ok(pokemons)
+        return ResponseEntity.ok(pokemons)
     }
 
     @GetMapping("/byWeight/{weight}")
@@ -54,7 +54,7 @@ class PokemonController(private var pokemonService: PokemonService) {
     @GetMapping("/byType/{type}")
     fun filterPokemonByType(@PathVariable type: String, pageable: Pageable): ResponseEntity<Page<Pokemon>> {
         val pokemonWithType = pokemonService.filterPokemonByType(type, pageable)
-         return ResponseEntity.ok(pokemonWithType)
+        return ResponseEntity.ok(pokemonWithType)
     }
 
     @GetMapping("/byAbility/{ability}")
@@ -77,9 +77,9 @@ class PokemonController(private var pokemonService: PokemonService) {
         @RequestParam(required = false) type: String?,
         @RequestParam(required = false) ability: String?,
         @RequestParam(required = false) eggGroup: String?,
-        pageable: Pageable): ResponseEntity<Page<Pokemon>> {
-        val filteredPokemons =  pokemonService.combinedPokemonFilter(genus, height, weight, type, ability, eggGroup, pageable)
+        pageable: Pageable,
+    ): ResponseEntity<Page<Pokemon>> {
+        val filteredPokemons = pokemonService.combinedPokemonFilter(genus, height, weight, type, ability, eggGroup, pageable)
         return ResponseEntity.ok(filteredPokemons)
     }
-
 }

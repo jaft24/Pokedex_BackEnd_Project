@@ -808,43 +808,7 @@
       }
     } ],
     "defaultClientScopes" : [ "web-origins", "acr", "address", "trainer", "offline_access", "profile", "roles", "microprofile-jwt", "email" ],
-    "optionalClientScopes" : [ "phone" ],
-    "authorizationSettings" : {
-      "allowRemoteResourceManagement" : true,
-      "policyEnforcementMode" : "PERMISSIVE",
-      "resources" : [ {
-        "name" : "Default Resource",
-        "type" : "urn:trainer:resources:default",
-        "ownerManagedAccess" : false,
-        "attributes" : { },
-        "_id" : "83123a47-95f8-4bf7-b666-107ef7932504",
-        "uris" : [ "/*" ]
-      } ],
-      "policies" : [ {
-        "id" : "6ef9ab58-4d6d-4ba5-9593-f1aa2eab1421",
-        "name" : "Default Policy",
-        "description" : "A policy that grants access only for users within this realm",
-        "type" : "js",
-        "logic" : "POSITIVE",
-        "decisionStrategy" : "AFFIRMATIVE",
-        "config" : {
-          "code" : "// by default, grants any permission associated with this policy\n$evaluation.grant();\n"
-        }
-      }, {
-        "id" : "05fb56c1-6d72-4dad-89e9-9db21f08fb4c",
-        "name" : "Default Permission",
-        "description" : "A permission that applies to the default resource type",
-        "type" : "resource",
-        "logic" : "POSITIVE",
-        "decisionStrategy" : "UNANIMOUS",
-        "config" : {
-          "defaultResourceType" : "urn:trainer:resources:default",
-          "applyPolicies" : "[\"Default Policy\"]"
-        }
-      } ],
-      "scopes" : [ ],
-      "decisionStrategy" : "UNANIMOUS"
-    }
+    "optionalClientScopes" : [ "phone" ]
   } ],
   "clientScopes" : [ {
     "id" : "5ed68211-6ae5-4398-a11b-5ef8e8ea9af2",

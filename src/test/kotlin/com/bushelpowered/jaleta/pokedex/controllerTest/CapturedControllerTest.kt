@@ -1,7 +1,11 @@
 package com.bushelpowered.jaleta.pokedex.controllerTest
 
-import com.bushelpowered.jaleta.pokedex.model.*
 import com.bushelpowered.jaleta.pokedex.controller.CapturedController
+import com.bushelpowered.jaleta.pokedex.model.Ability
+import com.bushelpowered.jaleta.pokedex.model.EggGroup
+import com.bushelpowered.jaleta.pokedex.model.Pokemon
+import com.bushelpowered.jaleta.pokedex.model.Stat
+import com.bushelpowered.jaleta.pokedex.model.Type
 import com.bushelpowered.jaleta.pokedex.service.CapturedService
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeEach
@@ -17,6 +21,7 @@ internal class CapturedControllerTest {
 
     @Mock
     private val capturedService: CapturedService? = null
+
     @BeforeEach
     fun setUp() {
         MockitoAnnotations.openMocks(this)
@@ -27,9 +32,9 @@ internal class CapturedControllerTest {
     fun testCatchPokemonById() {
         val pokemonId = 1
         val authentication = Mockito.mock(
-            Authentication::class.java
+            Authentication::class.java,
         )
-        capturedController!!.catchPokemonById(pokemonId, authentication)
+        capturedController!!.catchPokemonById(authentication, pokemonId)
 
         Mockito.verify(capturedService, Mockito.times(1))?.catchPokemonById(authentication, pokemonId)
     }
@@ -42,45 +47,45 @@ internal class CapturedControllerTest {
                 name = "Charizard",
                 types = listOf(
                     Type(2, "fire"),
-                    Type(3, "flying")
+                    Type(3, "flying"),
                 ),
                 height = 6.1,
                 weight = 90.5,
                 abilities = listOf(
                     Ability(23, "blaze"),
-                    Ability(13, "solar-power")
+                    Ability(13, "solar-power"),
                 ),
                 eggGroups = listOf(
                     EggGroup(13, "monster"),
-                    EggGroup(15, "dragon")
+                    EggGroup(15, "dragon"),
                 ),
-                stats = Stats(6, 78, 100, 84, 78, 109, 82),
+                stat = Stat(6, 78, 100, 84, 78, 109, 82),
                 genus = "Flame Pokémon",
-                description = "Charizard flies around the sky in search of powerful opponents."
+                description = "Charizard flies around the sky in search of powerful opponents.",
             ),
             Pokemon(
                 id = 2,
                 name = "Arcanine",
                 types = listOf(
-                    Type(2, "fire")
+                    Type(2, "fire"),
                 ),
                 height = 1.9,
                 weight = 155.0,
                 abilities = listOf(
                     Ability(23, "intimidate"),
-                    Ability(13, "flash-fire")
+                    Ability(13, "flash-fire"),
                 ),
                 eggGroups = listOf(
-                    EggGroup(13, "field")
+                    EggGroup(13, "field"),
                 ),
-                stats = Stats(6, 90, 110, 80, 80, 95, 82),
+                stat = Stat(6, 90, 110, 80, 80, 95, 82),
                 genus = "Legendary Pokémon",
-                description = "Arcanine is known for its high speed."
-            )
+                description = "Arcanine is known for its high speed.",
+            ),
         )
         val expectedResponse = ResponseEntity.ok(capturedPokemonList)
         val authentication = Mockito.mock(
-            Authentication::class.java
+            Authentication::class.java,
         )
         Mockito.`when`(capturedService!!.getAllCapturedPokemonByTrainerId(authentication))
             .thenReturn(capturedPokemonList)
@@ -90,5 +95,4 @@ internal class CapturedControllerTest {
 
         Mockito.verify(capturedService, Mockito.times(1)).getAllCapturedPokemonByTrainerId(authentication)
     }
-
 }

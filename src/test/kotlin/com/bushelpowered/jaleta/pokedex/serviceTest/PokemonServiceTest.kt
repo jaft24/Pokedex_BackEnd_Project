@@ -1,6 +1,10 @@
 package com.bushelpowered.jaleta.pokedex.serviceTest
 
-import com.bushelpowered.jaleta.pokedex.model.*
+import com.bushelpowered.jaleta.pokedex.model.Ability
+import com.bushelpowered.jaleta.pokedex.model.EggGroup
+import com.bushelpowered.jaleta.pokedex.model.Pokemon
+import com.bushelpowered.jaleta.pokedex.model.Stat
+import com.bushelpowered.jaleta.pokedex.model.Type
 import com.bushelpowered.jaleta.pokedex.repository.PokemonRepository
 import com.bushelpowered.jaleta.pokedex.service.PokemonService
 import org.junit.jupiter.api.Assertions.assertEquals
@@ -18,6 +22,7 @@ class PokemonServiceTest {
 
     @Mock
     private lateinit var pokemonRepository: PokemonRepository
+
     @InjectMocks
     private lateinit var pokemonService: PokemonService
 
@@ -35,22 +40,22 @@ class PokemonServiceTest {
                 name = "Pikachu",
                 types = listOf(
                     Type(2, "fire"),
-                    Type(3, "flying")
+                    Type(3, "flying"),
                 ),
                 height = 6.0,
                 weight = 0.4,
                 abilities = listOf(
                     Ability(23, "blaze"),
-                    Ability(13, "solar-power")
+                    Ability(13, "solar-power"),
                 ),
                 eggGroups = listOf(
                     EggGroup(13, "monster"),
-                    EggGroup(15, "dragon")
+                    EggGroup(15, "dragon"),
                 ),
-                stats = Stats(6, 78, 100, 84, 78, 109, 82),
+                stat = Stat(6, 78, 100, 84, 78, 109, 82),
                 genus = "Mouse Pokémon",
-                description = "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings."
-            )
+                description = "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
+            ),
         )
         val expectedPage = PageImpl(pokemonList, pageable, pokemonList.size.toLong())
         `when`(pokemonRepository.findAll(pageable)).thenReturn(expectedPage)
@@ -69,8 +74,8 @@ class PokemonServiceTest {
             6.0, 0.4,
             listOf(Ability(23, "blaze"), Ability(13, "solar-power")),
             listOf(EggGroup(13, "monster"), EggGroup(15, "dragon")),
-            Stats(6, 78, 100, 84, 78, 109, 82),
-            "Mouse Pokémon", "Pikachu has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings."
+            Stat(6, 78, 100, 84, 78, 109, 82),
+            "Mouse Pokémon", "Pikachu has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
         )
         `when`(pokemonRepository.findAllById(id)).thenReturn(expectedPokemon)
 
@@ -99,62 +104,62 @@ class PokemonServiceTest {
                 name = "Charizard",
                 types = listOf(
                     Type(2, "fire"),
-                    Type(3, "flying")
+                    Type(3, "flying"),
                 ),
                 height = 6.1,
                 weight = 90.5,
                 abilities = listOf(
                     Ability(23, "blaze"),
-                    Ability(13, "solar-power")
+                    Ability(13, "solar-power"),
                 ),
                 eggGroups = listOf(
                     EggGroup(13, "monster"),
-                    EggGroup(15, "dragon")
+                    EggGroup(15, "dragon"),
                 ),
-                stats = Stats(6, 78, 100, 84, 78, 109, 82),
+                stat = Stat(6, 78, 100, 84, 78, 109, 82),
                 genus = "Flame Pokémon",
-                description = "Charizard flies around the sky in search of powerful opponents."
+                description = "Charizard flies around the sky in search of powerful opponents.",
             ),
             Pokemon(
                 id = 2,
                 name = "Arcanine",
                 types = listOf(
-                    Type(2, "fire")
+                    Type(2, "fire"),
                 ),
                 height = 1.9,
                 weight = 155.0,
                 abilities = listOf(
                     Ability(23, "intimidate"),
-                    Ability(13, "flash-fire")
+                    Ability(13, "flash-fire"),
                 ),
                 eggGroups = listOf(
-                    EggGroup(13, "field")
+                    EggGroup(13, "field"),
                 ),
-                stats = Stats(6, 90, 110, 80, 80, 95, 82),
+                stat = Stat(6, 90, 110, 80, 80, 95, 82),
                 genus = "Legendary Pokémon",
-                description = "Arcanine is known for its high speed."
+                description = "Arcanine is known for its high speed.",
             ),
             Pokemon(
                 id = 3,
                 name = "Bulbasaur",
                 types = listOf(
                     Type(1, "grass"),
-                    Type(2, "poison")
+                    Type(2, "poison"),
                 ),
                 height = 0.7,
                 weight = 6.9,
                 abilities = listOf(
                     Ability(23, "overgrow"),
-                    Ability(13, "chlorophyll")
+                    Ability(13, "chlorophyll"),
                 ),
                 eggGroups = listOf(
                     EggGroup(13, "monster"),
-                    EggGroup(15, "plant")
+                    EggGroup(15, "plant"),
                 ),
-                stats = Stats(6, 45, 49, 49, 65, 65, 45),
+                stat = Stat(6, 45, 49, 49, 65, 65, 45),
                 genus = "Seed Pokémon",
-                description = "Bulbasaur can be seen napping in bright sunlight."
-            )
+                description = "Bulbasaur can be seen napping in bright sunlight.",
+            ),
         )
 
         val expectedPage = PageImpl(pokemonList, pageable, pokemonList.size.toLong())
@@ -164,5 +169,4 @@ class PokemonServiceTest {
 
         assertEquals(expectedPage, resultPage)
     }
-
 }

@@ -2,16 +2,16 @@ package com.bushelpowered.jaleta.pokedex.model
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
-import jakarta.persistence.Table
 import jakarta.persistence.Id
+import jakarta.persistence.Table
 
 @Entity
 @Table(name = "stats", schema = "public")
-data class Stats (
+data class Stat(
 
     @Id
-    @Column(name = "pokemon_id")
-    val pokemonId: Int,
+    @Column(name = "id")
+    val id: Int,
 
     @Column(name = "hp")
     val hp: Int,
@@ -29,6 +29,6 @@ data class Stats (
     val specialAttack: Int,
 
     @Column(name = "special_defense")
-    val specialDefense: Int
+    val specialDefense: Int,
 
 )
