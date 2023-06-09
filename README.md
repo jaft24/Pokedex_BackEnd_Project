@@ -3,7 +3,7 @@ Author: Jaleta Tesgera <br>
 Date: June, 08, 2023
 
 # Project Description
-This project is a backend for a Pokemon api. This api end points that lets users execute tasks such as, but not limited to, retrieving a paginated list of pokemon, retrieving a specific pokemon by providing its number, or filter pokemon by providing its type. Moreover, if users want to engage with the api and train pokeomons they will need to create their account from a keycloak api end point, by getting a master token from a keycloak admin. They will be able to execute tasks such as, but not limited to, capturing pokemons, or retrieveing a list of pokemons they have captured.
+This project is a backend for a Pokemon api. This api end points that lets users execute tasks such as, but not limited to, retrieving a paginated list of pokemon, retrieving a specific pokemon by providing its number, or filter pokemon by providing its type. Moreover, if users want to engage with the api and train pokeomons they will need to create their account from a keycloak api end point, by getting a master token from a keycloak admin. They will be able to execute tasks such as, but not limited to, capturing pokemons, or retrieveing a list of pokemons they have captured. (More end points in the How to Use the project section below.)
 
 # How to Install and Run
 1. Both the postgress sql and keycloak are set up in the pokedex docker container and you will find a "docker-compose.yml" file that contains both configurations.
@@ -24,17 +24,18 @@ This project is a backend for a Pokemon api. This api end points that lets users
 | swalker       | Sky Walker    | sky@fastmail.com | starwars123   | 
 
 # How to use the project (POSTMAN)
-I configured the security of the project where it would only ask for autentication if a capture end point is run ("/api/capture/- ") , and if users are running a pokemon end point ("/api/pokemon/- ") it will not ask for authentication, as anyone should be able to see, search, and filter through the pokemon api.
+I configured the security of the project where it would only ask for autentication if a capture end point is run ("/api/capture/- ") , and if users are running a pokemon end point ("/api/pokemon/- ") it will not ask for authentication, as anyone should be able to see, search, and filter through the pokemon api. (More information in the security configuration file)
 
 # 1.To get a Token
 The POST end point to get a token is: http://localhost:8083/realms/pokedexapi/protocol/openid-connect/token
 Eg: Lets us simulate a login for Sky Walker (username and passowrd are the only user information needed.) The body (x-www-form-unlencoded) key values should contain the following information to get a token.
- Key            Value
- client_id      trainer
- username       swalker
- password       starwars123
- grant_type     password
- client_secret  sHXxsqaebT4jeGWlLqTHLs4EUqMG31R5
+ |      Key      |               Value                |
+ | ------------- | ---------------------------------- |
+ | client_id     |  trainer                           |
+ | username      |  swalker                           | 
+ | password      |  starwars123                       |
+ | grant_type    |  password                          |
+ | client_secret |  sHXxsqaebT4jeGWlLqTHLs4EUqMG31R5  |
  
 # 2. Capture End Points (Authorization JWT Token Needed = Bearer + Token)
 1. Capture pokemon by specifying the Id. http://localhost:8081/api/capture/{id}
@@ -55,13 +56,14 @@ NB: Pagination rule if a Response Entity has 10 or more than 10 pokemons it will
 10. Filter pokemon by EggGroup. http://localhost:8081/api/pokemon/byEggGroup/{eggGroup}
 11. Combining all filters. The parameters (Request(Query)Parameters) for this end point are all optional being that if all of them are null (value not specified) it returns a paginated list of all pokemons, the more parameters applied the narrower the list that fit them. A sample Query Param could look likem this:  
 End Point: http://localhost:8081/api/pokemon/filter
-Key        Value
-genus      Seed Pokémon
-weight     69
-height     7
-type       grass
-ability    chlorophyll 
-eggGroup   monster
+|   Key    |      Value     |
+| -------- | -------------- |
+| genus    |  Seed Pokémon  |
+| weight   |  69            |
+| height   |  7             |
+| type     |  grass         |
+| ability  |  chlorophyll   |
+| eggGroup |  monster       |
 
 # Project Architecture
 * **main**
@@ -83,8 +85,8 @@ This notice is from the past reviews we have had and expections I have on my cod
 
 # Resources
 
-Raw Pokemon List CSV File: https://bitbucket.org/!api/2.0/snippets/myriadmobile/Rerr8E/96d04ea30f8e177149dd0c1c98271f1843b5f9b7/files/pokedex.csv
-Wrangled and Organized CSV Files: https://github.com/JaletaTesgera/Pokedex/tree/main/DBFiles
+Raw Pokemon List CSV File: https://bitbucket.org/!api/2.0/snippets/myriadmobile/Rerr8E/96d04ea30f8e177149dd0c1c98271f1843b5f9b7/files/pokedex.csv  
+Wrangled and Organized CSV Files: https://github.com/JaletaTesgera/Pokedex/tree/main/DBFiles  
 
 ** Debugging and General: https://stackoverflow.com/
 
