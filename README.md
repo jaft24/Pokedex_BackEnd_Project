@@ -85,7 +85,7 @@ This note is from past reviwer comment on other codes and the exceptions I have 
 1. You will notice a separate "040_autoincrement_pokemon_captured.xml" liquibase file instead of just having the id to autoincrement in the tabe creation. For some reason I kept getting an "unsupported" error when I had it as a property of a colummn "autoincrememt = true" so I made a separate liquibase changeset for it.
 2. In my changelogs you will notice that there are upto 40 liquibase migrations, but it is actually not, I have an order system where for every type of chnagelog I jump to a new double digit. Meaning create, load, relationship, and autoincrement are all on different 2nd digit indexes (-0-, -2-, -3-, and -4-). I did this to leave space for unpredicatbale tables I might have to create, load data, or relate in the future and still maintain a numeral order, and good organization in my liquibase migrations.
 3. In the pokemon service class the combinedPokemonFilter function makes use of the nullable? operation. Eventhough it was recommended that I don't use nullable variables, I had to use them in this case since my functions execution and result depends on these values such that the function should still execute even if the parameters are null or not.
-4. Code is formatted with Kotlinter plugin.
+4. Code is formatted with Kotlinter plugin. (id("org.jmailen.kotlinter") version "3.15.0")
 
 ## Resources
 
