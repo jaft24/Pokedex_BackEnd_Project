@@ -11,5 +11,6 @@ interface CapturedRepository : JpaRepository<Capture, Int> {
     fun deleteAllByTrainerId(trainerId: String)
     fun deleteByTrainerIdAndPokemonId(trainerId: String, pokemonId: Int)
     fun existsByTrainerIdAndPokemonId(trainerId: String, pokemonId: Int): Boolean
+    fun existsByTrainerId(trainerId: String): Boolean
     fun countAllByTrainerId(trainerId: String): Int
 }

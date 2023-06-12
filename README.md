@@ -1,4 +1,4 @@
-# Pokedex_BackEnd_Project
+# Pokedex BackEnd Project
 Author: Jaleta Tesgera <br>
 Date: June, 08, 2023
 
@@ -29,14 +29,14 @@ I configured the security of the project where it would only ask for autenticati
 #### 1.To get a Token
 The POST end point to get a token is: http://localhost:8083/realms/pokedexapi/protocol/openid-connect/token
 Eg: Lets us simulate a login for Sky Walker (username and passowrd are the only user information needed.) The body (x-www-form-unlencoded) key values should contain the following information to get a token.
- |      Key      |               Value                |
- | ------------- | ---------------------------------- |
- | client_id     |  trainer                           |
- | username      |  swalker                           | 
- | password      |  starwars123                       |
- | grant_type    |  password                          |
- | client_secret |  sHXxsqaebT4jeGWlLqTHLs4EUqMG31R5  |
- 
+|      Key      |               Value                |
+| ------------- | ---------------------------------- |
+| client_id     |  trainer                           |
+| username      |  swalker                           |
+| password      |  starwars123                       |
+| grant_type    |  password                          |
+| client_secret |  sHXxsqaebT4jeGWlLqTHLs4EUqMG31R5  |
+
 #### 2. Capture End Points (Authorization JWT Token Needed = Bearer + Token)
 NB: Please note that since you ran all the changelog files as new and filled table values from local csv files, the captured table will be empty. Thus, you will need to run the capture api to capture some pokemon in order to retrive a list of captured pokemon by the authenticated trainer, or else the retrieve end point will return an empty list.
 1. Capture pokemon by specifying the Id. http://localhost:8081/api/capture/{id}
@@ -68,23 +68,24 @@ NB: Pagination rule if a Response Entity has 10 or more than 10 pokemons it will
 
 ## Project Architecture
 * **main**
-  *  **pokedex**
-       * config
-       * controller
-       * model
-       * repositoy
-       * service
+    *  **pokedex**
+        * config
+        * controller
+        * exception
+        * model
+        * repositoy
+        * service
 * **test**
-  *  **pokedex**
-       * controllerTest
-       * serviceTest
-     
+    *  **pokedex**
+        * controllerTest
+        * serviceTest
+
 ## Additional Notices for Reviwers
 This note is from past reviwer comment on other codes and the exceptions I have on my code.
 1. You will notice a separate "040_autoincrement_pokemon_captured.xml" liquibase file instead of just having the id to autoincrement in the tabe creation. For some reason I kept getting an "unsupported" error when I had it as a property of a colummn "autoincrememt = true" so I made a separate liquibase changeset for it.
 2. In my changelogs you will notice that there are upto 40 liquibase migrations, but it is actually not, I have an order system where for every type of chnagelog I jump to a new double digit. Meaning create, load, relationship, and autoincrement are all on different 2nd digit indexes (-0-, -2-, -3-, and -4-). I did this to leave space for unpredicatbale tables I might have to create, load data, or relate in the future and still maintain a numeral order, and good organization in my liquibase migrations.
 3. In the pokemon service class the combinedPokemonFilter function makes use of the nullable? operation. Eventhough it was recommended that I don't use nullable variables, I had to use them in this case since my functions execution and result depends on these values such that the function should still execute even if the parameters are null or not.
-4. Code is formatted with Kotlinter plugin.
+4. Code is formatted with Kotlinter plugin. (id("org.jmailen.kotlinter") version "3.15.0"), this dependancy only excecutes as a task and runs into errors when I kept it as a plugin so once I fomatted my code, I removed it from the dependecies.
 
 ## Resources
 

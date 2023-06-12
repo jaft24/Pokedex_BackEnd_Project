@@ -1,5 +1,7 @@
 package com.bushelpowered.jaleta.pokedex.serviceTest
 
+import com.bushelpowered.jaleta.pokedex.exception.AlreadyCapturedException
+import com.bushelpowered.jaleta.pokedex.exception.MoreThanFiveCapturedException
 import com.bushelpowered.jaleta.pokedex.model.Ability
 import com.bushelpowered.jaleta.pokedex.model.Capture
 import com.bushelpowered.jaleta.pokedex.model.EggGroup
@@ -47,6 +49,7 @@ class CapturedServiceTest {
         val capture = Capture()
         capture.trainerId = authentication.name
         capture.pokemonId = pokemonId
+        `when`(pokemonRepository.existsById(pokemonId)).thenReturn(true)
         `when`(capturedRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)).thenReturn(false)
         `when`(capturedRepository.countAllByTrainerId(capture.trainerId)).thenReturn(4)
 
@@ -64,13 +67,13 @@ class CapturedServiceTest {
         val capture = Capture()
         capture.trainerId = authentication.name
         capture.pokemonId = pokemonId
+        `when`(pokemonRepository.existsById(pokemonId)).thenReturn(true)
         `when`(capturedRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)).thenReturn(true)
 
-        val exception = assertThrows(IllegalArgumentException::class.java) {
+        assertThrows(AlreadyCapturedException::class.java) {
             capturedService.catchPokemonById(authentication, pokemonId)
         }
 
-        assertEquals("You have already captured this Pokemon.", exception.message)
         verify(capturedRepository, never()).save(capture)
     }
 
@@ -83,14 +86,14 @@ class CapturedServiceTest {
         val capture = Capture()
         capture.trainerId = authentication.name
         capture.pokemonId = pokemonId
+        `when`(pokemonRepository.existsById(pokemonId)).thenReturn(true)
         `when`(capturedRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)).thenReturn(false)
         `when`(capturedRepository.countAllByTrainerId(capture.trainerId)).thenReturn(5)
 
-        val exception = assertThrows(IllegalArgumentException::class.java) {
+        assertThrows(MoreThanFiveCapturedException::class.java) {
             capturedService.catchPokemonById(authentication, pokemonId)
         }
 
-        assertEquals("You can't capture more than five Pokemon.", exception.message)
         verify(capturedRepository, never()).save(capture)
     }
 
@@ -120,6 +123,7 @@ class CapturedServiceTest {
                 description = "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
             ),
         )
+        `when`(capturedRepository.existsByTrainerId(trainerId)).thenReturn(true)
         `when`(capturedRepository.findByTrainerId(trainerId)).thenReturn(capturedList)
         `when`(pokemonRepository.findAllById(pokemonIdList)).thenReturn(pokemonList)
 
@@ -135,7 +139,8 @@ class CapturedServiceTest {
         val authentication: Authentication = UsernamePasswordAuthenticationToken(username, password)
         val trainerId = authentication.name
         val pokemonId = 1
-
+        `when`(pokemonRepository.existsById(pokemonId)).thenReturn(true)
+        `when`(capturedRepository.existsByTrainerIdAndPokemonId(trainerId, pokemonId)).thenReturn(true)
         capturedService.deleteByTrainerIdAndPokemonId(authentication, pokemonId)
 
         verify(capturedRepository).deleteByTrainerIdAndPokemonId(trainerId, pokemonId)
@@ -147,6 +152,7 @@ class CapturedServiceTest {
         val password = ""
         val authentication: Authentication = UsernamePasswordAuthenticationToken(username, password)
         val trainerId = authentication.name
+        `when`(capturedRepository.existsByTrainerId(trainerId)).thenReturn(true)
 
         capturedService.deleteAllByTrainerId(authentication)
 

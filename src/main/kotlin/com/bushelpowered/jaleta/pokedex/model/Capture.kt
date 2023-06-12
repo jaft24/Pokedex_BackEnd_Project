@@ -6,11 +6,9 @@ import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
 import jakarta.persistence.Table
-import org.springframework.stereotype.Component
 
-@Component
 @Entity
-@Table(name = "captured", schema = "public")
+@Table(name = "captured_pokemon", schema = "public")
 data class Capture(
 
     @Id

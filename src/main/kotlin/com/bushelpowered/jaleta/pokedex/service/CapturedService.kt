@@ -1,5 +1,10 @@
 package com.bushelpowered.jaleta.pokedex.service
 
+import com.bushelpowered.jaleta.pokedex.exception.AlreadyCapturedException
+import com.bushelpowered.jaleta.pokedex.exception.MoreThanFiveCapturedException
+import com.bushelpowered.jaleta.pokedex.exception.NoPokemonCapturedException
+import com.bushelpowered.jaleta.pokedex.exception.PokemonNotCapturedException
+import com.bushelpowered.jaleta.pokedex.exception.PokemonNotFoundException
 import com.bushelpowered.jaleta.pokedex.model.Capture
 import com.bushelpowered.jaleta.pokedex.model.Pokemon
 import com.bushelpowered.jaleta.pokedex.repository.CapturedRepository
@@ -17,19 +22,25 @@ class CapturedService(private val capturedRepository: CapturedRepository, privat
         capture.trainerId = autHeader.name
         capture.pokemonId = pokemonId
 
-        if (capturedRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)) {
-            throw IllegalArgumentException("You have already captured this Pokemon.")
-        } else if (capturedRepository.countAllByTrainerId(capture.trainerId) >= maxCaptureAmount) {
-            throw IllegalArgumentException("You can't capture more than five Pokemon.")
+        if (!pokemonRepository.existsById(pokemonId)) {
+            throw PokemonNotFoundException()
         } else {
-            capturedRepository.save(capture)
+            if (capturedRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)) {
+                throw AlreadyCapturedException()
+            } else if (capturedRepository.countAllByTrainerId(capture.trainerId) >= maxCaptureAmount) {
+                throw MoreThanFiveCapturedException()
+            }
         }
+        capturedRepository.save(capture)
     }
 
     fun getAllCapturedPokemonByTrainerId(autHeader: Authentication): List<Pokemon> {
         val capturedList = capturedRepository.findByTrainerId(autHeader.name)
         val pokemonIdList = mutableListOf<Int>()
 
+        if (!capturedRepository.existsByTrainerId(autHeader.name)) {
+            throw NoPokemonCapturedException()
+        }
         capturedList.forEach { captured ->
             pokemonIdList.add(captured.pokemonId)
         }
@@ -37,10 +48,18 @@ class CapturedService(private val capturedRepository: CapturedRepository, privat
     }
 
     fun deleteByTrainerIdAndPokemonId(autHeader: Authentication, pokemonId: Int) {
+        if (!pokemonRepository.existsById(pokemonId)) {
+            throw PokemonNotFoundException()
+        } else if (!capturedRepository.existsByTrainerIdAndPokemonId(autHeader.name, pokemonId)) {
+            throw PokemonNotCapturedException()
+        }
         capturedRepository.deleteByTrainerIdAndPokemonId(autHeader.name, pokemonId)
     }
 
     fun deleteAllByTrainerId(autHeader: Authentication) {
+        if (!capturedRepository.existsByTrainerId(autHeader.name)) {
+            throw NoPokemonCapturedException()
+        }
         capturedRepository.deleteAllByTrainerId(autHeader.name)
     }
 }

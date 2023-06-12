@@ -12,7 +12,7 @@
                           incrementBy="1"
                           schemaName="public"
                           startWith="1"
-                          tableName="captured"/>
+                          tableName="captured_pokemon"/>
     </changeSet>
 
 </databaseChangeLog>

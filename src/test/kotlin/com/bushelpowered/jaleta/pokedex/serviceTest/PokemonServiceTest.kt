@@ -1,5 +1,6 @@
 package com.bushelpowered.jaleta.pokedex.serviceTest
 
+import com.bushelpowered.jaleta.pokedex.exception.PokemonNotFoundException
 import com.bushelpowered.jaleta.pokedex.model.Ability
 import com.bushelpowered.jaleta.pokedex.model.EggGroup
 import com.bushelpowered.jaleta.pokedex.model.Pokemon
@@ -66,7 +67,7 @@ class PokemonServiceTest {
     }
 
     @Test
-    fun testGetPokemonByID_ExistingId_ReturnsListOfPokemon() {
+    fun testGetPokemonByID_ExistingId_ReturnsPokemon() {
         val id = 1
         val expectedPokemon = Pokemon(
             1, "Pikachu",
@@ -75,8 +76,11 @@ class PokemonServiceTest {
             listOf(Ability(23, "blaze"), Ability(13, "solar-power")),
             listOf(EggGroup(13, "monster"), EggGroup(15, "dragon")),
             Stat(6, 78, 100, 84, 78, 109, 82),
-            "Mouse Pokémon", "Pikachu has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
+            "Mouse Pokémon",
+            "Pikachu has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
         )
+
+        `when`(pokemonRepository.existsById(id)).thenReturn(true)
         `when`(pokemonRepository.findAllById(id)).thenReturn(expectedPokemon)
 
         val result = pokemonService.getPokemonByID(id)
@@ -89,7 +93,7 @@ class PokemonServiceTest {
         val id = 1
         `when`(pokemonRepository.findAllById(mutableListOf(id))).thenReturn(mutableListOf())
 
-        assertThrows(NullPointerException::class.java) {
+        assertThrows(PokemonNotFoundException::class.java) {
             pokemonService.getPokemonByID(id)
         }
     }

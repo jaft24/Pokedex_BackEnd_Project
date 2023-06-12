@@ -5,7 +5,7 @@
 
 
     <changeSet id="relationshipPokemonCaptured" author="jaleta">
-        <addForeignKeyConstraint baseTableName="captured"
+        <addForeignKeyConstraint baseTableName="captured_pokemon"
                                  baseColumnNames="pokemon_id"
                                  constraintName="pokemon_captured_id"
                                  referencedTableName="pokemon"

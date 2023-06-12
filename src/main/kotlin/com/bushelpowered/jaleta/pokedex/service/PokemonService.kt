@@ -1,5 +1,6 @@
 package com.bushelpowered.jaleta.pokedex.service
 
+import com.bushelpowered.jaleta.pokedex.exception.PokemonNotFoundException
 import com.bushelpowered.jaleta.pokedex.model.Pokemon
 import com.bushelpowered.jaleta.pokedex.repository.PokemonRepository
 import org.springframework.data.domain.Page
@@ -23,14 +24,14 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
 
     fun getPokemonByID(id: Int): Pokemon {
         if (!pokemonRepository.existsById(id)) {
-            throw NoSuchElementException("There is no pokemon with this Id number")
+            throw PokemonNotFoundException()
         }
         return pokemonRepository.findAllById(id)
     }
 
     fun getPokemonByName(name: String): Pokemon {
         if (!pokemonRepository.existsByName(name)) {
-            throw NoSuchElementException("There is no pokemon with this name")
+            throw PokemonNotFoundException()
         }
         return pokemonRepository.findByName(name)
     }
