@@ -1,4 +1,4 @@
-# Pokedex_BackEnd_Project
+# Pokedex BackEnd Project
 Author: Jaleta Tesgera <br>
 Date: June, 08, 2023
 
@@ -71,6 +71,7 @@ NB: Pagination rule if a Response Entity has 10 or more than 10 pokemons it will
   *  **pokedex**
        * config
        * controller
+       * exception
        * model
        * repositoy
        * service
