@@ -1,12 +1,12 @@
 package com.bushelpowered.jaleta.pokedex.controllerTest
 
-import com.bushelpowered.jaleta.pokedex.controller.CapturedController
+import com.bushelpowered.jaleta.pokedex.controller.CaptureController
 import com.bushelpowered.jaleta.pokedex.model.Ability
 import com.bushelpowered.jaleta.pokedex.model.EggGroup
 import com.bushelpowered.jaleta.pokedex.model.Pokemon
 import com.bushelpowered.jaleta.pokedex.model.Stat
 import com.bushelpowered.jaleta.pokedex.model.Type
-import com.bushelpowered.jaleta.pokedex.service.CapturedService
+import com.bushelpowered.jaleta.pokedex.service.CaptureService
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
@@ -16,16 +16,16 @@ import org.mockito.MockitoAnnotations
 import org.springframework.http.ResponseEntity
 import org.springframework.security.core.Authentication
 
-internal class CapturedControllerTest {
-    private var capturedController: CapturedController? = null
+internal class CaptureControllerTest {
+    private var captureController: CaptureController? = null
 
     @Mock
-    private val capturedService: CapturedService? = null
+    private val captureService: CaptureService? = null
 
     @BeforeEach
     fun setUp() {
         MockitoAnnotations.openMocks(this)
-        capturedController = CapturedController(capturedService!!)
+        captureController = CaptureController(captureService!!)
     }
 
     @Test
@@ -34,9 +34,9 @@ internal class CapturedControllerTest {
         val authentication = Mockito.mock(
             Authentication::class.java,
         )
-        capturedController!!.catchPokemonById(authentication, pokemonId)
+        captureController!!.catchPokemonById(authentication, pokemonId)
 
-        Mockito.verify(capturedService, Mockito.times(1))?.catchPokemonById(authentication, pokemonId)
+        Mockito.verify(captureService, Mockito.times(1))?.catchPokemonById(authentication, pokemonId)
     }
 
     @Test
@@ -87,12 +87,12 @@ internal class CapturedControllerTest {
         val authentication = Mockito.mock(
             Authentication::class.java,
         )
-        Mockito.`when`(capturedService!!.getAllCapturedPokemonByTrainerId(authentication))
+        Mockito.`when`(captureService!!.getAllCapturedPokemonByTrainerId(authentication))
             .thenReturn(capturedPokemonList)
 
-        val response = capturedController!!.getAllCapturedPokemonByTrainerId(authentication)
+        val response = captureController!!.getAllCapturedPokemonByTrainerId(authentication)
         Assertions.assertEquals(expectedResponse, response)
 
-        Mockito.verify(capturedService, Mockito.times(1)).getAllCapturedPokemonByTrainerId(authentication)
+        Mockito.verify(captureService, Mockito.times(1)).getAllCapturedPokemonByTrainerId(authentication)
     }
 }

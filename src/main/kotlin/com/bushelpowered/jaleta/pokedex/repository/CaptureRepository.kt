@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 
 @Repository
-interface CapturedRepository : JpaRepository<Capture, Int> {
+interface CaptureRepository : JpaRepository<Capture, Int> {
 
     fun findByTrainerId(trainerId: String): List<Capture>
     fun deleteAllByTrainerId(trainerId: String)

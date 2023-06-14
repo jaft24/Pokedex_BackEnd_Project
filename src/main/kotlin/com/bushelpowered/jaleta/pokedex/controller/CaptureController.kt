@@ -1,7 +1,7 @@
 package com.bushelpowered.jaleta.pokedex.controller
 
 import com.bushelpowered.jaleta.pokedex.model.Pokemon
-import com.bushelpowered.jaleta.pokedex.service.CapturedService
+import com.bushelpowered.jaleta.pokedex.service.CaptureService
 import org.springframework.http.ResponseEntity
 import org.springframework.security.core.Authentication
 import org.springframework.transaction.annotation.Transactional
@@ -15,26 +15,26 @@ import org.springframework.web.bind.annotation.RestController
 @Transactional
 @RestController
 @RequestMapping("/api/capture")
-class CapturedController(private val capturedService: CapturedService) {
+class CaptureController(private val captureService: CaptureService) {
 
     @PostMapping("/{id}")
     fun catchPokemonById(aut: Authentication, @PathVariable id: Int) {
-        capturedService.catchPokemonById(aut, id)
+        captureService.catchPokemonById(aut, id)
     }
 
     @GetMapping("/getAll")
     fun getAllCapturedPokemonByTrainerId(autHeader: Authentication): ResponseEntity<List<Pokemon>> {
-        val capturedPokemonList = capturedService.getAllCapturedPokemonByTrainerId(autHeader)
+        val capturedPokemonList = captureService.getAllCapturedPokemonByTrainerId(autHeader)
         return ResponseEntity.ok(capturedPokemonList)
     }
 
     @DeleteMapping("/remove/{id}")
     fun deleteByTrainerIdAndPokemonId(autHeader: Authentication, @PathVariable id: Int) {
-        capturedService.deleteByTrainerIdAndPokemonId(autHeader, id)
+        captureService.deleteByTrainerIdAndPokemonId(autHeader, id)
     }
 
     @DeleteMapping("/removeAll")
     fun deleteAllByTrainerId(autHeader: Authentication) {
-        capturedService.deleteAllByTrainerId(autHeader)
+        captureService.deleteAllByTrainerId(autHeader)
     }
 }

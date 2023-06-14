@@ -1,16 +1,16 @@
 package com.bushelpowered.jaleta.pokedex.serviceTest
 
 import com.bushelpowered.jaleta.pokedex.exception.AlreadyCapturedException
-import com.bushelpowered.jaleta.pokedex.exception.MoreThanFiveCapturedException
+import com.bushelpowered.jaleta.pokedex.exception.MaxCapturedException
 import com.bushelpowered.jaleta.pokedex.model.Ability
 import com.bushelpowered.jaleta.pokedex.model.Capture
 import com.bushelpowered.jaleta.pokedex.model.EggGroup
 import com.bushelpowered.jaleta.pokedex.model.Pokemon
 import com.bushelpowered.jaleta.pokedex.model.Stat
 import com.bushelpowered.jaleta.pokedex.model.Type
-import com.bushelpowered.jaleta.pokedex.repository.CapturedRepository
+import com.bushelpowered.jaleta.pokedex.repository.CaptureRepository
 import com.bushelpowered.jaleta.pokedex.repository.PokemonRepository
-import com.bushelpowered.jaleta.pokedex.service.CapturedService
+import com.bushelpowered.jaleta.pokedex.service.CaptureService
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertThrows
 import org.junit.jupiter.api.BeforeEach
@@ -24,21 +24,22 @@ import org.mockito.MockitoAnnotations
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken
 import org.springframework.security.core.Authentication
 
-class CapturedServiceTest {
+class CaptureServiceTest {
 
     @Mock
-    private lateinit var capturedRepository: CapturedRepository
+    private lateinit var captureRepository: CaptureRepository
 
     @Mock
     private lateinit var pokemonRepository: PokemonRepository
 
     @InjectMocks
-    private lateinit var capturedService: CapturedService
+    private lateinit var captureService: CaptureService
 
     @BeforeEach
     fun setup() {
         MockitoAnnotations.openMocks(this)
     }
+
 
     @Test
     fun testCatchPokemonById() {
@@ -50,12 +51,12 @@ class CapturedServiceTest {
         capture.trainerId = authentication.name
         capture.pokemonId = pokemonId
         `when`(pokemonRepository.existsById(pokemonId)).thenReturn(true)
-        `when`(capturedRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)).thenReturn(false)
-        `when`(capturedRepository.countAllByTrainerId(capture.trainerId)).thenReturn(4)
+        `when`(captureRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)).thenReturn(false)
+        `when`(captureRepository.countAllByTrainerId(capture.trainerId)).thenReturn(4)
 
-        capturedService.catchPokemonById(authentication, pokemonId)
+        captureService.catchPokemonById(authentication, pokemonId)
 
-        verify(capturedRepository).save(capture)
+        verify(captureRepository).save(capture)
     }
 
     @Test
@@ -68,13 +69,13 @@ class CapturedServiceTest {
         capture.trainerId = authentication.name
         capture.pokemonId = pokemonId
         `when`(pokemonRepository.existsById(pokemonId)).thenReturn(true)
-        `when`(capturedRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)).thenReturn(true)
+        `when`(captureRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)).thenReturn(true)
 
         assertThrows(AlreadyCapturedException::class.java) {
-            capturedService.catchPokemonById(authentication, pokemonId)
+            captureService.catchPokemonById(authentication, pokemonId)
         }
 
-        verify(capturedRepository, never()).save(capture)
+        verify(captureRepository, never()).save(capture)
     }
 
     @Test
@@ -87,14 +88,14 @@ class CapturedServiceTest {
         capture.trainerId = authentication.name
         capture.pokemonId = pokemonId
         `when`(pokemonRepository.existsById(pokemonId)).thenReturn(true)
-        `when`(capturedRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)).thenReturn(false)
-        `when`(capturedRepository.countAllByTrainerId(capture.trainerId)).thenReturn(5)
+        `when`(captureRepository.existsByTrainerIdAndPokemonId(capture.trainerId, capture.pokemonId)).thenReturn(false)
+        `when`(captureRepository.countAllByTrainerId(capture.trainerId)).thenReturn(5)
 
-        assertThrows(MoreThanFiveCapturedException::class.java) {
-            capturedService.catchPokemonById(authentication, pokemonId)
+        assertThrows(MaxCapturedException::class.java) {
+            captureService.catchPokemonById(authentication, pokemonId)
         }
 
-        verify(capturedRepository, never()).save(capture)
+        verify(captureRepository, never()).save(capture)
     }
 
     @Test
@@ -123,11 +124,11 @@ class CapturedServiceTest {
                 description = "Pidgey has an extremely sharp sense of direction. It is capable of unerringly returning home to its nest, however far it may be removed from its familiar surroundings.",
             ),
         )
-        `when`(capturedRepository.existsByTrainerId(trainerId)).thenReturn(true)
-        `when`(capturedRepository.findByTrainerId(trainerId)).thenReturn(capturedList)
+        `when`(captureRepository.existsByTrainerId(trainerId)).thenReturn(true)
+        `when`(captureRepository.findByTrainerId(trainerId)).thenReturn(capturedList)
         `when`(pokemonRepository.findAllById(pokemonIdList)).thenReturn(pokemonList)
 
-        val result = capturedService.getAllCapturedPokemonByTrainerId(authentication)
+        val result = captureService.getAllCapturedPokemonByTrainerId(authentication)
 
         assertEquals(pokemonList, result)
     }
@@ -140,10 +141,10 @@ class CapturedServiceTest {
         val trainerId = authentication.name
         val pokemonId = 1
         `when`(pokemonRepository.existsById(pokemonId)).thenReturn(true)
-        `when`(capturedRepository.existsByTrainerIdAndPokemonId(trainerId, pokemonId)).thenReturn(true)
-        capturedService.deleteByTrainerIdAndPokemonId(authentication, pokemonId)
+        `when`(captureRepository.existsByTrainerIdAndPokemonId(trainerId, pokemonId)).thenReturn(true)
+        captureService.deleteByTrainerIdAndPokemonId(authentication, pokemonId)
 
-        verify(capturedRepository).deleteByTrainerIdAndPokemonId(trainerId, pokemonId)
+        verify(captureRepository).deleteByTrainerIdAndPokemonId(trainerId, pokemonId)
     }
 
     @Test
@@ -152,10 +153,10 @@ class CapturedServiceTest {
         val password = ""
         val authentication: Authentication = UsernamePasswordAuthenticationToken(username, password)
         val trainerId = authentication.name
-        `when`(capturedRepository.existsByTrainerId(trainerId)).thenReturn(true)
+        `when`(captureRepository.existsByTrainerId(trainerId)).thenReturn(true)
 
-        capturedService.deleteAllByTrainerId(authentication)
+        captureService.deleteAllByTrainerId(authentication)
 
-        verify(capturedRepository).deleteAllByTrainerId(trainerId)
+        verify(captureRepository).deleteAllByTrainerId(trainerId)
     }
 }

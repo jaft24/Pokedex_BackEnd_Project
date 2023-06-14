@@ -13,7 +13,7 @@ class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ResponseBody
     fun handlePokemonNotFoundException(ex: PokemonNotFoundException): String {
-        return "Pokemon with this description not found, please try again."
+        return ex.message ?: "Pokemon with this description not found, please try again."
     }
 
     @ExceptionHandler(AlreadyCapturedException::class)
@@ -23,11 +23,11 @@ class GlobalExceptionHandler {
         return "You have already captured this pokemon, please try to capture another pokemon."
     }
 
-    @ExceptionHandler(MoreThanFiveCapturedException::class)
+    @ExceptionHandler(MaxCapturedException::class)
     @ResponseStatus(HttpStatus.FORBIDDEN)
     @ResponseBody
-    fun handleMoreThanFiveCapturedException(ex: MoreThanFiveCapturedException): String {
-        return "You can not capture more than five pokemon, please release some of your pokemon and try again"
+    fun handleMoreThanFiveCapturedException(ex: MaxCapturedException): String {
+        return "You have captured the maximum allowed pokemon, please release some of your pokemon and try again"
     }
 
     @ExceptionHandler(NoPokemonCapturedException::class)

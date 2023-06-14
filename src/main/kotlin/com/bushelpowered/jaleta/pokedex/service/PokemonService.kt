@@ -24,14 +24,14 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
 
     fun getPokemonByID(id: Int): Pokemon {
         if (!pokemonRepository.existsById(id)) {
-            throw PokemonNotFoundException()
+            throw PokemonNotFoundException("There is no Pokemon with this Id.")
         }
         return pokemonRepository.findAllById(id)
     }
 
     fun getPokemonByName(name: String): Pokemon {
         if (!pokemonRepository.existsByName(name)) {
-            throw PokemonNotFoundException()
+            throw PokemonNotFoundException("There is no Pokemon with this Name.")
         }
         return pokemonRepository.findByName(name)
     }
