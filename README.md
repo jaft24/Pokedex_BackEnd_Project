@@ -10,7 +10,7 @@ This project is a backend for a Pokemon api. This api end points that lets users
 2. Port, database connection, and spring securty is set up in the application.properties file.
 3. The keycloak relam import json file for the realm ("pokedexapi") should be found in the keycloak, realm folder.
 4. Command to run the docker compose: docker compose up -d (this comand willl run also automatiucally import the "pokedexapi" relam to the running keycloak instance)
-5. Once that docker container has started running, run the spring boot application with pokedex bootRun which will start its server on (http://localhost:8081/)
+5. Once that docker container has started running, run the spring boot application with "bootRun" which will start its server on (http://localhost:8081/)
 6. If you have run it sucessfully, and created the necessary databases please find the resources/db/changelog/changelog_master.xml and comment out the changelog includeAll code line as the changelogs should only run once to create the tables, load their data, and create their relationships.
 7. KeyCloak is running on http://localhost:8083/, and you should be able to access the pokedexapi realm by utilizing the password and name specified in the "docker-compose.yml" file, and run all the end points on Postman
 
@@ -72,7 +72,7 @@ NB: Pagination rule if a Response Entity has 10 or more than 10 pokemons it will
         * config
         * controller
         * exception
-        * model
+        * entity
         * repositoy
         * service
 * **test**
@@ -82,10 +82,9 @@ NB: Pagination rule if a Response Entity has 10 or more than 10 pokemons it will
 
 ## Additional Notices for Reviwers
 This note is from past reviwer comment on other codes and the exceptions I have on my code.
-1. You will notice a separate "040_autoincrement_pokemon_captured.xml" liquibase file instead of just having the id to autoincrement in the tabe creation. For some reason I kept getting an "unsupported" error when I had it as a property of a colummn "autoincrememt = true" so I made a separate liquibase changeset for it.
-2. In my changelogs you will notice that there are upto 40 liquibase migrations, but it is actually not, I have an order system where for every type of chnagelog I jump to a new double digit. Meaning create, load, relationship, and autoincrement are all on different 2nd digit indexes (-0-, -2-, -3-, and -4-). I did this to leave space for unpredicatbale tables I might have to create, load data, or relate in the future and still maintain a numeral order, and good organization in my liquibase migrations.
-3. In the pokemon service class the combinedPokemonFilter function makes use of the nullable? operation. Eventhough it was recommended that I don't use nullable variables, I had to use them in this case since my functions execution and result depends on these values such that the function should still execute even if the parameters are null or not.
-4. Code is formatted with Kotlinter plugin. (id("org.jmailen.kotlinter") version "3.15.0"), this dependancy only excecutes as a task and runs into errors when I kept it as a plugin so once I fomatted my code, I removed it from the dependecies.
+1. In my changelogs you will notice that there are upto 40 liquibase migrations, but it is actually not, I have an order system where for every type of chnagelog I jump to a new double digit. Meaning create, load, relationship, and autoincrement are all on different 2nd digit indexes (-0-, -2-, -3-, and -4-). I did this to leave space for unpredicatbale tables I might have to create, load data, or relate in the future and still maintain a numeral order, and good organization in my liquibase migrations.
+2. In the pokemon service class the combinedPokemonFilter function makes use of the nullable? operation. Eventhough it was recommended that I don't use nullable variables, I had to use them in this case since my functions execution and result depends on these values such that the function should still execute even if the parameters are null or not.
+3. Code is formatted with Kotlinter plugin. (id("org.jmailen.kotlinter") version "3.15.0"), this dependancy only excecutes as a task and runs into errors when I kept it as a plugin so once I fomatted my code, I removed it from the dependecies.
 
 ## Resources
 
