@@ -5,6 +5,7 @@ import com.bushelpowered.service.PokemonService
 import org.springframework.data.domain.Page
 import org.springframework.data.domain.Pageable
 import org.springframework.http.ResponseEntity
+import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api/pokemon")
 class PokemonController(private var pokemonService: PokemonService) {
 
@@ -31,6 +33,30 @@ class PokemonController(private var pokemonService: PokemonService) {
     fun getPokemonByName(@PathVariable name: String): ResponseEntity<Pokemon> {
         val pokemon = pokemonService.getPokemonByName(name)
         return ResponseEntity.ok(pokemon)
+    }
+
+    @GetMapping("/allByName")
+    fun sortPokemonByAlphabet(pageable: Pageable): ResponseEntity<Page<Pokemon>> {
+        val allPokemonsByName = pokemonService.sortPokemonByAlphabet(pageable)
+        return ResponseEntity.ok(allPokemonsByName)
+    }
+
+    @GetMapping("/allByNameRev")
+    fun sortPokemonByAlphabetRev(pageable: Pageable): ResponseEntity<Page<Pokemon>> {
+        val allPokemonsByNameRev = pokemonService.sortPokemonByAlphabetRev(pageable)
+        return ResponseEntity.ok(allPokemonsByNameRev)
+    }
+
+    @GetMapping("/allRev")
+    fun sortPokemonByIdRev(pageable: Pageable): ResponseEntity<Page<Pokemon>> {
+        val allPokemonsByIdRev = pokemonService.sortPokemonByIdRev(pageable)
+        return ResponseEntity.ok(allPokemonsByIdRev)
+    }
+
+    @GetMapping("/byMatchingName/{nameString}")
+    fun filterPokemonWithMatchingName(@PathVariable nameString: String): ResponseEntity<List<Pokemon>> {
+        val allPokemonsWithMatchingName = pokemonService.filterPokemonWithMatchingName(nameString)
+        return ResponseEntity.ok(allPokemonsWithMatchingName)
     }
 
     @GetMapping("/byGenus/{genus}")

@@ -13,10 +13,10 @@ class SecurityConfig {
     @Bean
     @Throws(Exception::class)
     fun filterChain(http: HttpSecurity): SecurityFilterChain? {
-        http.csrf().disable().cors().and()
+        http.csrf().disable()
             .authorizeHttpRequests()
-            .requestMatchers("/api/capture/**").hasAuthority("SCOPE_trainer")
             .requestMatchers("/api/pokemon/**").permitAll()
+            .requestMatchers("/api/capture/**").hasAuthority("SCOPE_trainer")
             .anyRequest().permitAll()
 
         http.cors().and()

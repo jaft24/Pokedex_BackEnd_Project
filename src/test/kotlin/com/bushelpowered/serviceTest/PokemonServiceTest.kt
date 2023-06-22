@@ -73,16 +73,16 @@ class PokemonServiceTest {
             1, "Pikachu",
             listOf(
                 Type(2, "fire"),
-                Type(3, "flying")
+                Type(3, "flying"),
             ),
             6.0, 0.4,
             listOf(
                 Ability(23, "blaze"),
-                Ability(13, "solar-power")
+                Ability(13, "solar-power"),
             ),
             listOf(
                 EggGroup(13, "monster"),
-                EggGroup(15, "dragon")
+                EggGroup(15, "dragon"),
             ),
             Stat(6, 78, 100, 84, 78, 109, 82),
             "Mouse Pokémon",

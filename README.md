@@ -46,16 +46,21 @@ NB: Please note that since you ran all the changelog files as new and filled tab
 
 #### 3. Pokemon End Points (No Authorization Needed)
 NB: Pagination rule if a Response Entity has 10 or more than 10 pokemons it will be paginated or else it is either a List of Pokemon or a single Pokemon
-1. Get all pokemon. http://localhost:8081/api/pokemon/all
-2. Get pokemon by Id. http://localhost:8081/api/pokemon/byID/{id}
-3. Get pokemon by Name. http://localhost:8081/api/pokemon/byName/{name}
-5. Filter pokemon by Genus. http://localhost:8081/api/pokemon/byGenus/{genus}
-6. Filter pokemon by Height. http://localhost:8081/api/pokemon/byHeight/{height}
-7. Filter pokemon by Weight. http://localhost:8081/api/pokemon/byWeight/{weight}
-8. Filter pokemon by Type. http://localhost:8081/api/pokemon/byType/{type}
-9. Filter pokemon by Ability. http://localhost:8081/api/pokemon/byAbility/{ability}
-10. Filter pokemon by EggGroup. http://localhost:8081/api/pokemon/byEggGroup/{eggGroup}
-11. Combining all filters. The parameters (Request(Query)Parameters) for this end point are all optional being that if all of them are null (value not specified) it returns a paginated list of all pokemons, the more parameters applied the narrower the list that fit them. A sample Query Param could look likem this: End Point: http://localhost:8081/api/pokemon/filter
+1. Get all pokemon (ordered by Id). http://localhost:8081/api/pokemon/all
+2. Get all pokemon (reversed ordered by Id). http://localhost:8081/api/pokemon/allRev
+3. Get all pokemon by Alphabetical Order: http://localhost:8081/api/pokemon/allByName
+4. Get all pokemon by Reverse Alphabetical Order: http://localhost:8081/api/pokemon/allByNameRev
+5. Get a pokemon by Id. http://localhost:8081/api/pokemon/byID/{id}
+6. Get a pokemon by Name. http://localhost:8081/api/pokemon/byName/{name}
+7. Filter pokemon by Matching Name String. http://localhost:8081/api/pokemon//byMatchingName/{nameString}
+8. Filter pokemon by Genus. http://localhost:8081/api/pokemon/byGenus/{genus}
+9. Filter pokemon by Height. http://localhost:8081/api/pokemon/byHeight/{height}
+10. Filter pokemon by Weight. http://localhost:8081/api/pokemon/byWeight/{weight}
+11. Filter pokemon by Type. http://localhost:8081/api/pokemon/byType/{type}
+12. Filter pokemon by Ability. http://localhost:8081/api/pokemon/byAbility/{ability}
+13. Filter pokemon by EggGroup. http://localhost:8081/api/pokemon/byEggGroup/{eggGroup}
+14. Combining all filters. The parameters (Request(Query)Parameters) for this end point are all optional being that if all of them are null (value not specified) it returns a paginated list of all pokemons, the more parameters applied the narrower the list that fit them. A sample Query Param could look likem this: End Point: http://localhost:8081/api/pokemon/filter
+
 
 |   Key    |      Value     |
 | -------- | -------------- |

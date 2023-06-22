@@ -54,4 +54,4 @@ data class Pokemon(
 
     val description: String,
 
-    )
+)

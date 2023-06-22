@@ -20,4 +20,4 @@ data class Capture(
 
     var pokemonId: Int = 0,
 
-    )
+)

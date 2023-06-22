@@ -40,7 +40,6 @@ class CaptureServiceTest {
         MockitoAnnotations.openMocks(this)
     }
 
-
     @Test
     fun testCatchPokemonById() {
         val username = ""
@@ -116,17 +115,17 @@ class CaptureServiceTest {
                 name = "Pikachu",
                 types = listOf(
                     Type(2, "fire"),
-                    Type(3, "flying")
+                    Type(3, "flying"),
                 ),
                 weight = 6.0,
                 height = 0.4,
                 abilities = listOf(
                     Ability(23, "blaze"),
-                    Ability(13, "solar-power")
+                    Ability(13, "solar-power"),
                 ),
                 eggGroups = listOf(
                     EggGroup(13, "monster"),
-                    EggGroup(15, "dragon")
+                    EggGroup(15, "dragon"),
                 ),
                 stat = Stat(6, 78, 100, 84, 78, 109, 82),
                 genus = "Mouse Pokémon",
