@@ -22,6 +22,20 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
         val updatedPageable = updatePageable(pageable)
         return pokemonRepository.findAll(updatedPageable)
     }
+    fun getAllPokemonList(): List<Pokemon> {
+        return pokemonRepository.findAll()
+    }
+
+    fun getAllPokemonNames(): MutableList<String> {
+        val pokemonList = pokemonRepository.findAll()
+        val pokemonNames = mutableListOf<String>()
+
+        for (pokemon in pokemonList) {
+            pokemonNames.add(pokemon.name)
+        }
+
+        return pokemonNames
+    }
 
     fun getPokemonByID(id: Int): Pokemon {
         if (!pokemonRepository.existsById(id)) {
@@ -97,26 +111,27 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
     ): Page<Pokemon> {
         val updatedPageable = updatePageable(pageable)
 
-        val genusPokemon = genus?.let {
-            pokemonRepository.findPokemonsByGenus(genus)
-        }
         val heightPokemon = height?.let {
             pokemonRepository.findByHeight(height)
         }
         val weightPokemon = weight?.let {
             pokemonRepository.findByWeight(weight)
         }
-        val typePokemon = type?.let {
+        val genusPokemon = genus?.takeIf { it.isNotEmpty() }?.let {
+            pokemonRepository.findPokemonsByGenus(genus)
+        }
+        val typePokemon = type?.takeIf { it.isNotEmpty() }?.let {
             pokemonRepository.findPokemonByTypesType(type)
         }
-        val abilityPokemon = ability?.let {
+        val abilityPokemon = ability?.takeIf { it.isNotEmpty() }?.let {
             pokemonRepository.findPokemonByAbilitiesAbility(ability)
         }
-        val eggGroupPokemon = eggGroup?.let {
+        val eggGroupPokemon = eggGroup?.takeIf { it.isNotEmpty() }?.let {
             pokemonRepository.findPokemonByEggGroupsEggGroup(eggGroup)
         }
 
         val allFiltersCombined: MutableList<Pokemon> = mutableListOf()
+
         allFiltersCombined.addAll(pokemonRepository.findAll())
         genusPokemon?.let { allFiltersCombined.retainAll(it) }
         heightPokemon?.let { allFiltersCombined.retainAll(it) }

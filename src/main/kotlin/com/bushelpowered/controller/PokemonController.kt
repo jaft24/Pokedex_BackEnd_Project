@@ -22,6 +22,11 @@ class PokemonController(private var pokemonService: PokemonService) {
         val allPokemons = pokemonService.getAllPokemon(pageable)
         return ResponseEntity.ok(allPokemons)
     }
+    @GetMapping("/allList")
+    fun getAllPokemonList(): ResponseEntity<List<Pokemon>> {
+        val allPokemonsList = pokemonService.getAllPokemonList()
+        return ResponseEntity.ok(allPokemonsList)
+    }
 
     @GetMapping("/byId/{id}")
     fun getPokemonById(@PathVariable id: Int): ResponseEntity<Pokemon> {
@@ -33,6 +38,12 @@ class PokemonController(private var pokemonService: PokemonService) {
     fun getPokemonByName(@PathVariable name: String): ResponseEntity<Pokemon> {
         val pokemon = pokemonService.getPokemonByName(name)
         return ResponseEntity.ok(pokemon)
+    }
+
+    @GetMapping("/allNames")
+    fun getAllPokemonNames(): ResponseEntity<MutableList<String>> {
+        val pokemonNames = pokemonService.getAllPokemonNames()
+        return ResponseEntity.ok(pokemonNames)
     }
 
     @GetMapping("/allByName")
