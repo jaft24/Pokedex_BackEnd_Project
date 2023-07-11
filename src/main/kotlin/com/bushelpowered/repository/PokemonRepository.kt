@@ -8,11 +8,10 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface PokemonRepository : JpaRepository<Pokemon, Int> {
-    fun findAllByOrderByNameAsc(pageable: Pageable): Page<Pokemon>
-    fun findAllByOrderByNameDesc(pageable: Pageable): Page<Pokemon>
-    fun findAllByOrderByIdDesc(pageable: Pageable): Page<Pokemon>
+    fun findAllByOrderByNameAsc(): MutableList<Pokemon>
+    fun findAllByOrderByNameDesc(): MutableList<Pokemon>
+    fun findAllByOrderByIdDesc(): MutableList<Pokemon>
     fun findByName(name: String): Pokemon
-    fun findAllByNameContainingIgnoreCase(name: String): List<Pokemon>
     fun findAllById(id: Int): Pokemon
     fun existsByName(name: String): Boolean
     fun findPokemonsByGenus(genus: String?): List<Pokemon>

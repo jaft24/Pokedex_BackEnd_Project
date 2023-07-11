@@ -22,11 +22,6 @@ class PokemonController(private var pokemonService: PokemonService) {
         val allPokemons = pokemonService.getAllPokemon(pageable)
         return ResponseEntity.ok(allPokemons)
     }
-    @GetMapping("/allList")
-    fun getAllPokemonList(): ResponseEntity<List<Pokemon>> {
-        val allPokemonsList = pokemonService.getAllPokemonList()
-        return ResponseEntity.ok(allPokemonsList)
-    }
 
     @GetMapping("/byId/{id}")
     fun getPokemonById(@PathVariable id: Int): ResponseEntity<Pokemon> {
@@ -46,29 +41,23 @@ class PokemonController(private var pokemonService: PokemonService) {
         return ResponseEntity.ok(pokemonNames)
     }
 
-    @GetMapping("/allByName")
-    fun sortPokemonByAlphabet(pageable: Pageable): ResponseEntity<Page<Pokemon>> {
-        val allPokemonsByName = pokemonService.sortPokemonByAlphabet(pageable)
-        return ResponseEntity.ok(allPokemonsByName)
-    }
-
-    @GetMapping("/allByNameRev")
-    fun sortPokemonByAlphabetRev(pageable: Pageable): ResponseEntity<Page<Pokemon>> {
-        val allPokemonsByNameRev = pokemonService.sortPokemonByAlphabetRev(pageable)
-        return ResponseEntity.ok(allPokemonsByNameRev)
-    }
-
-    @GetMapping("/allRev")
-    fun sortPokemonByIdRev(pageable: Pageable): ResponseEntity<Page<Pokemon>> {
-        val allPokemonsByIdRev = pokemonService.sortPokemonByIdRev(pageable)
-        return ResponseEntity.ok(allPokemonsByIdRev)
-    }
-
-    @GetMapping("/byMatchingName/{nameString}")
-    fun filterPokemonWithMatchingName(@PathVariable nameString: String): ResponseEntity<List<Pokemon>> {
-        val allPokemonsWithMatchingName = pokemonService.filterPokemonWithMatchingName(nameString)
-        return ResponseEntity.ok(allPokemonsWithMatchingName)
-    }
+//    @GetMapping("/allByName")
+//    fun sortPokemonByAlphabet(pageable: Pageable): ResponseEntity<Page<Pokemon>> {
+//        val allPokemonsByName = pokemonService.sortPokemonByAlphabet(pageable)
+//        return ResponseEntity.ok(allPokemonsByName)
+//    }
+//
+//    @GetMapping("/allByNameRev")
+//    fun sortPokemonByAlphabetRev(pageable: Pageable): ResponseEntity<Page<Pokemon>> {
+//        val allPokemonsByNameRev = pokemonService.sortPokemonByAlphabetRev(pageable)
+//        return ResponseEntity.ok(allPokemonsByNameRev)
+//    }
+//
+//    @GetMapping("/allRev")
+//    fun sortPokemonByIdRev(pageable: Pageable): ResponseEntity<Page<Pokemon>> {
+//        val allPokemonsByIdRev = pokemonService.sortPokemonByIdRev(pageable)
+//        return ResponseEntity.ok(allPokemonsByIdRev)
+//    }
 
     @GetMapping("/byGenus/{genus}")
     fun filterByGenus(@PathVariable genus: String, pageable: Pageable): ResponseEntity<Page<Pokemon>> {
@@ -108,6 +97,9 @@ class PokemonController(private var pokemonService: PokemonService) {
 
     @GetMapping("/filter")
     fun combinedFilters(
+        @RequestParam(required = false) id: String?,
+        @RequestParam(required = false) name: String?,
+        @RequestParam(required = false) sort: String?,
         @RequestParam(required = false) genus: String?,
         @RequestParam(required = false) height: Double?,
         @RequestParam(required = false) weight: Double?,
@@ -116,7 +108,7 @@ class PokemonController(private var pokemonService: PokemonService) {
         @RequestParam(required = false) eggGroup: String?,
         pageable: Pageable,
     ): ResponseEntity<Page<Pokemon>> {
-        val filteredPokemons = pokemonService.combinedPokemonFilter(genus, height, weight, type, ability, eggGroup, pageable)
+        val filteredPokemons = pokemonService.combinedPokemonFilter(id, name, sort, genus, height, weight, type, ability, eggGroup, pageable)
         return ResponseEntity.ok(filteredPokemons)
     }
 }

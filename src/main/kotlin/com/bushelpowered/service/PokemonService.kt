@@ -22,9 +22,6 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
         val updatedPageable = updatePageable(pageable)
         return pokemonRepository.findAll(updatedPageable)
     }
-    fun getAllPokemonList(): List<Pokemon> {
-        return pokemonRepository.findAll()
-    }
 
     fun getAllPokemonNames(): MutableList<String> {
         val pokemonList = pokemonRepository.findAll()
@@ -49,25 +46,6 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
             throw PokemonNotFoundException("getPokemonByName")
         }
         return pokemonRepository.findByName((name.substring(0, 1).uppercase() + name.substring(1)))
-    }
-
-    fun sortPokemonByAlphabet(pageable: Pageable): Page<Pokemon> {
-        val updatedPageable = updatePageable(pageable)
-        return pokemonRepository.findAllByOrderByNameAsc(updatedPageable)
-    }
-
-    fun sortPokemonByAlphabetRev(pageable: Pageable): Page<Pokemon> {
-        val updatedPageable = updatePageable(pageable)
-        return pokemonRepository.findAllByOrderByNameDesc(updatedPageable)
-    }
-
-    fun sortPokemonByIdRev(pageable: Pageable): Page<Pokemon> {
-        val updatedPageable = updatePageable(pageable)
-        return pokemonRepository.findAllByOrderByIdDesc(updatedPageable)
-    }
-
-    fun filterPokemonWithMatchingName(name: String): List<Pokemon> {
-        return pokemonRepository.findAllByNameContainingIgnoreCase(name)
     }
 
     fun filterPokemonByHeight(height: Double, pageable: Pageable): Page<Pokemon> {
@@ -101,6 +79,9 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
     }
 
     fun combinedPokemonFilter(
+        id: String?,
+        name: String?,
+        sort: String?,
         genus: String?,
         height: Double?,
         weight: Double?,
@@ -108,8 +89,22 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
         ability: String?,
         eggGroup: String?,
         pageable: Pageable,
-    ): Page<Pokemon> {
+    ): PageImpl<Pokemon> {
         val updatedPageable = updatePageable(pageable)
+
+        val singlePokemonName = name?.takeIf { it.isNotEmpty() }?.let {
+            if (!pokemonRepository.existsByName(name)) {
+                throw PokemonNotFoundException("getPokemonByName")
+            }
+            pokemonRepository.findByName((name.substring(0, 1).uppercase() + name.substring(1)))
+        }
+
+        val singlePokemonId = id?.takeIf { it.isNotEmpty() }?.let {
+            if (!pokemonRepository.existsById(id.toInt())) {
+                throw PokemonNotFoundException("getPokemonByID")
+            }
+             pokemonRepository.findAllById(id.toInt())
+        }
 
         val heightPokemon = height?.let {
             pokemonRepository.findByHeight(height)
@@ -130,15 +125,39 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
             pokemonRepository.findPokemonByEggGroupsEggGroup(eggGroup)
         }
 
-        val allFiltersCombined: MutableList<Pokemon> = mutableListOf()
 
-        allFiltersCombined.addAll(pokemonRepository.findAll())
+        var allFiltersCombined: MutableList<Pokemon> = pokemonRepository.findAll()
+
+        var sortedPokemon: MutableList<Pokemon>? = sort?.takeIf { it.isNotEmpty() }?.let {
+            when (it) {
+                "A" -> pokemonRepository.findAllByOrderByNameAsc()
+                "Z" -> pokemonRepository.findAllByOrderByNameDesc()
+                "-1" -> pokemonRepository.findAllByOrderByIdDesc()
+                else -> null // Handle invalid sort input
+            }
+        }
+
+
+        if (!sortedPokemon.isNullOrEmpty()) {
+            allFiltersCombined = sortedPokemon
+        }
+
         genusPokemon?.let { allFiltersCombined.retainAll(it) }
         heightPokemon?.let { allFiltersCombined.retainAll(it) }
         weightPokemon?.let { allFiltersCombined.retainAll(it) }
         typePokemon?.let { allFiltersCombined.retainAll(it) }
         abilityPokemon?.let { allFiltersCombined.retainAll(it) }
         eggGroupPokemon?.let { allFiltersCombined.retainAll(it) }
+
+        if (singlePokemonName != null) {
+            if (!singlePokemonName.equals(null)) {
+                allFiltersCombined = mutableListOf(singlePokemonName)
+            }
+        } else if (singlePokemonId != null) {
+            if (!singlePokemonId.equals(null)) {
+                allFiltersCombined = mutableListOf(singlePokemonId)
+            }
+        }
 
         val start: Int = updatedPageable.offset.toInt()
         val end: Int = min((start + updatedPageable.pageSize), allFiltersCombined.size)
