@@ -79,7 +79,7 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
     }
 
     fun combinedPokemonFilter(
-        id: String?,
+        id: Int?,
         name: String?,
         sort: String?,
         genus: String?,
@@ -99,11 +99,11 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
             pokemonRepository.findByName((name.substring(0, 1).uppercase() + name.substring(1)))
         }
 
-        val singlePokemonId = id?.takeIf { it.isNotEmpty() }?.let {
-            if (!pokemonRepository.existsById(id.toInt())) {
+        val singlePokemonId = id?.takeIf { it!=0 }?.let {
+            if (!pokemonRepository.existsById(id)) {
                 throw PokemonNotFoundException("getPokemonByID")
             }
-             pokemonRepository.findAllById(id.toInt())
+             pokemonRepository.findAllById(id)
         }
 
         val heightPokemon = height?.let {
@@ -130,10 +130,10 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
 
         var sortedPokemon: MutableList<Pokemon>? = sort?.takeIf { it.isNotEmpty() }?.let {
             when (it) {
-                "A" -> pokemonRepository.findAllByOrderByNameAsc()
-                "Z" -> pokemonRepository.findAllByOrderByNameDesc()
-                "-1" -> pokemonRepository.findAllByOrderByIdDesc()
-                else -> null // Handle invalid sort input
+                "A-Z" -> pokemonRepository.findAllByOrderByNameAsc()
+                "Z-A" -> pokemonRepository.findAllByOrderByNameDesc()
+                "Desc" -> pokemonRepository.findAllByOrderByIdDesc()
+                else -> null
             }
         }
 

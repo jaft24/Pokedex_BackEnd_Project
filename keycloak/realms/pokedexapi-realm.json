@@ -478,6 +478,26 @@
     "notBefore" : 0,
     "groups" : [ ]
   }, {
+    "id" : "4cf76b5b-4e7f-4142-b5e0-15c92f2107c8",
+    "createdTimestamp" : 1686245760447,
+    "username" : "service-account-trainer",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "serviceAccountClientId" : "trainer",
+    "credentials" : [ ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-pokedexapi", "user", "uma_authorization", "offline_access" ],
+    "clientRoles" : {
+      "realm-management" : [ "manage-events", "query-realms", "create-client", "view-realm", "query-users", "manage-realm", "view-events", "query-groups", "manage-users", "manage-clients", "realm-admin", "manage-authorization", "impersonation", "view-authorization", "manage-identity-providers", "view-identity-providers", "view-clients", "query-clients", "view-users" ],
+      "trainer" : [ "uma_protection" ],
+      "broker" : [ "read-token" ],
+      "account" : [ "manage-consent", "manage-account", "view-consent", "view-profile", "view-applications", "view-groups", "manage-account-links", "delete-account" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
     "id" : "770d32fe-7976-476b-beee-684d2a68e757",
     "createdTimestamp" : 1686244121059,
     "username" : "swalker",

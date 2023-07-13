@@ -97,7 +97,7 @@ class PokemonController(private var pokemonService: PokemonService) {
 
     @GetMapping("/filter")
     fun combinedFilters(
-        @RequestParam(required = false) id: String?,
+        @RequestParam(required = false) id: Int?,
         @RequestParam(required = false) name: String?,
         @RequestParam(required = false) sort: String?,
         @RequestParam(required = false) genus: String?,
