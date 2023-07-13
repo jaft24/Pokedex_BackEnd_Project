@@ -106,10 +106,10 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
              pokemonRepository.findAllById(id)
         }
 
-        val heightPokemon = height?.let {
+        val heightPokemon = height?.takeIf { it != 0.toDouble() }?.let {
             pokemonRepository.findByHeight(height)
         }
-        val weightPokemon = weight?.let {
+        val weightPokemon = weight?.takeIf { it != 0.toDouble() }?.let {
             pokemonRepository.findByWeight(weight)
         }
         val genusPokemon = genus?.takeIf { it.isNotEmpty() }?.let {
