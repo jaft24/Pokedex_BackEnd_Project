@@ -5,6 +5,24 @@ Date: June, 08, 2023
 ## Project Description
 This project is a backend for a Pokemon api. This api end points that lets users execute tasks such as, but not limited to, retrieving a paginated list of pokemon, retrieving a specific pokemon by providing its number, or filter pokemon by providing its type. Moreover, if users want to engage with the api and train pokeomons they will need to create their account from a keycloak api end point, by getting a master token from a keycloak admin. They will be able to execute tasks such as, but not limited to, capturing pokemons, or retrieveing a list of pokemons they have captured. (More end points in the How to Use the project section below.)
 
+#Quick Demo <br/>
+<a href="#"><img alt="KeyCloak" src="https://img.shields.io/badge/KeyCloak%20-%23369E1D.svg?logo=keycloak&logoColor=white"></a>
+<a href=""><img alt="Kotlin" src="https://img.shields.io/badge/Kotlin-%230095D5.svg?logo=kotlin&logoColor=white"></a>
+<a href=""><img alt="R" src="https://img.shields.io/badge/R%20-%2314354C.svg?logo=R&logoColor=blue"></a>
+<a href=""><img alt="Python" src="https://img.shields.io/badge/Python%20-%2314354C.svg?logo=python&logoColor=white"></a>
+<a href="#"><img alt="Spring Boot" src="https://img.shields.io/badge/Spring%20Boot%20-%236DB33F.svg?logo=spring-boot&logoColor=white"></a>
+<a href="#"><img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-%23336791.svg?logo=postgresql&logoColor=white"></a>
+<a href="#"><img alt="Liquibase" src="https://img.shields.io/badge/Liquibase%20-%23005696.svg?logo=liquibase&logoColor=white"></a>
+<a href="#"><img alt="DBeaver" src="https://img.shields.io/badge/DBeaver%20-%230C5C8B.svg?logo=dbeaver&logoColor=white"></a>
+<a href="#"><img alt="Docker" src="https://img.shields.io/badge/Docker%20-%230db7ed.svg?logo=docker&logoColor=white"></a>
+
+
+
+
+
+<br/>
+![](https://github.com/jaft24/Pokedex_BackEnd_Project/blob/main/postman.png)
+
 ## How to Install and Run
 1. Both the postgress sql and keycloak are set up in the pokedex docker container and you will find a "docker-compose.yml" file that contains both configurations.
 2. Port, database connection, and spring securty is set up in the application.properties file.
