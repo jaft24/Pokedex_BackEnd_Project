@@ -15,7 +15,8 @@ This project is a backend for a Pokemon api. This api end points that lets users
 <a href="#"><img alt="Liquibase" src="https://img.shields.io/badge/Liquibase%20-%23005696.svg?logo=liquibase&logoColor=white"></a>
 <a href="#"><img alt="DBeaver" src="https://img.shields.io/badge/DBeaver%20-%230C5C8B.svg?logo=dbeaver&logoColor=white"></a>
 <a href="#"><img alt="Docker" src="https://img.shields.io/badge/Docker%20-%230db7ed.svg?logo=docker&logoColor=white"></a>
-[](https://github.com/jaft24/Pokedex_BackEnd_Project/blob/main/postman.png)
+<br/>
+![](https://github.com/jaft24/Pokedex_BackEnd_Project/blob/main/postman.png)
 
 ## How to Install and Run
 1. Both the postgress sql and keycloak are set up in the pokedex docker container and you will find a "docker-compose.yml" file that contains both configurations.
