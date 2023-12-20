@@ -4,7 +4,7 @@
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <changeSet id="loadPokemon_TypesData" author="jaleta">
-        <loadData relativeToChangelogFile="true" file="changelog/loadfiles/pokemon_types.csv"
+        <loadData relativeToChangelogFile="true" file="loadfiles/pokemon_types.csv"
                   separator=","
                   tableName="pokemon_types">
             <column name="id" type="bigint"/>

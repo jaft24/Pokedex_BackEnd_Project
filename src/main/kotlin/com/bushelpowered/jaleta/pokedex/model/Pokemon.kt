@@ -1,14 +1,14 @@
 package com.bushelpowered.jaleta.pokedex.model
 
-import jakarta.persistence.Column
-import jakarta.persistence.Entity
-import jakarta.persistence.Id
-import jakarta.persistence.JoinColumn
-import jakarta.persistence.JoinTable
-import jakarta.persistence.OneToMany
-import jakarta.persistence.OneToOne
-import jakarta.persistence.PrimaryKeyJoinColumn
-import jakarta.persistence.Table
+import javax.persistence.Column
+import javax.persistence.Entity
+import javax.persistence.Id
+import javax.persistence.JoinColumn
+import javax.persistence.JoinTable
+import javax.persistence.OneToMany
+import javax.persistence.OneToOne
+import javax.persistence.PrimaryKeyJoinColumn
+import javax.persistence.Table
 
 @Entity
 @Table(name = "pokemon", schema = "public")

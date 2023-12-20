@@ -4,7 +4,7 @@
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <changeSet id="loadStatsData" author="jaleta">
-        <loadData relativeToChangelogFile="true" file="changelog/loadfiles/stats.csv"
+        <loadData relativeToChangelogFile="true" file="loadfiles/stats.csv"
                   separator=","
                   tableName="stats">
             <column name="id" type="bigint"/>

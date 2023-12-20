@@ -4,10 +4,10 @@
                    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <changeSet id="loadPokemonData" author="jaleta">
-        <loadData relativeToChangelogFile="true" file="changelog/loadfiles/pokedex.csv"
+        <loadData relativeToChangelogFile="true" file="loadfiles/pokedex.csv"
                   separator=","
                   tableName="pokemon">
-            <column name="id" type="INT"/>
+            <column name="id" type="bigint"/>
             <column name="name" type="VARCHAR(255)"/>
             <column name="height" type="INT"/>
             <column name="weight" type="INT"/>

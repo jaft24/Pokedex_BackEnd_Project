@@ -16,22 +16,24 @@ class SecurityConfig {
     @Throws(Exception::class)
     fun filterChain(http: HttpSecurity): SecurityFilterChain? {
         http.csrf().disable().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
-            .and().cors().and()
-            .authorizeHttpRequests()
-            .requestMatchers("/api/capture/**").hasAuthority("SCOPE_trainer")
-            .requestMatchers(HttpMethod.DELETE, "/api/capture/**").hasAuthority("SCOPE_trainer")
-            .requestMatchers("/api/pokemon/**").permitAll()
-            .anyRequest().permitAll()
+                .and().cors().and()
+                .authorizeRequests { requests ->
+                    requests
+                            .antMatchers("/api/capture/**").hasAuthority("SCOPE_trainer")
+                            .antMatchers(HttpMethod.DELETE, "/api/capture/**").hasAuthority("SCOPE_trainer")
+                            .antMatchers("/api/pokemon/**").permitAll()
+                            .anyRequest().permitAll()
+                }
 
         http.cors().and()
-            .logout()
-            .logoutUrl("/api/capture/logout")
-            .logoutSuccessUrl("/api/pokemon/all")
-            .clearAuthentication(true)
-            .invalidateHttpSession(true)
+                .logout()
+                .logoutUrl("/api/capture/logout")
+                .logoutSuccessUrl("/api/pokemon/all")
+                .clearAuthentication(true)
+                .invalidateHttpSession(true)
 
         http.oauth2ResourceServer()
-            .jwt()
+                .jwt()
 
         return http.build()
     }
