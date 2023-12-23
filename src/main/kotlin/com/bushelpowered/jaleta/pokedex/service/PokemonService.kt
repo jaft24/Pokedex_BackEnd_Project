@@ -3,11 +3,10 @@ package com.bushelpowered.jaleta.pokedex.service
 import com.bushelpowered.jaleta.pokedex.exception.PokemonNotFoundException
 import com.bushelpowered.jaleta.pokedex.model.Pokemon
 import com.bushelpowered.jaleta.pokedex.repository.PokemonRepository
-import org.springframework.data.domain.Page
-import org.springframework.data.domain.PageImpl
-import org.springframework.data.domain.PageRequest
-import org.springframework.data.domain.Pageable
+import org.springframework.data.domain.*
 import org.springframework.stereotype.Service
+import java.util.*
+
 
 @Service
 class PokemonService(private var pokemonRepository: PokemonRepository) {
@@ -21,89 +20,102 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
         val updatedPageable = updatePageable(pageable)
         return pokemonRepository.findAll(updatedPageable)
     }
+    fun getPokemonByID(id: Int): Optional<Pokemon> {
+        if (!pokemonRepository.existsById(id)) {
+            throw PokemonNotFoundException("There is no Pokemon with this Id.")
+        }
+        return pokemonRepository.findById(id)
+    }
 
-    fun getPokemonByID(id: Int): Pokemon {
+    fun getAllPokemonByID(id: Int): List<Pokemon> {
         if (!pokemonRepository.existsById(id)) {
             throw PokemonNotFoundException("There is no Pokemon with this Id.")
         }
         return pokemonRepository.findAllById(id)
     }
-
-    fun getPokemonByName(name: String): Pokemon {
+    fun getPokemonByName(name: String): List<Pokemon> {
         if (!pokemonRepository.existsByName(name)) {
             throw PokemonNotFoundException("There is no Pokemon with this Name.")
         }
         return pokemonRepository.findByName(name)
     }
-
-    fun filterPokemonByHeight(height: Double, pageable: Pageable): Page<Pokemon> {
-        val updatedPageable = updatePageable(pageable)
-        return pokemonRepository.findByHeight(height, updatedPageable)
+    fun filterPokemonByHeight(height: Double): List<Pokemon> {
+        return pokemonRepository.findByHeight(height)
     }
-
-    fun filterPokemonByWeight(weight: Double, pageable: Pageable): Page<Pokemon> {
-        val updatedPageable = updatePageable(pageable)
-        return pokemonRepository.findByWeight(weight, updatedPageable)
+    fun filterPokemonByWeight(weight: Double): List<Pokemon> {
+        return pokemonRepository.findByWeight(weight)
     }
-
-    fun filterPokemonByGenus(genusName: String, pageable: Pageable): Page<Pokemon> {
-        val updatedPageable = updatePageable(pageable)
-        return pokemonRepository.findPokemonsByGenus(genusName, updatedPageable)
+    fun filterPokemonByGenus(genusName: String): List<Pokemon> {
+        return pokemonRepository.findPokemonByGenus(genusName)
     }
-
-    fun filterPokemonByType(typeName: String, pageable: Pageable): Page<Pokemon> {
-        val updatedPageable = updatePageable(pageable)
-        return pokemonRepository.findPokemonByTypesType(typeName, updatedPageable)
+    fun filterPokemonByType(typeName: String): List<Pokemon> {
+        return pokemonRepository.findPokemonByTypesType(typeName)
     }
-
-    fun filterPokemonByAbility(abilityName: String, pageable: Pageable): Page<Pokemon> {
-        val updatedPageable = updatePageable(pageable)
-        return pokemonRepository.findPokemonByAbilitiesAbility(abilityName, updatedPageable)
+    fun filterPokemonByAbility(abilityName: String): List<Pokemon> {
+        return pokemonRepository.findPokemonByAbilitiesAbility(abilityName)
     }
-
-    fun filterPokemonByEggGroup(eggGroupName: String, pageable: Pageable): Page<Pokemon> {
-        val updatedPageable = updatePageable(pageable)
-        return pokemonRepository.findPokemonByEggGroupsEggGroup(eggGroupName, updatedPageable)
+    fun filterPokemonByEggGroup(eggGroupName: String): List<Pokemon> {
+        return pokemonRepository.findPokemonByEggGroupsEggGroup(eggGroupName)
     }
 
     fun combinedPokemonFilter(
         genus: String?,
+        id: Int?,
+        name: String?,
+        page: Int,
+        sort: String?,
         height: Double?,
         weight: Double?,
         type: String?,
         ability: String?,
         eggGroup: String?,
-        pageable: Pageable,
-    ): PageImpl<Pokemon> {
+        pageable: Pageable
+    ): Page<Pokemon> {
+
         val updatedPageable = updatePageable(pageable)
 
-        val genusPokemon = genus?.let {
-            filterPokemonByGenus(it, updatedPageable)
+        val idPokemon = id?.takeIf { it != 0 }?.let {
+            getAllPokemonByID(it)
         }
-        val heightPokemon = height?.let {
-            filterPokemonByHeight(it, updatedPageable)
+        val namePokemon = name?.takeIf { it != "" }?.let {
+            getPokemonByName(it)
         }
-        val weightPokemon = weight?.let {
-            filterPokemonByWeight(it, updatedPageable)
+        val genusPokemon = genus?.takeIf { it != "" }?.let {
+            filterPokemonByGenus(it)
         }
-        val typePokemon = type?.let {
-            filterPokemonByType(it, updatedPageable)
+        val heightPokemon = height?.takeIf { it != 0.0 }?.let {
+            filterPokemonByHeight(it)
         }
-        val abilityPokemon = ability?.let {
-            filterPokemonByAbility(it, updatedPageable)
+        val weightPokemon = weight?.takeIf { it != 0.0 }?.let {
+            filterPokemonByWeight(it)
         }
-        val eggGroupPokemon = eggGroup?.let {
-            filterPokemonByEggGroup(it, updatedPageable)
+        val typePokemon = type?.takeIf { it != "" }?.let {
+            filterPokemonByType(it)
+        }
+        val abilityPokemon = ability?.takeIf { it != "" }?.let {
+            filterPokemonByAbility(it)
+        }
+        val eggGroupPokemon = eggGroup?.takeIf { it != "" }?.let {
+            filterPokemonByEggGroup(it)
         }
 
-        val allFiltersCombined: MutableList<Pokemon> = mutableListOf()
-        allFiltersCombined.addAll(pokemonRepository.findAll())
-        genusPokemon?.let { allFiltersCombined.retainAll(it.content) }
-        heightPokemon?.let { allFiltersCombined.retainAll(it.content) }
-        weightPokemon?.let { allFiltersCombined.retainAll(it.content) }
-        typePokemon?.let { allFiltersCombined.retainAll(it.content) }
-        abilityPokemon?.let { allFiltersCombined.retainAll(it.content) }
-        eggGroupPokemon?.let { allFiltersCombined.retainAll(it.content) }
+        val allFiltersCombined: MutableList<Pokemon> = ArrayList(pokemonRepository.findAll())
+
+        idPokemon?.let { allFiltersCombined.retainAll(idPokemon) }
+        namePokemon?.let { allFiltersCombined.retainAll(namePokemon) }
+        genusPokemon?.let { allFiltersCombined.retainAll(genusPokemon) }
+        heightPokemon?.let { allFiltersCombined.retainAll(heightPokemon) }
+        weightPokemon?.let { allFiltersCombined.retainAll(weightPokemon) }
+        typePokemon?.let { allFiltersCombined.retainAll(typePokemon) }
+        abilityPokemon?.let { allFiltersCombined.retainAll(abilityPokemon) }
+        eggGroupPokemon?.let { allFiltersCombined.retainAll(eggGroupPokemon) }
+
+        when (sort?.uppercase()) {
+            "DESC" -> allFiltersCombined.sortByDescending { it.id }
+            "A-Z" -> allFiltersCombined.sortBy { it.name }
+            "Z-A" -> allFiltersCombined.sortByDescending { it.name }
+            else -> allFiltersCombined.sortBy { it.id }
+        }
 
         val startIndex = updatedPageable.offset.toInt()
         val endIndex = (startIndex + updatedPageable.pageSize).coerceAtMost(allFiltersCombined.size)
