@@ -37,7 +37,7 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.liquibase:liquibase-core")
-	runtimeOnly("org.postgresql:postgresql")
+	implementation("org.postgresql:postgresql:42.5.1")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 
 }
@@ -45,4 +45,10 @@ dependencies {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+}
+
+tasks.getByName<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar") {
+	archiveFileName.set("your-application.jar")
+	archiveBaseName.set("your-application")
+	archiveVersion.set("0.0.1-SNAPSHOT")
 }

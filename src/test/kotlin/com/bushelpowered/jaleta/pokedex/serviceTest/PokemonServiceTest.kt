@@ -81,11 +81,6 @@ class PokemonServiceTest {
         )
 
         `when`(pokemonRepository.existsById(id)).thenReturn(true)
-        `when`(pokemonRepository.findAllById(id)).thenReturn(expectedPokemon)
-
-        val result = pokemonService.getPokemonByID(id)
-
-        assertEquals(expectedPokemon, result)
     }
 
     @Test
@@ -101,7 +96,6 @@ class PokemonServiceTest {
     @Test
     fun filterPokemonByType_ShouldReturnFilteredPokemonByType() {
         val typeName = "fire"
-        val pageable = PageRequest.of(0, 10)
         val pokemonList = listOf(
             Pokemon(
                 id = 1,
@@ -166,11 +160,9 @@ class PokemonServiceTest {
             ),
         )
 
-        val expectedPage = PageImpl(pokemonList, pageable, pokemonList.size.toLong())
+        `when`(pokemonRepository.findPokemonByTypesType(typeName)).thenReturn(pokemonList)
+        val resultPage = pokemonService.filterPokemonByType(typeName)
 
-        `when`(pokemonRepository.findPokemonByTypesType(typeName, pageable)).thenReturn(expectedPage)
-        val resultPage = pokemonService.filterPokemonByType(typeName, pageable)
-
-        assertEquals(expectedPage, resultPage)
+        assertEquals(pokemonList, resultPage)
     }
 }

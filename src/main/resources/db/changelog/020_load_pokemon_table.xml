@@ -7,10 +7,10 @@
         <loadData relativeToChangelogFile="true" file="loadfiles/pokedex.csv"
                   separator=","
                   tableName="pokemon">
-            <column name="id" type="bigint"/>
+            <column name="id" type="numeric"/>
             <column name="name" type="VARCHAR(255)"/>
-            <column name="height" type="INT"/>
-            <column name="weight" type="INT"/>
+            <column name="height" type="numeric"/>
+            <column name="weight" type="numeric"/>
             <column name="genus" type="VARCHAR(255)"/>
             <column name="description" type="VARCHAR(255)"/>
         </loadData>

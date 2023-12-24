@@ -7,7 +7,7 @@
         <loadData relativeToChangelogFile="true" file="loadfiles/types.csv"
                   separator=","
                   tableName="types">
-            <column name="id" type="bigint"/>
+            <column name="id" type="numeric"/>
             <column name="type" type="VARCHAR(255)"/>
         </loadData>
     </changeSet>

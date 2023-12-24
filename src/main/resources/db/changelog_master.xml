@@ -9,4 +9,5 @@
 
         <includeAll relativeToChangelogFile="true" path="changelog/"/>
 
+
 </databaseChangeLog>

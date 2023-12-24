@@ -7,13 +7,13 @@
         <loadData relativeToChangelogFile="true" file="loadfiles/stats.csv"
                   separator=","
                   tableName="stats">
-            <column name="id" type="bigint"/>
-            <column name="hp" type="int"/>
-            <column name="speed" type="int"/>
-            <column name="attack" type="int"/>
-            <column name="defense" type="int"/>
-            <column name="special_attack" type="int"/>
-            <column name="special_defense" type="int"/>
+            <column name="id" type="numeric"/>
+            <column name="hp" type="numeric"/>
+            <column name="speed" type="numeric"/>
+            <column name="attack" type="numeric"/>
+            <column name="defense" type="numeric"/>
+            <column name="special_attack" type="numeric"/>
+            <column name="special_defense" type="numeric"/>
         </loadData>
     </changeSet>
 

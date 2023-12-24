@@ -7,9 +7,9 @@
         <loadData relativeToChangelogFile="true" file="loadfiles/pokemon_abilities.csv"
                   separator=","
                   tableName="pokemon_abilities">
-            <column name="id" type="bigint"/>
-            <column name="pokemon_id" type="int"/>
-            <column name="ability_id" type="int"/>
+            <column name="id" type="numeric"/>
+            <column name="pokemon_id" type="numeric"/>
+            <column name="ability_id" type="numeric"/>
         </loadData>
     </changeSet>
 
