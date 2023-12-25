@@ -28,7 +28,7 @@ class SecurityConfig {
         http.cors().and()
                 .logout()
                 .logoutUrl("/api/capture/logout")
-                .logoutSuccessUrl("/api/pokemon/all")
+                .logoutSuccessUrl("/api/pokemon/filter")
                 .clearAuthentication(true)
                 .invalidateHttpSession(true)
 
