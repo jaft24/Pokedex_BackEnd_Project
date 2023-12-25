@@ -42,11 +42,11 @@ class PokemonController(private var pokemonService: PokemonService) {
             @RequestParam(required = false) type: String?,
             @RequestParam(required = false) ability: String?,
             @RequestParam(required = false) eggGroup: String?,
-            @RequestParam(required = false) sort: String?,
+            @RequestParam(required = false) sortOrder: String?,
             @RequestParam(required = false, defaultValue = "0") page: Int,
             pageable: Pageable): ResponseEntity<Page<Pokemon>> {
 
-        val resultPage: Page<Pokemon> = pokemonService.combinedPokemonFilter(genus, id, name, page, sort, height, weight, type, ability, eggGroup, pageable)
+        val resultPage: Page<Pokemon> = pokemonService.combinedPokemonFilter(genus, id, name, page, sortOrder, height, weight, type, ability, eggGroup, pageable)
         return ResponseEntity.ok(resultPage)
     }
 

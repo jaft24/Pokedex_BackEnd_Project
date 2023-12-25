@@ -1,3 +1,9 @@
+FROM quay.io/keycloak/keycloak:latest
+
+ENV KEYCLOAK_ADMIN=admin
+
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start-dev"]
+
 # Use the official OpenJDK 17 image as the base image
 FROM openjdk:17-jdk-slim
 

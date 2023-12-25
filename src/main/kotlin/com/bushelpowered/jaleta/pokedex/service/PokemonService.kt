@@ -3,6 +3,7 @@ package com.bushelpowered.jaleta.pokedex.service
 import com.bushelpowered.jaleta.pokedex.exception.PokemonNotFoundException
 import com.bushelpowered.jaleta.pokedex.model.Pokemon
 import com.bushelpowered.jaleta.pokedex.repository.PokemonRepository
+import org.springframework.cache.annotation.Cacheable
 import org.springframework.data.domain.*
 import org.springframework.stereotype.Service
 import java.util.*
@@ -58,69 +59,83 @@ class PokemonService(private var pokemonRepository: PokemonRepository) {
         return pokemonRepository.findPokemonByEggGroupsEggGroup(eggGroupName)
     }
 
+    fun sortHandler(sort: String?): Pair<String, String>{
+        val adjustedSort = sort?.uppercase()
+        var sortOn = "id"
+        var sortOrder = "ASC"
+        if (adjustedSort == "DESC"){
+            sortOrder = "DESC"
+            return Pair(sortOn, sortOrder)
+        } else if (adjustedSort == "A-Z") {
+            sortOn = "name"
+            return Pair(sortOn, sortOrder)
+        } else if (adjustedSort == "Z-A") {
+            sortOn = "name"
+            sortOrder = "DESC"
+            return Pair(sortOn, sortOrder)
+        } else return Pair(sortOn, sortOrder)
+
+    }
+
+    @Cacheable("combinedPokemonFilter", keyGenerator = "customKeyGenerator")
     fun combinedPokemonFilter(
-        genus: String?,
-        id: Int?,
-        name: String?,
-        page: Int,
-        sort: String?,
-        height: Double?,
-        weight: Double?,
-        type: String?,
-        ability: String?,
-        eggGroup: String?,
-        pageable: Pageable
+            genus: String?,
+            id: Int?,
+            name: String?,
+            page: Int,
+            sortOrder: String?,
+            height: Double?,
+            weight: Double?,
+            type: String?,
+            ability: String?,
+            eggGroup: String?,
+            pageable: Pageable
     ): Page<Pokemon> {
 
         val updatedPageable = updatePageable(pageable)
+        val sortResult = sortHandler(sortOrder)
 
-        val idPokemon = id?.takeIf { it != 0 }?.let {
-            getAllPokemonByID(it)
-        }
-        val namePokemon = name?.takeIf { it != "" }?.let {
-            getPokemonByName(it)
-        }
-        val genusPokemon = genus?.takeIf { it != "" }?.let {
-            filterPokemonByGenus(it)
-        }
-        val heightPokemon = height?.takeIf { it != 0.0 }?.let {
-            filterPokemonByHeight(it)
-        }
-        val weightPokemon = weight?.takeIf { it != 0.0 }?.let {
-            filterPokemonByWeight(it)
-        }
-        val typePokemon = type?.takeIf { it != "" }?.let {
-            filterPokemonByType(it)
-        }
-        val abilityPokemon = ability?.takeIf { it != "" }?.let {
-            filterPokemonByAbility(it)
-        }
-        val eggGroupPokemon = eggGroup?.takeIf { it != "" }?.let {
-            filterPokemonByEggGroup(it)
-        }
+        // Convert empty string or 0 to null
+        val adjustedGenus = if (genus.isNullOrBlank()) null else genus
+        val adjustedId = if (id == 0) null else id
+        val adjustedName = if (name.isNullOrBlank()) null else name
+        val sortBy = sortResult.first
+        val adjustedSort = if (sortResult.second == "ASC") null else "DESC"
+        val adjustedHeight = if (height == 0.0) null else height
+        val adjustedWeight = if (weight == 0.0) null else weight
+        val adjustedType = if (type.isNullOrBlank()) null else type
+        val adjustedAbility = if (ability.isNullOrBlank()) null else ability
+        val adjustedEggGroup = if (eggGroup.isNullOrBlank()) null else eggGroup
 
-        val allFiltersCombined: MutableList<Pokemon> = ArrayList(pokemonRepository.findAll())
 
-        idPokemon?.let { allFiltersCombined.retainAll(idPokemon) }
-        namePokemon?.let { allFiltersCombined.retainAll(namePokemon) }
-        genusPokemon?.let { allFiltersCombined.retainAll(genusPokemon) }
-        heightPokemon?.let { allFiltersCombined.retainAll(heightPokemon) }
-        weightPokemon?.let { allFiltersCombined.retainAll(weightPokemon) }
-        typePokemon?.let { allFiltersCombined.retainAll(typePokemon) }
-        abilityPokemon?.let { allFiltersCombined.retainAll(abilityPokemon) }
-        eggGroupPokemon?.let { allFiltersCombined.retainAll(eggGroupPokemon) }
-
-        when (sort?.uppercase()) {
-            "DESC" -> allFiltersCombined.sortByDescending { it.id }
-            "A-Z" -> allFiltersCombined.sortBy { it.name }
-            "Z-A" -> allFiltersCombined.sortByDescending { it.name }
-            else -> allFiltersCombined.sortBy { it.id }
+        val filteredPokemon = if (sortBy == "id") {
+            pokemonRepository.findPokemonByCombinedFiltersIdSort(
+                    adjustedId, adjustedName, adjustedGenus, adjustedHeight, adjustedWeight, adjustedType, adjustedAbility, adjustedEggGroup, adjustedSort, updatedPageable
+            )
+        } else {
+            pokemonRepository.findPokemonByCombinedFiltersNameSort(
+                    adjustedId, adjustedName, adjustedGenus, adjustedHeight, adjustedWeight, adjustedType, adjustedAbility, adjustedEggGroup, adjustedSort, updatedPageable
+            )
         }
 
-        val startIndex = updatedPageable.offset.toInt()
-        val endIndex = (startIndex + updatedPageable.pageSize).coerceAtMost(allFiltersCombined.size)
-        val filteredResults = allFiltersCombined.subList(startIndex, endIndex)
+        return PageImpl(filteredPokemon.content, updatedPageable, filteredPokemon.totalElements)
+    }
 
-        return PageImpl(filteredResults, updatedPageable, allFiltersCombined.size.toLong())
+    fun customKeyGenerator(
+            genus: String?,
+            id: Int?,
+            name: String?,
+            page: Int,
+            sortOrder: String?,
+            height: Double?,
+            weight: Double?,
+            type: String?,
+            ability: String?,
+            eggGroup: String?,
+            pageable: Pageable
+    ): String {
+        return "combinedPokemonFilter_" +
+                "${genus ?: ""}_${id}_${name ?: ""}_${page}_${sortOrder ?: ""}_${height?.toString() ?: ""}_${weight?.toString() ?: ""}_${type ?: ""}_${ability ?: ""}_${eggGroup ?: ""}" +
+                "_${pageable.pageNumber}_${pageable.pageSize}"
     }
 }
