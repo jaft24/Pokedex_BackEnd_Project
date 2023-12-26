@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
 	id("org.springframework.boot") version "2.7.11"
@@ -51,4 +52,5 @@ tasks.getByName<org.springframework.boot.gradle.tasks.bundling.BootJar>("bootJar
 	archiveFileName.set("your-application.jar")
 	archiveBaseName.set("your-application")
 	archiveVersion.set("0.0.1-SNAPSHOT")
+	mainClass = "com.bushelpowered.jaleta.pokedex.PokedexApplication"
 }

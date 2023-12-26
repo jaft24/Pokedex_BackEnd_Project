@@ -1,4 +1,4 @@
-version: '3'
+# Run "docker compose up" only during Local Dev with Docker Daemon Running, then adjust url in application.properties file
 services:
   postgres:
     image: postgres:14
@@ -9,10 +9,10 @@ services:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: secret
 
-  keycloak:
+  dev_keycloak:
     container_name: keycloak_dev
     image: quay.io/keycloak/keycloak:20.0.2
-    command: "start --import-realm"
+    command: "start-dev --import-realm"
     volumes:
       - './keycloak/realms:/opt/keycloak/data/import'
       - './keycloak/export:/opt/keycloak/data/export'
@@ -21,21 +21,3 @@ services:
     environment:
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: admin
-
-  spring-app:
-    build: .
-    ports:
-      - "8080:8080"
-    depends_on:
-      - postgres
-      - keycloak
-    networks:
-      - backend
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/pokedex
-      SPRING_DATASOURCE_USERNAME: user
-      SPRING_DATASOURCE_PASSWORD: secret
-      KEYCLOAK_AUTH_SERVER_URL: http://keycloak:8080/auth
-
-networks:
-  backend:

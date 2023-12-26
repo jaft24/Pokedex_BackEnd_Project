@@ -5,7 +5,8 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy only the necessary files for gradle build
-COPY build.gradle settings.gradle ./
+COPY build.gradle.kts settings.gradle.kts ./
+COPY gradlew ./
 COPY gradle ./gradle
 
 # Download dependencies to cache them in a separate layer
