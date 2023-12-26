@@ -5,15 +5,10 @@ import com.bushelpowered.jaleta.pokedex.service.CaptureService
 import org.springframework.http.ResponseEntity
 import org.springframework.security.core.Authentication
 import org.springframework.transaction.annotation.Transactional
-import org.springframework.web.bind.annotation.DeleteMapping
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PathVariable
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
-@Transactional
 @RestController
+@CrossOrigin("https://pokedex-frontend-project.fly.dev/")
 @RequestMapping("/api/capture")
 class CaptureController(private val captureService: CaptureService) {
 

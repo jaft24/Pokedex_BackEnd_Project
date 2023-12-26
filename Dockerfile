@@ -1,19 +1,20 @@
-FROM quay.io/keycloak/keycloak:latest
-
-ENV KEYCLOAK_ADMIN=admin
-
-ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start-dev"]
-
 # Use the official OpenJDK 17 image as the base image
 FROM openjdk:17-jdk-slim
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Copy the application source code and Gradle files into the container
+# Copy only the necessary files for gradle build
+COPY build.gradle settings.gradle ./
+COPY gradle ./gradle
+
+# Download dependencies to cache them in a separate layer
+RUN ./gradlew build --no-daemon
+
+# Copy the application source code
 COPY . .
 
-# Build the application using the Gradle Wrapper
+# Build the application
 RUN ./gradlew build
 
 # Expose the port that your application will run on

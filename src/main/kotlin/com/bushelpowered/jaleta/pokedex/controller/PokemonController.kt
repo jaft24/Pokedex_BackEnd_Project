@@ -15,8 +15,7 @@ import java.util.*
 import javax.transaction.Transactional
 
 @RestController
-@Transactional
-@CrossOrigin
+@CrossOrigin("https://pokedex-frontend-project.fly.dev/")
 @RequestMapping("/api/pokemon")
 class PokemonController(private var pokemonService: PokemonService) {
 
