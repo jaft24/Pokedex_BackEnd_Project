@@ -17,6 +17,9 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
+## Local Token ##
+!**/application-local.properties
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
