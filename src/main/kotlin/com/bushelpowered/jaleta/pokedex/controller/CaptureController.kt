@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional
 import org.springframework.web.bind.annotation.*
 
 @RestController
-@CrossOrigin("https://pokedex-frontend-project.fly.dev/")
+@CrossOrigin("https://pokedex-frontend-project.fly.dev/","http://localhost:3000/")
 @RequestMapping("/api/capture")
 class CaptureController(private val captureService: CaptureService) {
 
